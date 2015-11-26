@@ -90,6 +90,10 @@ section{
 
 .desktop-menu{
     display: none;
+    color: $white;
+    li{
+        line-height: 25px;
+    }
 }
 .menu-mobile{
     position: relative;
