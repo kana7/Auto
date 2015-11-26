@@ -353,11 +353,12 @@
                                     </nav>
                                 </div>
                                 <div class="clearfix">
-                                    <div class="phone-12 tab-6">
+                                    <a class="btn-outline-orange hidden-phone detailed-search" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
+                                    <div style="padding-left: 0;" class="phone-12 tab-6">
                                         <div class="group-input">
                                             <label for="state">Etat : </label>
                                             <select id="state" name="state">
-                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="" disabled selected hidden>Etat</option>
                                                 <option value="0"></option>
                                                 <option value="1"></option>
                                             </select>
@@ -365,7 +366,7 @@
                                         <div class="group-input">
                                             <label for="brand">Marque : </label>
                                             <select id="brand" name="_brand">
-                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="" disabled selected hidden>Marque</option>
                                                 <option value="0">-</option>
                                                 <option value="1"></option>
                                             </select>
@@ -373,7 +374,7 @@
                                         <div class="group-input">
                                             <label for="model">Modèle : </label>
                                             <select id="model" name="_model">
-                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="" disabled selected hidden>Modèle</option>
                                                 <option value="0">-</option>
                                                 <option value="1"></option>
                                             </select>
@@ -381,7 +382,7 @@
                                         <div class="group-input">
                                             <label for="fuel">Carburant</label>
                                             <select id="fuel" name="_fuel">
-                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="" disabled selected hidden>Carburant</option>
                                                 <option value="0">-</option>
                                                 <option value="1"></option>
                                             </select>
@@ -391,7 +392,7 @@
                                         <div class="group-input">
                                             <label for="price">Prix (€)</label>
                                             <select id="price" name="_price">
-                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="" disabled selected hidden>Prix (€)</option>
                                                 <option value="0">jusqu'à</option>
                                                 <option value="1"></option>
                                             </select>
@@ -399,7 +400,7 @@
                                         <div class="group-input">
                                             <label for="year">Année : </label>
                                             <select id="year" name="_year">
-                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="" disabled selected hidden>Année</option>
                                                 <option value="0">à partir de</option>
                                                 <option value="1"></option>
                                             </select>
@@ -407,25 +408,25 @@
                                         <div class="group-input">
                                             <label for="km">Kilométrage : </label>
                                             <select id="km" name="_km">
-                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="" disabled selected hidden>Kilométrage</option>
                                                 <option value="0">jusqu'à</option>
                                                 <option value="1"></option>
                                             </select>
                                         </div>
-                                        <div style="text-align: center;" class="group-input">
-                                            <p><strong>2376 véhicules</strong> en ligne</p>
+                                        <div style="text-align: center; margin-top: 5px; padding-bottom: 0;" class="group-input">
+                                            <p class="orange hidden-phone"><strong>2376 véhicules</strong> en ligne</p>
                                             <button class="btn-orange" type="submit">Rechercher</button>
-                                            <a href="#">Recherche détaillée <span class="icon-recherche"></span></a>
+                                            <a style="margin-top: 10px;" class="btn-outline-orange hidden display-phone-inline-block" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="phone-3 hidden-phone">
+                        <div class="phone-3 hidden-phone hidden-tab desk-6">
                             <div class="grey-border-box">
                                 <h2>Je veux vendre : </h2>
-                                <div id="key-image"></div>
-                                <button>Créer mon annonce gratuite</button>
+                                <img class="fill-width" src="images/key.jpg" alt="clé vendre" />
+                                <a class="btn-orange" href="#">Créer mon annonce gratuite</a>
                             </div>
                         </div>
                     </div>
@@ -434,12 +435,14 @@
             <section id="pubs">
                 <div class="container-wrapper">
                     <div class="row">
-                        <div class="phone-12">
+                        <div class="phone-12 tab-6 margin-bottom-phone">
                             <div class="grey-border-box">
                                 <h2>Garages partenaires : </h2>
+                                <p>Cars Benelux S.A</p>
+                                <img class="fill-width" src="images/garage.jpg" alt="garages benelux" />
                             </div>
                         </div>
-                        <div class="phone-12">
+                        <div class="phone-12 tab-6">
                             <div class="orange-border-box">
                                 <h2>La bonne affaire : </h2>
                             </div>
@@ -468,18 +471,14 @@
                     <div class="row">
                         <h2>Nos partenaires</h2>
                         <div class="clearfix">
-                            <div class="phone-12 tab-6">
+                            <div class="phone-12 tab-6 margin-bottom-phone">
                                 <div class="grey-border-box">
-                                    <a href="#">
-
-                                    </a>
+                                    <a class="annonce-link" href="#"></a>
                                 </div>
                             </div>
                             <div class="phone-12 tab-6">
                                 <div class="grey-border-box">
-                                    <a href="#">
-
-                                    </a>
+                                    <a class="annonce-link" href="#"></a>
                                 </div>
                             </div>
                         </div>

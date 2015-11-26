@@ -31,6 +31,10 @@ Contient les classes supplémentaires pour la mise en page du site + les styles 
     @include display-flex-center;
 }
 
+.margin-bottom-phone{
+    margin-bottom: 20px;
+}
+
 .align-center{
     text-align: center;
 }
@@ -61,12 +65,12 @@ Contient les classes supplémentaires pour la mise en page du site + les styles 
 }
 .footer-top{
     nav{
-        font-size: 16px;
         color: darken($grey, 40%);
         li{
             display: block;
             @include transition($transitionUi);
             font-weight: 400;
+             font-size: 16px;
             &:hover{
                 color: darken($grey, 60%);
             }
@@ -102,7 +106,7 @@ section{
         }
         color: $blue;
     }
-   
+
 }
 .menu-mobile-icon{
     display: inline-block;

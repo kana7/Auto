@@ -31,6 +31,44 @@ Contient les media queries pour adapter les styles sur les différents formats
             width: 50%;
         }
     }
+    .row, .clearfix{
+
+        .phone-auto, .tab-auto, .desk-auto, .lgdesk-auto, .phone-0, .tab-0, .desk-0, .lgdesk-0, .phone-1, .tab-1, .desk-1, .lgdesk-1, .phone-2, .tab-2, .desk-2, .lgdesk-2, .phone-3, .tab-3, .desk-3, .lgdesk-3, .phone-4, .tab-4, .desk-4, .lgdesk-4, .phone-5, .tab-5, .desk-5, .lgdesk-5, .phone-6, .tab-6, .desk-6, .lgdesk-6, .phone-7, .tab-7, .desk-7, .lgdesk-7, .phone-8, .tab-8, .desk-8, .lgdesk-8, .phone-9, .tab-9, .desk-9, .lgdesk-9, .phone-10, .tab-10, .desk-10, .lgdesk-10, .phone-11, .tab-11, .desk-11, .lgdesk-11, .phone-12, .tab-12, .desk-12, .lgdesk-12{
+            padding: 0 15px;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+        h1, h2, h3, h4, h5, h6{
+            text-align: left;
+        }
+    }
+    .footer-top nav{
+        ul{
+            text-align: justify;
+            width: 100%;
+            font-size: 0;
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 100%;
+            }
+        }
+        li{
+            display: inline-block;
+            &:not(:last-child){
+                margin-bottom: 0;
+            }
+        } 
+    }
+    .detailed-search{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
 }
 @include media(desk){
     .container-wrapper{

@@ -89,6 +89,7 @@ img.fill-height{
     width: 100%;
     height: 100%;
 }
+
 //TEXT STYLES
 //--------------------------------------------------
 #propos{
@@ -176,7 +177,7 @@ img.fill-height{
     display: inline-block;
     position: relative;
     width: 100%;
-    padding: 5px 0;
+    padding: 4px 0;
     label{
         display: none;
     }
@@ -184,8 +185,51 @@ img.fill-height{
         display: block;
         width: 100%;
         border-color: $grey-border;
-        height: 40px;
+        height: 38px;
         padding-left: 10px;
+        font-size: 13px;
         cursor: pointer;
+    }
+}
+
+//BUTTON StYLES
+//--------------------------------------------------------
+
+@mixin btn($back-color, $font-color){
+    display: inline-block;
+    position: relative;
+    border: none;
+    border-radius: 8px;
+    background-color: $back-color;
+    color: $font-color;
+    padding: 14px 35px 11px;
+    font-size: 12px;
+    font-weight: 600;
+    @include transition($transitionUi);
+    span{
+        position: relative; 
+        top: 2px;
+        margin-right: 5px;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.btn-orange{
+    @include btn($orange, $white);
+    @include box-shadow(0 2px 1px 0 rgb(223, 223, 223));
+    text-transform: uppercase;
+    &:hover{
+        background-color: lighten($orange, 7%);
+    }
+}
+.btn-outline-orange{
+    @include btn($white, $orange);
+    border: 1px solid $orange;
+    font-size: 12px;
+    padding: 7px 10px;
+    border-radius: 4px;
+    &:hover{
+        background-color: lighten($orange, 50%);
     }
 }
