@@ -1,0 +1,232 @@
+/*
+LAYOUT
+----------------------------------------------------------------
+Contient les classes supplémentaires pour la mise en page du site + les styles pour la structure générale du site (header, menus et footer)
+*/
+.container-wrapper
+{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: ($gridGutterWidth/2);
+    padding-left: ($gridGutterWidth/2);
+    height: 100%;
+
+    @include clearfix;
+}
+
+.absolute-vertical-align-middle
+{
+    @include vertical-align-middle(absolute);
+}
+.vertical-align-middle{
+    @include vertical-align-middle();
+}
+.disable-vertical-align-middle{
+    @include disable-vertical-align();
+}
+.flex-align-spread{
+    @include display-flex-spread;
+}
+.flex-align-center{
+    @include display-flex-center;
+}
+
+.align-center{
+    text-align: center;
+}
+.align-right{
+    text-align: right !important;
+}
+.align-left{
+    text-align: left !important;
+}
+
+.header-top, .header-bottom, footer-top, .footer-bottom{
+    display: block;
+    position: relative;
+    padding: 15px 0;
+}
+
+.header-top, .footer-bottom{
+    background-color: $blue;
+    color: $white;
+    .container-wrapper{
+        width: auto;
+        padding: 0 25px;
+    }
+}
+.footer-bottom, .footer-top{
+    text-align: center;
+    padding: 20px 0;
+}
+.footer-top{
+    nav{
+        font-size: 16px;
+        color: darken($grey, 40%);
+        li{
+            display: block;
+            @include transition($transitionUi);
+            font-weight: 400;
+            &:hover{
+                color: darken($grey, 60%);
+            }
+            &:not(:last-child){
+                margin-bottom: 10px;  
+            }
+        }
+    }
+}
+section, .header-bottom{
+    border-bottom: 1px solid $grey-border;
+    @include box-shadow(0 1px 0 0 $white);
+}
+section{
+    padding: 20px 0;
+}
+
+.desktop-menu{
+    display: none;
+}
+.menu-mobile{
+    position: relative;
+    text-align: center;
+    ul{
+        display: inline-block;
+        color: $blue;
+        li:not(:first-child):not(:last-child){
+            margin: 0 11px;
+        }
+        li:first-child{
+            margin-right: 11px;
+        } 
+        li:last-child{
+            margin-left: 11px;
+        }
+    }
+}
+.menu-mobile-icon{
+    text-align: center;
+    div[class^="icon-"]{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    div:not([class^="icon-"]){
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+}
+
+//sidebar coulissant pour les menus mobiles
+.mobile-sidebar-menu{
+    display: inline-block;
+    width: 300px !important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    @include transition(transform 0.3s ease);
+    @include transform(translateX(0px));
+    border-right: 2px solid $grey-border;
+    z-index: 5;
+    background-color: #ffffff;
+    &.right{
+        right: -303px; 
+        &.open{
+            @include transform(translateX(-300px));
+        }
+    }
+    &.left{
+        left: -303px;
+        &.open{
+            @include transform(translateX(300px));
+        }
+    }
+}
+.category-entry, .sub-categories, .sub-category-entry{
+    display: block;
+    position: relative;
+}
+
+.search-box{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: -90px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 15px 15px 10px 15px;
+    @include transform(translateY(0px));
+    background-color: #ffffff;
+    @include transition(transform 0.3s ease);
+    &.open{
+        box-shadow: 0px 4px 15px 0px #575757;
+        @include transform(translateY(90px));
+    }
+}
+.header-logo{
+    li{
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+    }
+    .logo-description{
+        width: 80px;
+        color: $white;
+        text-align: center;
+        span{
+            display: block;
+            margin-bottom: 3px;
+            letter-spacing: 0.05em
+        }
+    }
+}
+.separator{
+    width: 1px;
+    background-color: $white;
+    margin: 0 5px;
+
+}
+.language-selection{
+    &.mobile{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        button{
+            position: relative;
+            height: 45px;
+            width: 45px;
+            padding: 7px;
+            border-radius: 0px 0px 0px 7px;
+            background-color: lighten($blue, 10%);
+            border: 1px solid darken($blue, 25%);
+            z-index: 2;
+            div[class^="icon-"]{
+                margin-top: 2px;
+                color: $white;
+            }
+        }
+        .dropdown{
+            display: none;
+            position: relative;
+            bottom: 5px;
+            padding-top: 15px;
+            background-color: $white;
+            border: 1px solid $blue;
+            border-radius: 0px 0px 0px 7px;
+            z-index: 1;
+            &.open{
+                display: block;
+            }
+            li{
+                display: block;
+            }
+            a{
+                display: block;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+/*
+RESPONSIVE
+----------------------------------------------------------------
+Contient les media queries pour adapter les styles sur les différents formats
+*/
+
+
+@include media(phone){
+    .container-wrapper{
+        width: 320px;
+        padding: 0 15px;
+    }
+    #annonces-une{
+        .container-wrapper{
+            width: auto;
+        }
+    }    
+}
+@include media(tab){
+    .container-wrapper{
+        width: 640px;
+    }
+    .main-gallery{
+        .gallery-cell{
+            width: 33.3333%;
+        }
+    }
+    .main-gallery{
+        .gallery-cell{
+            padding: 0 5px;
+            width: 50%;
+        }
+    }
+}
+@include media(desk){
+    .container-wrapper{
+        width: 1024px;
+    }
+    .main-gallery{
+        .gallery-cell{
+            width: 25%;
+        }
+    }
+    .annonce-une-item-content{
+        font-size: 15px;
+        .price{
+            font-size: 1.2em;
+        }
+    }
+}
+@include media(lgdesk){
+    .container-wrapper{
+        width: 1280px;
+    }
+    .main-gallery{
+        .gallery-cell{
+            width: 20%;
+        }
+    }
+}
