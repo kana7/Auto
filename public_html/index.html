@@ -65,7 +65,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <nav class="row menu-mobile">
+                    <nav class="menu-mobile">
                         <ul>
                             <li class="menu-mobile-icon">
                                 <a href="#">
@@ -357,58 +357,65 @@
                                         <div class="group-input">
                                             <label for="state">Etat : </label>
                                             <select id="state" name="state">
-                                                <option value="0" selected></option>
+                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="0"></option>
                                                 <option value="1"></option>
                                             </select>
                                         </div>
                                         <div class="group-input">
                                             <label for="brand">Marque : </label>
                                             <select id="brand" name="_brand">
-                                                <option value="0" selected>-</option>
+                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="0">-</option>
                                                 <option value="1"></option>
                                             </select>
                                         </div>
                                         <div class="group-input">
                                             <label for="model">Modèle : </label>
                                             <select id="model" name="_model">
-                                                <option value="0" selected>-</option>
+                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="0">-</option>
                                                 <option value="1"></option>
                                             </select>
                                         </div>
                                         <div class="group-input">
                                             <label for="fuel">Carburant</label>
                                             <select id="fuel" name="_fuel">
-                                                <option value="0" selected>-</option>
+                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="0">-</option>
                                                 <option value="1"></option>
                                             </select>
                                         </div>
-                                        <a href="#">Recherche détaillée <span class="icon-recherche"></span></a>
                                     </div>
                                     <div class="phone-12 tab-6">
                                         <div class="group-input">
                                             <label for="price">Prix (€)</label>
                                             <select id="price" name="_price">
-                                                <option value="0" selected>jusqu'à</option>
+                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="0">jusqu'à</option>
                                                 <option value="1"></option>
                                             </select>
                                         </div>
                                         <div class="group-input">
                                             <label for="year">Année : </label>
                                             <select id="year" name="_year">
-                                                <option value="0" selected>à partir de</option>
+                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="0">à partir de</option>
                                                 <option value="1"></option>
                                             </select>
                                         </div>
                                         <div class="group-input">
                                             <label for="km">Kilométrage : </label>
                                             <select id="km" name="_km">
-                                                <option value="0" selected>jusqu'à</option>
+                                                <option value="" disabled selected hidden>Please Choose</option>
+                                                <option value="0">jusqu'à</option>
                                                 <option value="1"></option>
                                             </select>
                                         </div>
-                                        <div class="group-input">
+                                        <div style="text-align: center;" class="group-input">
                                             <p><strong>2376 véhicules</strong> en ligne</p>
                                             <button class="btn-orange" type="submit">Rechercher</button>
+                                            <a href="#">Recherche détaillée <span class="icon-recherche"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -520,7 +527,7 @@
                     cellAlign: 'left',
                     pageDots: false,
                     freeScroll: true,
-                    wrapAround: true, 
+                    wrapAround: true,
                     arrowShape: "M32.272,53.375l20.117,18.96c1.975,1.859,5.178,1.859,7.149,0c1.975-1.863,1.975-4.881,0-6.74l-16.538-15.59l16.538-15.59c1.975-1.863,1.975-4.882,0-6.743c-1.975-1.863-5.178-1.863-7.149,0l-20.117,18.96C30.298,48.497,30.298,51.512,32.272,53.375z"
                 });
             });

@@ -57,9 +57,9 @@ var languageSelection = (function () {
     var $menu = $el.find('.dropdown');
     var $document = $('html');
 
-    var $overlay = $('<div id="bazar_language_overlay"></div>');
+    /*var $overlay = $('<div id="bazar_language_overlay"></div>');
     $overlay.css('height', $(document).height());
-    $document.append($overlay);
+    $document.append($overlay);*/
 
     var init = function () {
         _bindEvents();

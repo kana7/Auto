@@ -1775,19 +1775,21 @@ section {
   display: none; }
 
 .menu-mobile {
-  position: relative;
-  text-align: center; }
+  position: relative; }
   .menu-mobile ul {
-    display: inline-block;
+    text-align: justify;
+    width: 100%;
+    font-size: 0;
     color: #004994; }
-    .menu-mobile ul li:not(:first-child):not(:last-child) {
-      margin: 0 11px; }
-    .menu-mobile ul li:first-child {
-      margin-right: 11px; }
-    .menu-mobile ul li:last-child {
-      margin-left: 11px; }
+    .menu-mobile ul:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 0;
+      line-height: 0; }
 
 .menu-mobile-icon {
+  display: inline-block;
   text-align: center; }
   .menu-mobile-icon div[class^="icon-"] {
     font-size: 24px;
@@ -1994,13 +1996,13 @@ img.fill-height {
   height: 100%; }
 
 #propos p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   text-align: justify; }
 
 .grey-border-box, .orange-border-box {
   width: 100%;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 3px;
   border: 3px solid;
   background-color: #fff;
@@ -2038,6 +2040,43 @@ img.fill-height {
     color: #e75e0a;
     font-weight: 800;
     font-size: 1.1em; }
+
+.cat-selection {
+  text-align: center;
+  margin-bottom: 10px; }
+  .cat-selection ul {
+    text-align: justify;
+    width: 100%;
+    font-size: 0; }
+    .cat-selection ul:after {
+      content: '';
+      display: inline-block;
+      width: 100%; }
+  .cat-selection li {
+    display: inline-block;
+    font-size: 21px;
+    cursor: pointer;
+    -moz-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
+    -o-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
+    -webkit-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
+    transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out; }
+    .cat-selection li:hover {
+      color: #e75e0a; }
+
+.group-input {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 5px 0; }
+  .group-input label {
+    display: none; }
+  .group-input select {
+    display: block;
+    width: 100%;
+    border-color: #dfdfdf;
+    height: 40px;
+    padding-left: 10px;
+    cursor: pointer; }
 
 /*
 RESPONSIVE

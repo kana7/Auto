@@ -89,22 +89,23 @@ section{
 }
 .menu-mobile{
     position: relative;
-    text-align: center;
     ul{
-        display: inline-block;
+        text-align: justify;
+        width: 100%;
+        font-size: 0;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 0;
+            line-height: 0;
+        }
         color: $blue;
-        li:not(:first-child):not(:last-child){
-            margin: 0 11px;
-        }
-        li:first-child{
-            margin-right: 11px;
-        } 
-        li:last-child{
-            margin-left: 11px;
-        }
     }
+   
 }
 .menu-mobile-icon{
+    display: inline-block;
     text-align: center;
     div[class^="icon-"]{
         font-size: 24px;
