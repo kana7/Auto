@@ -71,6 +71,12 @@ Contient les media queries pour adapter les styles sur les différents formats
         bottom: 0;
     }
 }
+@include viewport(max, $max: 1055){
+    .header-top .container-wrapper, .footer-bottom .container-wrapper {
+        width: auto;
+        padding: 0 25px;
+    }
+}
 @include media(desk){
     .container-wrapper{
         width: 1024px;

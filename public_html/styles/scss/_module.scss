@@ -49,8 +49,7 @@ svg:not(:root) {
 .immo{
     display: inline-block;
     width: 100%;
-    font-size: 28px !important;
-    @include transform(rotate(-25deg));
+    font-size: 30px !important;
 }
 // BACKGROUND-COLOR CLASS
 // --------------------------------------------------

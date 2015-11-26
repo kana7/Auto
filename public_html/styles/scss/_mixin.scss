@@ -281,6 +281,21 @@ Contient les fonctions SCSS
     -ms-flex-item-align: auto;
     align-self: auto;
 }
+@mixin item-spread($max-width){
+    text-align: justify;
+    width: 100%;
+    max-width: $max-width + px;
+    font-size: 0;
+    &:after{
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+    li{
+        display: inline-block;
+    }
+}
+
 @mixin gradient-upDown($top, $bottom){
     background: -webkit-linear-gradient($top, $bottom); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient($top, $bottom); /* For Opera 11.1 to 12.0 */

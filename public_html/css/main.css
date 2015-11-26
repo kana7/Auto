@@ -1518,8 +1518,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin-top: 0; }
 
-button:focus {
-  outline: 0; }
+button {
+  border: none;
+  background: none; }
+  button:focus {
+    outline: 0; }
 
 header, section, footer {
   display: block;
@@ -1743,9 +1746,6 @@ Contient les classes suppl├®mentaires pour la mise en page du site + les styl
 .header-top, .footer-bottom {
   background-color: #004994;
   color: #fff; }
-  .header-top .container-wrapper, .footer-bottom .container-wrapper {
-    width: auto;
-    padding: 0 25px; }
 
 .footer-bottom, .footer-top {
   text-align: center;
@@ -1780,8 +1780,20 @@ section {
 .desktop-menu {
   display: none;
   color: #fff; }
+  .desktop-menu ul {
+    text-align: justify;
+    width: 100%;
+    max-width: 350px;
+    font-size: 0; }
+    .desktop-menu ul:after {
+      content: '';
+      display: inline-block;
+      width: 100%; }
+    .desktop-menu ul li {
+      display: inline-block; }
   .desktop-menu li {
-    line-height: 25px; }
+    line-height: 25px;
+    font-size: 13px; }
 
 .menu-mobile {
   position: relative; }
@@ -1963,11 +1975,7 @@ svg:not(:root) {
 .immo {
   display: inline-block;
   width: 100%;
-  font-size: 28px !important;
-  transform: rotate(-25deg);
-  -webkit-transform: rotate(-25deg);
-  -ms-transform: rotate(-25deg);
-  -o-transform: rotate(-25deg); }
+  font-size: 30px !important; }
 
 .background-border {
   border: 1px solid #dfdfdf;
@@ -2222,6 +2230,10 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     position: absolute;
     left: 0;
     bottom: 0; } }
+@media screen and (max-width: 1055px) {
+  .header-top .container-wrapper, .footer-bottom .container-wrapper {
+    width: auto;
+    padding: 0 25px; } }
 @media screen and (min-width: 1056px) {
   .container-wrapper {
     width: 1024px; }

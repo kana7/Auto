@@ -54,10 +54,6 @@ Contient les classes supplémentaires pour la mise en page du site + les styles 
 .header-top, .footer-bottom{
     background-color: $blue;
     color: $white;
-    .container-wrapper{
-        width: auto;
-        padding: 0 25px;
-    }
 }
 .footer-bottom, .footer-top{
     text-align: center;
@@ -91,8 +87,12 @@ section{
 .desktop-menu{
     display: none;
     color: $white;
+    ul{
+        @include item-spread(350);
+    }
     li{
         line-height: 25px;
+        font-size: 13px;
     }
 }
 .menu-mobile{
