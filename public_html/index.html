@@ -427,7 +427,7 @@
                                         <div style="text-align: center; padding-bottom: 0;" class="group-input">
                                             <p style="font-size: 16px; margin: 8px 0 12px;" class="orange hidden-phone"><strong>2376 véhicules</strong> en ligne</p>
                                             <button class="btn-orange" type="submit">Rechercher</button>
-                                            <a style="margin-top: 10px;" class="btn-outline-orange hidden display-phone-inline-block" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
+                                            <a class="btn-outline-orange hidden display-phone-inline-block phone-mt-10" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
                                         </div>
                                     </div>
                                 </div>
@@ -436,8 +436,10 @@
                         <div class="phone-3 hidden-phone hidden-tab desk-5 lgdesk-4">
                             <div class="grey-border-box align-center">
                                 <h2>Je veux vendre : </h2>
-                                <img class="fill-width" src="images/key.jpg" alt="clé vendre" />
-                                <a class="btn-orange phone-mt-30" href="#">Créer mon annonce gratuite</a>
+                                <img class="desk-mt-20 lgdesk-mt-30 fill-width" src="images/key.jpg" alt="clé vendre" />
+                                <div style="left: 0; padding: 0 20px 15px 20px;" class="phone-12 align-bottom">
+                                    <a class="btn-orange" href="#">Créer mon annonce gratuite</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -514,7 +516,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row hidden display-desk">
+                    <div class="row hidden display-desk phone-mt-15">
                         <div id="pub3-desktop" style="background-color: #004994; height: 90px; width: 100%;" class="pull-right"></div>
                     </div>
                 </div>
@@ -558,6 +560,7 @@
         <script type="text/javascript" src="scripts/main.js"></script>
         <script type="text/javascript">
             $(function () {
+                $(window).on('resize', matchHeightBox());
                 matchHeightBox();
                 //Init du slider
                 $('.main-gallery').flickity({

@@ -385,965 +385,965 @@ Contient les classes pour la grille de mise en page
   display: flex; }
 
 .phone-p-0 {
-  padding: 0px !important; }
+  padding: 0px; }
 
 .phone-p-5 {
-  padding: 5px !important; }
+  padding: 5px; }
 
 .phone-p-10 {
-  padding: 10px !important; }
+  padding: 10px; }
 
 .phone-p-15 {
-  padding: 15px !important; }
+  padding: 15px; }
 
 .phone-p-20 {
-  padding: 20px !important; }
+  padding: 20px; }
 
 .phone-p-30 {
-  padding: 30px !important; }
+  padding: 30px; }
 
 .phone-p-40 {
-  padding: 40px !important; }
+  padding: 40px; }
 
 .phone-p-50 {
-  padding: 50px !important; }
+  padding: 50px; }
 
 .phone-pt-0 {
-  padding-top: 0px !important; }
+  padding-top: 0px; }
 
 .phone-pt-5 {
-  padding-top: 5px !important; }
+  padding-top: 5px; }
 
 .phone-pt-10 {
-  padding-top: 10px !important; }
+  padding-top: 10px; }
 
 .phone-pt-15 {
-  padding-top: 15px !important; }
+  padding-top: 15px; }
 
 .phone-pt-20 {
-  padding-top: 20px !important; }
+  padding-top: 20px; }
 
 .phone-pt-30 {
-  padding-top: 30px !important; }
+  padding-top: 30px; }
 
 .phone-pt-40 {
-  padding-top: 40px !important; }
+  padding-top: 40px; }
 
 .phone-pt-50 {
-  padding-top: 50px !important; }
+  padding-top: 50px; }
 
 .phone-pr-0 {
-  padding-right: 0px !important; }
+  padding-right: 0px; }
 
 .phone-pr-5 {
-  padding-right: 5px !important; }
+  padding-right: 5px; }
 
 .phone-pr-10 {
-  padding-right: 10px !important; }
+  padding-right: 10px; }
 
 .phone-pr-15 {
-  padding-right: 15px !important; }
+  padding-right: 15px; }
 
 .phone-pr-20 {
-  padding-right: 20px !important; }
+  padding-right: 20px; }
 
 .phone-pr-30 {
-  padding-right: 30px !important; }
+  padding-right: 30px; }
 
 .phone-pr-40 {
-  padding-right: 40px !important; }
+  padding-right: 40px; }
 
 .phone-pr-50 {
-  padding-right: 50px !important; }
+  padding-right: 50px; }
 
 .phone-pb-0 {
-  padding-bottom: 0px !important; }
+  padding-bottom: 0px; }
 
 .phone-pb-5 {
-  padding-bottom: 5px !important; }
+  padding-bottom: 5px; }
 
 .phone-pb-10 {
-  padding-bottom: 10px !important; }
+  padding-bottom: 10px; }
 
 .phone-pb-15 {
-  padding-bottom: 15px !important; }
+  padding-bottom: 15px; }
 
 .phone-pb-20 {
-  padding-bottom: 20px !important; }
+  padding-bottom: 20px; }
 
 .phone-pb-30 {
-  padding-bottom: 30px !important; }
+  padding-bottom: 30px; }
 
 .phone-pb-40 {
-  padding-bottom: 40px !important; }
+  padding-bottom: 40px; }
 
 .phone-pb-50 {
-  padding-bottom: 50px !important; }
+  padding-bottom: 50px; }
 
 .phone-pl-0 {
-  padding-left: 0px !important; }
+  padding-left: 0px; }
 
 .phone-pl-5 {
-  padding-left: 5px !important; }
+  padding-left: 5px; }
 
 .phone-pl-10 {
-  padding-left: 10px !important; }
+  padding-left: 10px; }
 
 .phone-pl-15 {
-  padding-left: 15px !important; }
+  padding-left: 15px; }
 
 .phone-pl-20 {
-  padding-left: 20px !important; }
+  padding-left: 20px; }
 
 .phone-pl-30 {
-  padding-left: 30px !important; }
+  padding-left: 30px; }
 
 .phone-pl-40 {
-  padding-left: 40px !important; }
+  padding-left: 40px; }
 
 .phone-pl-50 {
-  padding-left: 50px !important; }
+  padding-left: 50px; }
 
 .phone-m-0 {
-  margin: 0px !important; }
+  margin: 0px; }
 
 .phone-m-5 {
-  margin: 5px !important; }
+  margin: 5px; }
 
 .phone-m-10 {
-  margin: 10px !important; }
+  margin: 10px; }
 
 .phone-m-15 {
-  margin: 15px !important; }
+  margin: 15px; }
 
 .phone-m-20 {
-  margin: 20px !important; }
+  margin: 20px; }
 
 .phone-m-30 {
-  margin: 30px !important; }
+  margin: 30px; }
 
 .phone-m-40 {
-  margin: 40px !important; }
+  margin: 40px; }
 
 .phone-m-50 {
-  margin: 50px !important; }
+  margin: 50px; }
 
 .phone-mt-0 {
-  margin-top: 0px !important; }
+  margin-top: 0px; }
 
 .phone-mt-5 {
-  margin-top: 5px !important; }
+  margin-top: 5px; }
 
 .phone-mt-10 {
-  margin-top: 10px !important; }
+  margin-top: 10px; }
 
 .phone-mt-15 {
-  margin-top: 15px !important; }
+  margin-top: 15px; }
 
 .phone-mt-20 {
-  margin-top: 20px !important; }
+  margin-top: 20px; }
 
 .phone-mt-30 {
-  margin-top: 30px !important; }
+  margin-top: 30px; }
 
 .phone-mt-40 {
-  margin-top: 40px !important; }
+  margin-top: 40px; }
 
 .phone-mt-50 {
-  margin-top: 50px !important; }
+  margin-top: 50px; }
 
 .phone-mr-0 {
-  margin-right: 0px !important; }
+  margin-right: 0px; }
 
 .phone-mr-5 {
-  margin-right: 5px !important; }
+  margin-right: 5px; }
 
 .phone-mr-10 {
-  margin-right: 10px !important; }
+  margin-right: 10px; }
 
 .phone-mr-15 {
-  margin-right: 15px !important; }
+  margin-right: 15px; }
 
 .phone-mr-20 {
-  margin-right: 20px !important; }
+  margin-right: 20px; }
 
 .phone-mr-30 {
-  margin-right: 30px !important; }
+  margin-right: 30px; }
 
 .phone-mr-40 {
-  margin-right: 40px !important; }
+  margin-right: 40px; }
 
 .phone-mr-50 {
-  margin-right: 50px !important; }
+  margin-right: 50px; }
 
 .phone-mb-0 {
-  margin-bottom: 0px !important; }
+  margin-bottom: 0px; }
 
 .phone-mb-5 {
-  margin-bottom: 5px !important; }
+  margin-bottom: 5px; }
 
 .phone-mb-10 {
-  margin-bottom: 10px !important; }
+  margin-bottom: 10px; }
 
 .phone-mb-15 {
-  margin-bottom: 15px !important; }
+  margin-bottom: 15px; }
 
 .phone-mb-20 {
-  margin-bottom: 20px !important; }
+  margin-bottom: 20px; }
 
 .phone-mb-30 {
-  margin-bottom: 30px !important; }
+  margin-bottom: 30px; }
 
 .phone-mb-40 {
-  margin-bottom: 40px !important; }
+  margin-bottom: 40px; }
 
 .phone-mb-50 {
-  margin-bottom: 50px !important; }
+  margin-bottom: 50px; }
 
 .phone-ml-0 {
-  margin-left: 0px !important; }
+  margin-left: 0px; }
 
 .phone-ml-5 {
-  margin-left: 5px !important; }
+  margin-left: 5px; }
 
 .phone-ml-10 {
-  margin-left: 10px !important; }
+  margin-left: 10px; }
 
 .phone-ml-15 {
-  margin-left: 15px !important; }
+  margin-left: 15px; }
 
 .phone-ml-20 {
-  margin-left: 20px !important; }
+  margin-left: 20px; }
 
 .phone-ml-30 {
-  margin-left: 30px !important; }
+  margin-left: 30px; }
 
 .phone-ml-40 {
-  margin-left: 40px !important; }
+  margin-left: 40px; }
 
 .phone-ml-50 {
-  margin-left: 50px !important; }
+  margin-left: 50px; }
 
-@media screen and (min-width: 672) {
+@media screen and (min-width: 672px) {
   .tab-p-0 {
-    padding: 0px !important; }
+    padding: 0px; }
 
   .tab-p-5 {
-    padding: 5px !important; }
+    padding: 5px; }
 
   .tab-p-10 {
-    padding: 10px !important; }
+    padding: 10px; }
 
   .tab-p-15 {
-    padding: 15px !important; }
+    padding: 15px; }
 
   .tab-p-20 {
-    padding: 20px !important; }
+    padding: 20px; }
 
   .tab-p-30 {
-    padding: 30px !important; }
+    padding: 30px; }
 
   .tab-p-40 {
-    padding: 40px !important; }
+    padding: 40px; }
 
   .tab-p-50 {
-    padding: 50px !important; }
+    padding: 50px; }
 
   .tab-pt-0 {
-    padding-top: 0px !important; }
+    padding-top: 0px; }
 
   .tab-pt-5 {
-    padding-top: 5px !important; }
+    padding-top: 5px; }
 
   .tab-pt-10 {
-    padding-top: 10px !important; }
+    padding-top: 10px; }
 
   .tab-pt-15 {
-    padding-top: 15px !important; }
+    padding-top: 15px; }
 
   .tab-pt-20 {
-    padding-top: 20px !important; }
+    padding-top: 20px; }
 
   .tab-pt-30 {
-    padding-top: 30px !important; }
+    padding-top: 30px; }
 
   .tab-pt-40 {
-    padding-top: 40px !important; }
+    padding-top: 40px; }
 
   .tab-pt-50 {
-    padding-top: 50px !important; }
+    padding-top: 50px; }
 
   .tab-pr-0 {
-    padding-right: 0px !important; }
+    padding-right: 0px; }
 
   .tab-pr-5 {
-    padding-right: 5px !important; }
+    padding-right: 5px; }
 
   .tab-pr-10 {
-    padding-right: 10px !important; }
+    padding-right: 10px; }
 
   .tab-pr-15 {
-    padding-right: 15px !important; }
+    padding-right: 15px; }
 
   .tab-pr-20 {
-    padding-right: 20px !important; }
+    padding-right: 20px; }
 
   .tab-pr-30 {
-    padding-right: 30px !important; }
+    padding-right: 30px; }
 
   .tab-pr-40 {
-    padding-right: 40px !important; }
+    padding-right: 40px; }
 
   .tab-pr-50 {
-    padding-right: 50px !important; }
+    padding-right: 50px; }
 
   .tab-pb-0 {
-    padding-bottom: 0px !important; }
+    padding-bottom: 0px; }
 
   .tab-pb-5 {
-    padding-bottom: 5px !important; }
+    padding-bottom: 5px; }
 
   .tab-pb-10 {
-    padding-bottom: 10px !important; }
+    padding-bottom: 10px; }
 
   .tab-pb-15 {
-    padding-bottom: 15px !important; }
+    padding-bottom: 15px; }
 
   .tab-pb-20 {
-    padding-bottom: 20px !important; }
+    padding-bottom: 20px; }
 
   .tab-pb-30 {
-    padding-bottom: 30px !important; }
+    padding-bottom: 30px; }
 
   .tab-pb-40 {
-    padding-bottom: 40px !important; }
+    padding-bottom: 40px; }
 
   .tab-pb-50 {
-    padding-bottom: 50px !important; }
+    padding-bottom: 50px; }
 
   .tab-pl-0 {
-    padding-left: 0px !important; }
+    padding-left: 0px; }
 
   .tab-pl-5 {
-    padding-left: 5px !important; }
+    padding-left: 5px; }
 
   .tab-pl-10 {
-    padding-left: 10px !important; }
+    padding-left: 10px; }
 
   .tab-pl-15 {
-    padding-left: 15px !important; }
+    padding-left: 15px; }
 
   .tab-pl-20 {
-    padding-left: 20px !important; }
+    padding-left: 20px; }
 
   .tab-pl-30 {
-    padding-left: 30px !important; }
+    padding-left: 30px; }
 
   .tab-pl-40 {
-    padding-left: 40px !important; }
+    padding-left: 40px; }
 
   .tab-pl-50 {
-    padding-left: 50px !important; }
+    padding-left: 50px; }
 
   .tab-m-0 {
-    margin: 0px !important; }
+    margin: 0px; }
 
   .tab-m-5 {
-    margin: 5px !important; }
+    margin: 5px; }
 
   .tab-m-10 {
-    margin: 10px !important; }
+    margin: 10px; }
 
   .tab-m-15 {
-    margin: 15px !important; }
+    margin: 15px; }
 
   .tab-m-20 {
-    margin: 20px !important; }
+    margin: 20px; }
 
   .tab-m-30 {
-    margin: 30px !important; }
+    margin: 30px; }
 
   .tab-m-40 {
-    margin: 40px !important; }
+    margin: 40px; }
 
   .tab-m-50 {
-    margin: 50px !important; }
+    margin: 50px; }
 
   .tab-mt-0 {
-    margin-top: 0px !important; }
+    margin-top: 0px; }
 
   .tab-mt-5 {
-    margin-top: 5px !important; }
+    margin-top: 5px; }
 
   .tab-mt-10 {
-    margin-top: 10px !important; }
+    margin-top: 10px; }
 
   .tab-mt-15 {
-    margin-top: 15px !important; }
+    margin-top: 15px; }
 
   .tab-mt-20 {
-    margin-top: 20px !important; }
+    margin-top: 20px; }
 
   .tab-mt-30 {
-    margin-top: 30px !important; }
+    margin-top: 30px; }
 
   .tab-mt-40 {
-    margin-top: 40px !important; }
+    margin-top: 40px; }
 
   .tab-mt-50 {
-    margin-top: 50px !important; }
+    margin-top: 50px; }
 
   .tab-mr-0 {
-    margin-right: 0px !important; }
+    margin-right: 0px; }
 
   .tab-mr-5 {
-    margin-right: 5px !important; }
+    margin-right: 5px; }
 
   .tab-mr-10 {
-    margin-right: 10px !important; }
+    margin-right: 10px; }
 
   .tab-mr-15 {
-    margin-right: 15px !important; }
+    margin-right: 15px; }
 
   .tab-mr-20 {
-    margin-right: 20px !important; }
+    margin-right: 20px; }
 
   .tab-mr-30 {
-    margin-right: 30px !important; }
+    margin-right: 30px; }
 
   .tab-mr-40 {
-    margin-right: 40px !important; }
+    margin-right: 40px; }
 
   .tab-mr-50 {
-    margin-right: 50px !important; }
+    margin-right: 50px; }
 
   .tab-mb-0 {
-    margin-bottom: 0px !important; }
+    margin-bottom: 0px; }
 
   .tab-mb-5 {
-    margin-bottom: 5px !important; }
+    margin-bottom: 5px; }
 
   .tab-mb-10 {
-    margin-bottom: 10px !important; }
+    margin-bottom: 10px; }
 
   .tab-mb-15 {
-    margin-bottom: 15px !important; }
+    margin-bottom: 15px; }
 
   .tab-mb-20 {
-    margin-bottom: 20px !important; }
+    margin-bottom: 20px; }
 
   .tab-mb-30 {
-    margin-bottom: 30px !important; }
+    margin-bottom: 30px; }
 
   .tab-mb-40 {
-    margin-bottom: 40px !important; }
+    margin-bottom: 40px; }
 
   .tab-mb-50 {
-    margin-bottom: 50px !important; }
+    margin-bottom: 50px; }
 
   .tab-ml-0 {
-    margin-left: 0px !important; }
+    margin-left: 0px; }
 
   .tab-ml-5 {
-    margin-left: 5px !important; }
+    margin-left: 5px; }
 
   .tab-ml-10 {
-    margin-left: 10px !important; }
+    margin-left: 10px; }
 
   .tab-ml-15 {
-    margin-left: 15px !important; }
+    margin-left: 15px; }
 
   .tab-ml-20 {
-    margin-left: 20px !important; }
+    margin-left: 20px; }
 
   .tab-ml-30 {
-    margin-left: 30px !important; }
+    margin-left: 30px; }
 
   .tab-ml-40 {
-    margin-left: 40px !important; }
+    margin-left: 40px; }
 
   .tab-ml-50 {
-    margin-left: 50px !important; } }
-@media screen and (min-width: 1056) {
+    margin-left: 50px; } }
+@media screen and (min-width: 1056px) {
   .desk-p-0 {
-    padding: 0px !important; }
+    padding: 0px; }
 
   .desk-p-5 {
-    padding: 5px !important; }
+    padding: 5px; }
 
   .desk-p-10 {
-    padding: 10px !important; }
+    padding: 10px; }
 
   .desk-p-15 {
-    padding: 15px !important; }
+    padding: 15px; }
 
   .desk-p-20 {
-    padding: 20px !important; }
+    padding: 20px; }
 
   .desk-p-30 {
-    padding: 30px !important; }
+    padding: 30px; }
 
   .desk-p-40 {
-    padding: 40px !important; }
+    padding: 40px; }
 
   .desk-p-50 {
-    padding: 50px !important; }
+    padding: 50px; }
 
   .desk-pt-0 {
-    padding-top: 0px !important; }
+    padding-top: 0px; }
 
   .desk-pt-5 {
-    padding-top: 5px !important; }
+    padding-top: 5px; }
 
   .desk-pt-10 {
-    padding-top: 10px !important; }
+    padding-top: 10px; }
 
   .desk-pt-15 {
-    padding-top: 15px !important; }
+    padding-top: 15px; }
 
   .desk-pt-20 {
-    padding-top: 20px !important; }
+    padding-top: 20px; }
 
   .desk-pt-30 {
-    padding-top: 30px !important; }
+    padding-top: 30px; }
 
   .desk-pt-40 {
-    padding-top: 40px !important; }
+    padding-top: 40px; }
 
   .desk-pt-50 {
-    padding-top: 50px !important; }
+    padding-top: 50px; }
 
   .desk-pr-0 {
-    padding-right: 0px !important; }
+    padding-right: 0px; }
 
   .desk-pr-5 {
-    padding-right: 5px !important; }
+    padding-right: 5px; }
 
   .desk-pr-10 {
-    padding-right: 10px !important; }
+    padding-right: 10px; }
 
   .desk-pr-15 {
-    padding-right: 15px !important; }
+    padding-right: 15px; }
 
   .desk-pr-20 {
-    padding-right: 20px !important; }
+    padding-right: 20px; }
 
   .desk-pr-30 {
-    padding-right: 30px !important; }
+    padding-right: 30px; }
 
   .desk-pr-40 {
-    padding-right: 40px !important; }
+    padding-right: 40px; }
 
   .desk-pr-50 {
-    padding-right: 50px !important; }
+    padding-right: 50px; }
 
   .desk-pb-0 {
-    padding-bottom: 0px !important; }
+    padding-bottom: 0px; }
 
   .desk-pb-5 {
-    padding-bottom: 5px !important; }
+    padding-bottom: 5px; }
 
   .desk-pb-10 {
-    padding-bottom: 10px !important; }
+    padding-bottom: 10px; }
 
   .desk-pb-15 {
-    padding-bottom: 15px !important; }
+    padding-bottom: 15px; }
 
   .desk-pb-20 {
-    padding-bottom: 20px !important; }
+    padding-bottom: 20px; }
 
   .desk-pb-30 {
-    padding-bottom: 30px !important; }
+    padding-bottom: 30px; }
 
   .desk-pb-40 {
-    padding-bottom: 40px !important; }
+    padding-bottom: 40px; }
 
   .desk-pb-50 {
-    padding-bottom: 50px !important; }
+    padding-bottom: 50px; }
 
   .desk-pl-0 {
-    padding-left: 0px !important; }
+    padding-left: 0px; }
 
   .desk-pl-5 {
-    padding-left: 5px !important; }
+    padding-left: 5px; }
 
   .desk-pl-10 {
-    padding-left: 10px !important; }
+    padding-left: 10px; }
 
   .desk-pl-15 {
-    padding-left: 15px !important; }
+    padding-left: 15px; }
 
   .desk-pl-20 {
-    padding-left: 20px !important; }
+    padding-left: 20px; }
 
   .desk-pl-30 {
-    padding-left: 30px !important; }
+    padding-left: 30px; }
 
   .desk-pl-40 {
-    padding-left: 40px !important; }
+    padding-left: 40px; }
 
   .desk-pl-50 {
-    padding-left: 50px !important; }
+    padding-left: 50px; }
 
   .desk-m-0 {
-    margin: 0px !important; }
+    margin: 0px; }
 
   .desk-m-5 {
-    margin: 5px !important; }
+    margin: 5px; }
 
   .desk-m-10 {
-    margin: 10px !important; }
+    margin: 10px; }
 
   .desk-m-15 {
-    margin: 15px !important; }
+    margin: 15px; }
 
   .desk-m-20 {
-    margin: 20px !important; }
+    margin: 20px; }
 
   .desk-m-30 {
-    margin: 30px !important; }
+    margin: 30px; }
 
   .desk-m-40 {
-    margin: 40px !important; }
+    margin: 40px; }
 
   .desk-m-50 {
-    margin: 50px !important; }
+    margin: 50px; }
 
   .desk-mt-0 {
-    margin-top: 0px !important; }
+    margin-top: 0px; }
 
   .desk-mt-5 {
-    margin-top: 5px !important; }
+    margin-top: 5px; }
 
   .desk-mt-10 {
-    margin-top: 10px !important; }
+    margin-top: 10px; }
 
   .desk-mt-15 {
-    margin-top: 15px !important; }
+    margin-top: 15px; }
 
   .desk-mt-20 {
-    margin-top: 20px !important; }
+    margin-top: 20px; }
 
   .desk-mt-30 {
-    margin-top: 30px !important; }
+    margin-top: 30px; }
 
   .desk-mt-40 {
-    margin-top: 40px !important; }
+    margin-top: 40px; }
 
   .desk-mt-50 {
-    margin-top: 50px !important; }
+    margin-top: 50px; }
 
   .desk-mr-0 {
-    margin-right: 0px !important; }
+    margin-right: 0px; }
 
   .desk-mr-5 {
-    margin-right: 5px !important; }
+    margin-right: 5px; }
 
   .desk-mr-10 {
-    margin-right: 10px !important; }
+    margin-right: 10px; }
 
   .desk-mr-15 {
-    margin-right: 15px !important; }
+    margin-right: 15px; }
 
   .desk-mr-20 {
-    margin-right: 20px !important; }
+    margin-right: 20px; }
 
   .desk-mr-30 {
-    margin-right: 30px !important; }
+    margin-right: 30px; }
 
   .desk-mr-40 {
-    margin-right: 40px !important; }
+    margin-right: 40px; }
 
   .desk-mr-50 {
-    margin-right: 50px !important; }
+    margin-right: 50px; }
 
   .desk-mb-0 {
-    margin-bottom: 0px !important; }
+    margin-bottom: 0px; }
 
   .desk-mb-5 {
-    margin-bottom: 5px !important; }
+    margin-bottom: 5px; }
 
   .desk-mb-10 {
-    margin-bottom: 10px !important; }
+    margin-bottom: 10px; }
 
   .desk-mb-15 {
-    margin-bottom: 15px !important; }
+    margin-bottom: 15px; }
 
   .desk-mb-20 {
-    margin-bottom: 20px !important; }
+    margin-bottom: 20px; }
 
   .desk-mb-30 {
-    margin-bottom: 30px !important; }
+    margin-bottom: 30px; }
 
   .desk-mb-40 {
-    margin-bottom: 40px !important; }
+    margin-bottom: 40px; }
 
   .desk-mb-50 {
-    margin-bottom: 50px !important; }
+    margin-bottom: 50px; }
 
   .desk-ml-0 {
-    margin-left: 0px !important; }
+    margin-left: 0px; }
 
   .desk-ml-5 {
-    margin-left: 5px !important; }
+    margin-left: 5px; }
 
   .desk-ml-10 {
-    margin-left: 10px !important; }
+    margin-left: 10px; }
 
   .desk-ml-15 {
-    margin-left: 15px !important; }
+    margin-left: 15px; }
 
   .desk-ml-20 {
-    margin-left: 20px !important; }
+    margin-left: 20px; }
 
   .desk-ml-30 {
-    margin-left: 30px !important; }
+    margin-left: 30px; }
 
   .desk-ml-40 {
-    margin-left: 40px !important; }
+    margin-left: 40px; }
 
   .desk-ml-50 {
-    margin-left: 50px !important; } }
-@media screen and (min-width: 1302) {
+    margin-left: 50px; } }
+@media screen and (min-width: 1302px) {
   .lgdesk-p-0 {
-    padding: 0px !important; }
+    padding: 0px; }
 
   .lgdesk-p-5 {
-    padding: 5px !important; }
+    padding: 5px; }
 
   .lgdesk-p-10 {
-    padding: 10px !important; }
+    padding: 10px; }
 
   .lgdesk-p-15 {
-    padding: 15px !important; }
+    padding: 15px; }
 
   .lgdesk-p-20 {
-    padding: 20px !important; }
+    padding: 20px; }
 
   .lgdesk-p-30 {
-    padding: 30px !important; }
+    padding: 30px; }
 
   .lgdesk-p-40 {
-    padding: 40px !important; }
+    padding: 40px; }
 
   .lgdesk-p-50 {
-    padding: 50px !important; }
+    padding: 50px; }
 
   .lgdesk-pt-0 {
-    padding-top: 0px !important; }
+    padding-top: 0px; }
 
   .lgdesk-pt-5 {
-    padding-top: 5px !important; }
+    padding-top: 5px; }
 
   .lgdesk-pt-10 {
-    padding-top: 10px !important; }
+    padding-top: 10px; }
 
   .lgdesk-pt-15 {
-    padding-top: 15px !important; }
+    padding-top: 15px; }
 
   .lgdesk-pt-20 {
-    padding-top: 20px !important; }
+    padding-top: 20px; }
 
   .lgdesk-pt-30 {
-    padding-top: 30px !important; }
+    padding-top: 30px; }
 
   .lgdesk-pt-40 {
-    padding-top: 40px !important; }
+    padding-top: 40px; }
 
   .lgdesk-pt-50 {
-    padding-top: 50px !important; }
+    padding-top: 50px; }
 
   .lgdesk-pr-0 {
-    padding-right: 0px !important; }
+    padding-right: 0px; }
 
   .lgdesk-pr-5 {
-    padding-right: 5px !important; }
+    padding-right: 5px; }
 
   .lgdesk-pr-10 {
-    padding-right: 10px !important; }
+    padding-right: 10px; }
 
   .lgdesk-pr-15 {
-    padding-right: 15px !important; }
+    padding-right: 15px; }
 
   .lgdesk-pr-20 {
-    padding-right: 20px !important; }
+    padding-right: 20px; }
 
   .lgdesk-pr-30 {
-    padding-right: 30px !important; }
+    padding-right: 30px; }
 
   .lgdesk-pr-40 {
-    padding-right: 40px !important; }
+    padding-right: 40px; }
 
   .lgdesk-pr-50 {
-    padding-right: 50px !important; }
+    padding-right: 50px; }
 
   .lgdesk-pb-0 {
-    padding-bottom: 0px !important; }
+    padding-bottom: 0px; }
 
   .lgdesk-pb-5 {
-    padding-bottom: 5px !important; }
+    padding-bottom: 5px; }
 
   .lgdesk-pb-10 {
-    padding-bottom: 10px !important; }
+    padding-bottom: 10px; }
 
   .lgdesk-pb-15 {
-    padding-bottom: 15px !important; }
+    padding-bottom: 15px; }
 
   .lgdesk-pb-20 {
-    padding-bottom: 20px !important; }
+    padding-bottom: 20px; }
 
   .lgdesk-pb-30 {
-    padding-bottom: 30px !important; }
+    padding-bottom: 30px; }
 
   .lgdesk-pb-40 {
-    padding-bottom: 40px !important; }
+    padding-bottom: 40px; }
 
   .lgdesk-pb-50 {
-    padding-bottom: 50px !important; }
+    padding-bottom: 50px; }
 
   .lgdesk-pl-0 {
-    padding-left: 0px !important; }
+    padding-left: 0px; }
 
   .lgdesk-pl-5 {
-    padding-left: 5px !important; }
+    padding-left: 5px; }
 
   .lgdesk-pl-10 {
-    padding-left: 10px !important; }
+    padding-left: 10px; }
 
   .lgdesk-pl-15 {
-    padding-left: 15px !important; }
+    padding-left: 15px; }
 
   .lgdesk-pl-20 {
-    padding-left: 20px !important; }
+    padding-left: 20px; }
 
   .lgdesk-pl-30 {
-    padding-left: 30px !important; }
+    padding-left: 30px; }
 
   .lgdesk-pl-40 {
-    padding-left: 40px !important; }
+    padding-left: 40px; }
 
   .lgdesk-pl-50 {
-    padding-left: 50px !important; }
+    padding-left: 50px; }
 
   .lgdesk-m-0 {
-    margin: 0px !important; }
+    margin: 0px; }
 
   .lgdesk-m-5 {
-    margin: 5px !important; }
+    margin: 5px; }
 
   .lgdesk-m-10 {
-    margin: 10px !important; }
+    margin: 10px; }
 
   .lgdesk-m-15 {
-    margin: 15px !important; }
+    margin: 15px; }
 
   .lgdesk-m-20 {
-    margin: 20px !important; }
+    margin: 20px; }
 
   .lgdesk-m-30 {
-    margin: 30px !important; }
+    margin: 30px; }
 
   .lgdesk-m-40 {
-    margin: 40px !important; }
+    margin: 40px; }
 
   .lgdesk-m-50 {
-    margin: 50px !important; }
+    margin: 50px; }
 
   .lgdesk-mt-0 {
-    margin-top: 0px !important; }
+    margin-top: 0px; }
 
   .lgdesk-mt-5 {
-    margin-top: 5px !important; }
+    margin-top: 5px; }
 
   .lgdesk-mt-10 {
-    margin-top: 10px !important; }
+    margin-top: 10px; }
 
   .lgdesk-mt-15 {
-    margin-top: 15px !important; }
+    margin-top: 15px; }
 
   .lgdesk-mt-20 {
-    margin-top: 20px !important; }
+    margin-top: 20px; }
 
   .lgdesk-mt-30 {
-    margin-top: 30px !important; }
+    margin-top: 30px; }
 
   .lgdesk-mt-40 {
-    margin-top: 40px !important; }
+    margin-top: 40px; }
 
   .lgdesk-mt-50 {
-    margin-top: 50px !important; }
+    margin-top: 50px; }
 
   .lgdesk-mr-0 {
-    margin-right: 0px !important; }
+    margin-right: 0px; }
 
   .lgdesk-mr-5 {
-    margin-right: 5px !important; }
+    margin-right: 5px; }
 
   .lgdesk-mr-10 {
-    margin-right: 10px !important; }
+    margin-right: 10px; }
 
   .lgdesk-mr-15 {
-    margin-right: 15px !important; }
+    margin-right: 15px; }
 
   .lgdesk-mr-20 {
-    margin-right: 20px !important; }
+    margin-right: 20px; }
 
   .lgdesk-mr-30 {
-    margin-right: 30px !important; }
+    margin-right: 30px; }
 
   .lgdesk-mr-40 {
-    margin-right: 40px !important; }
+    margin-right: 40px; }
 
   .lgdesk-mr-50 {
-    margin-right: 50px !important; }
+    margin-right: 50px; }
 
   .lgdesk-mb-0 {
-    margin-bottom: 0px !important; }
+    margin-bottom: 0px; }
 
   .lgdesk-mb-5 {
-    margin-bottom: 5px !important; }
+    margin-bottom: 5px; }
 
   .lgdesk-mb-10 {
-    margin-bottom: 10px !important; }
+    margin-bottom: 10px; }
 
   .lgdesk-mb-15 {
-    margin-bottom: 15px !important; }
+    margin-bottom: 15px; }
 
   .lgdesk-mb-20 {
-    margin-bottom: 20px !important; }
+    margin-bottom: 20px; }
 
   .lgdesk-mb-30 {
-    margin-bottom: 30px !important; }
+    margin-bottom: 30px; }
 
   .lgdesk-mb-40 {
-    margin-bottom: 40px !important; }
+    margin-bottom: 40px; }
 
   .lgdesk-mb-50 {
-    margin-bottom: 50px !important; }
+    margin-bottom: 50px; }
 
   .lgdesk-ml-0 {
-    margin-left: 0px !important; }
+    margin-left: 0px; }
 
   .lgdesk-ml-5 {
-    margin-left: 5px !important; }
+    margin-left: 5px; }
 
   .lgdesk-ml-10 {
-    margin-left: 10px !important; }
+    margin-left: 10px; }
 
   .lgdesk-ml-15 {
-    margin-left: 15px !important; }
+    margin-left: 15px; }
 
   .lgdesk-ml-20 {
-    margin-left: 20px !important; }
+    margin-left: 20px; }
 
   .lgdesk-ml-30 {
-    margin-left: 30px !important; }
+    margin-left: 30px; }
 
   .lgdesk-ml-40 {
-    margin-left: 40px !important; }
+    margin-left: 40px; }
 
   .lgdesk-ml-50 {
-    margin-left: 50px !important; } }
+    margin-left: 50px; } }
 /*Definition container de taille fixe*/
 @media screen and (min-width: 365px) {
   .container {
@@ -3025,7 +3025,7 @@ img.fill-height {
   z-index: 1; }
 
 #propos p {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   text-align: justify; }
 
