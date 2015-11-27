@@ -31,6 +31,43 @@ Contient les classes supplémentaires pour la mise en page du site + les styles 
     @include display-flex-center;
 }
 
+.align-bottom{
+    position: absolute !important;
+    bottom: 0;
+}
+
+//SAME COL HEIGHT STYLES
+//----------------------------------------------
+@include media(desk){
+    .same-height-col {
+        display: table !important;
+        width: 100%;
+        border-collapse: separate;
+    }
+    .same-height-col .row-col{
+        display: table-row;
+    }
+    .same-height-col .col {
+        display: table-cell;
+        float: none !important;
+        vertical-align: top;
+        height: 100%;
+        padding-bottom: 0 !important;
+        margin: 0 !important;
+        &:first-child{
+            padding-left: 0; 
+        }
+        &:last-child{
+            padding-right: 0;
+        }
+        &>*{
+            display: table;
+            width: 100%;
+        }
+    }
+}
+//----------------------------------------------
+
 .margin-bottom-phone{
     margin-bottom: 20px;
 }
@@ -66,7 +103,7 @@ Contient les classes supplémentaires pour la mise en page du site + les styles 
             display: block;
             @include transition($transitionUi);
             font-weight: 400;
-             font-size: 16px;
+            font-size: 16px;
             &:hover{
                 color: darken($grey, 60%);
             }

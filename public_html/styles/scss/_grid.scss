@@ -4,6 +4,78 @@ GRID
 Contient les classes pour la grille de mise en page
 */
 
+// mapping des noms de classe avec leur attribut css
+$space-prefixes : (
+p  : padding,
+pt : padding-top,
+pr : padding-right,
+pb : padding-bottom,
+pl : padding-left,
+m  : margin,
+mt : margin-top,
+mr : margin-right,
+mb : margin-bottom,
+ml : margin-left,
+) !default;
+
+// tableau de valeurs des margins et paddings
+$space-values : (
+0,
+5,
+10,
+15,
+20,
+30,
+40,
+50
+) !default;
+
+// change these values if its not imported into bootstrap
+$grid-breakpoints: (
+phone: 0,
+// Small screen / phone
+tab: $tab,
+// Medium screen / tablet
+desk: $desk,
+// Large screen / desktop
+lgdesk: $lgdesk
+// Extra large screen / wide desktop
+) !default;
+
+$breakpoints : $grid-breakpoints;
+
+
+// main function definition
+@mixin make-space($values, $prefixes, $breakpoints) {
+  @each $breakpoint-name, $breakpoint-value in $breakpoints {
+    // if xs value = 0, set it global without media queries
+    @if($breakpoint-value == 0) {
+      @each $attr-short, $attr-long in $prefixes {
+        @each $value in $values {
+          .#{$breakpoint-name}-#{$attr-short}-#{$value} {
+            #{$attr-long}: #{$value + px} !important;
+          }
+        }
+      }
+    }
+    // breakpoint values that not equal to 0
+    @else {
+      @media screen and (min-width: $breakpoint-value) {
+        @each $attr-short, $attr-long in $prefixes {
+          @each $value in $values {
+            .#{$breakpoint-name}-#{$attr-short}-#{$value} {
+              #{$attr-long}: #{$value + px} !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include make-space($space-values, $space-prefixes, $breakpoints);
+
+
 /*Definition container de taille fixe*/
 @include viewport(min, $min: 365){
     .container{
@@ -32,7 +104,7 @@ Contient les classes pour la grille de mise en page
 }
 
 *{
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*container prenant toute la largeur de l'ecran*/

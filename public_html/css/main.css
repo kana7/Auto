@@ -13,7 +13,7 @@ Contient les fonctions SCSS
 /*
 BASE
 ----------------------------------------------------------------
-Contient la base des styles pour constuire le site. Reset des propri├®t├®s de base des diff├®rents navigateurs
+Contient la base des styles pour constuire le site. Reset des propri?�t?�s de base des diff?�rents navigateurs
 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -378,6 +378,966 @@ GRID
 ----------------------------------------------------------------
 Contient les classes pour la grille de mise en page
 */
+.phone-p-0 {
+  padding: 0px !important; }
+
+.phone-p-5 {
+  padding: 5px !important; }
+
+.phone-p-10 {
+  padding: 10px !important; }
+
+.phone-p-15 {
+  padding: 15px !important; }
+
+.phone-p-20 {
+  padding: 20px !important; }
+
+.phone-p-30 {
+  padding: 30px !important; }
+
+.phone-p-40 {
+  padding: 40px !important; }
+
+.phone-p-50 {
+  padding: 50px !important; }
+
+.phone-pt-0 {
+  padding-top: 0px !important; }
+
+.phone-pt-5 {
+  padding-top: 5px !important; }
+
+.phone-pt-10 {
+  padding-top: 10px !important; }
+
+.phone-pt-15 {
+  padding-top: 15px !important; }
+
+.phone-pt-20 {
+  padding-top: 20px !important; }
+
+.phone-pt-30 {
+  padding-top: 30px !important; }
+
+.phone-pt-40 {
+  padding-top: 40px !important; }
+
+.phone-pt-50 {
+  padding-top: 50px !important; }
+
+.phone-pr-0 {
+  padding-right: 0px !important; }
+
+.phone-pr-5 {
+  padding-right: 5px !important; }
+
+.phone-pr-10 {
+  padding-right: 10px !important; }
+
+.phone-pr-15 {
+  padding-right: 15px !important; }
+
+.phone-pr-20 {
+  padding-right: 20px !important; }
+
+.phone-pr-30 {
+  padding-right: 30px !important; }
+
+.phone-pr-40 {
+  padding-right: 40px !important; }
+
+.phone-pr-50 {
+  padding-right: 50px !important; }
+
+.phone-pb-0 {
+  padding-bottom: 0px !important; }
+
+.phone-pb-5 {
+  padding-bottom: 5px !important; }
+
+.phone-pb-10 {
+  padding-bottom: 10px !important; }
+
+.phone-pb-15 {
+  padding-bottom: 15px !important; }
+
+.phone-pb-20 {
+  padding-bottom: 20px !important; }
+
+.phone-pb-30 {
+  padding-bottom: 30px !important; }
+
+.phone-pb-40 {
+  padding-bottom: 40px !important; }
+
+.phone-pb-50 {
+  padding-bottom: 50px !important; }
+
+.phone-pl-0 {
+  padding-left: 0px !important; }
+
+.phone-pl-5 {
+  padding-left: 5px !important; }
+
+.phone-pl-10 {
+  padding-left: 10px !important; }
+
+.phone-pl-15 {
+  padding-left: 15px !important; }
+
+.phone-pl-20 {
+  padding-left: 20px !important; }
+
+.phone-pl-30 {
+  padding-left: 30px !important; }
+
+.phone-pl-40 {
+  padding-left: 40px !important; }
+
+.phone-pl-50 {
+  padding-left: 50px !important; }
+
+.phone-m-0 {
+  margin: 0px !important; }
+
+.phone-m-5 {
+  margin: 5px !important; }
+
+.phone-m-10 {
+  margin: 10px !important; }
+
+.phone-m-15 {
+  margin: 15px !important; }
+
+.phone-m-20 {
+  margin: 20px !important; }
+
+.phone-m-30 {
+  margin: 30px !important; }
+
+.phone-m-40 {
+  margin: 40px !important; }
+
+.phone-m-50 {
+  margin: 50px !important; }
+
+.phone-mt-0 {
+  margin-top: 0px !important; }
+
+.phone-mt-5 {
+  margin-top: 5px !important; }
+
+.phone-mt-10 {
+  margin-top: 10px !important; }
+
+.phone-mt-15 {
+  margin-top: 15px !important; }
+
+.phone-mt-20 {
+  margin-top: 20px !important; }
+
+.phone-mt-30 {
+  margin-top: 30px !important; }
+
+.phone-mt-40 {
+  margin-top: 40px !important; }
+
+.phone-mt-50 {
+  margin-top: 50px !important; }
+
+.phone-mr-0 {
+  margin-right: 0px !important; }
+
+.phone-mr-5 {
+  margin-right: 5px !important; }
+
+.phone-mr-10 {
+  margin-right: 10px !important; }
+
+.phone-mr-15 {
+  margin-right: 15px !important; }
+
+.phone-mr-20 {
+  margin-right: 20px !important; }
+
+.phone-mr-30 {
+  margin-right: 30px !important; }
+
+.phone-mr-40 {
+  margin-right: 40px !important; }
+
+.phone-mr-50 {
+  margin-right: 50px !important; }
+
+.phone-mb-0 {
+  margin-bottom: 0px !important; }
+
+.phone-mb-5 {
+  margin-bottom: 5px !important; }
+
+.phone-mb-10 {
+  margin-bottom: 10px !important; }
+
+.phone-mb-15 {
+  margin-bottom: 15px !important; }
+
+.phone-mb-20 {
+  margin-bottom: 20px !important; }
+
+.phone-mb-30 {
+  margin-bottom: 30px !important; }
+
+.phone-mb-40 {
+  margin-bottom: 40px !important; }
+
+.phone-mb-50 {
+  margin-bottom: 50px !important; }
+
+.phone-ml-0 {
+  margin-left: 0px !important; }
+
+.phone-ml-5 {
+  margin-left: 5px !important; }
+
+.phone-ml-10 {
+  margin-left: 10px !important; }
+
+.phone-ml-15 {
+  margin-left: 15px !important; }
+
+.phone-ml-20 {
+  margin-left: 20px !important; }
+
+.phone-ml-30 {
+  margin-left: 30px !important; }
+
+.phone-ml-40 {
+  margin-left: 40px !important; }
+
+.phone-ml-50 {
+  margin-left: 50px !important; }
+
+@media screen and (min-width: 672) {
+  .tab-p-0 {
+    padding: 0px !important; }
+
+  .tab-p-5 {
+    padding: 5px !important; }
+
+  .tab-p-10 {
+    padding: 10px !important; }
+
+  .tab-p-15 {
+    padding: 15px !important; }
+
+  .tab-p-20 {
+    padding: 20px !important; }
+
+  .tab-p-30 {
+    padding: 30px !important; }
+
+  .tab-p-40 {
+    padding: 40px !important; }
+
+  .tab-p-50 {
+    padding: 50px !important; }
+
+  .tab-pt-0 {
+    padding-top: 0px !important; }
+
+  .tab-pt-5 {
+    padding-top: 5px !important; }
+
+  .tab-pt-10 {
+    padding-top: 10px !important; }
+
+  .tab-pt-15 {
+    padding-top: 15px !important; }
+
+  .tab-pt-20 {
+    padding-top: 20px !important; }
+
+  .tab-pt-30 {
+    padding-top: 30px !important; }
+
+  .tab-pt-40 {
+    padding-top: 40px !important; }
+
+  .tab-pt-50 {
+    padding-top: 50px !important; }
+
+  .tab-pr-0 {
+    padding-right: 0px !important; }
+
+  .tab-pr-5 {
+    padding-right: 5px !important; }
+
+  .tab-pr-10 {
+    padding-right: 10px !important; }
+
+  .tab-pr-15 {
+    padding-right: 15px !important; }
+
+  .tab-pr-20 {
+    padding-right: 20px !important; }
+
+  .tab-pr-30 {
+    padding-right: 30px !important; }
+
+  .tab-pr-40 {
+    padding-right: 40px !important; }
+
+  .tab-pr-50 {
+    padding-right: 50px !important; }
+
+  .tab-pb-0 {
+    padding-bottom: 0px !important; }
+
+  .tab-pb-5 {
+    padding-bottom: 5px !important; }
+
+  .tab-pb-10 {
+    padding-bottom: 10px !important; }
+
+  .tab-pb-15 {
+    padding-bottom: 15px !important; }
+
+  .tab-pb-20 {
+    padding-bottom: 20px !important; }
+
+  .tab-pb-30 {
+    padding-bottom: 30px !important; }
+
+  .tab-pb-40 {
+    padding-bottom: 40px !important; }
+
+  .tab-pb-50 {
+    padding-bottom: 50px !important; }
+
+  .tab-pl-0 {
+    padding-left: 0px !important; }
+
+  .tab-pl-5 {
+    padding-left: 5px !important; }
+
+  .tab-pl-10 {
+    padding-left: 10px !important; }
+
+  .tab-pl-15 {
+    padding-left: 15px !important; }
+
+  .tab-pl-20 {
+    padding-left: 20px !important; }
+
+  .tab-pl-30 {
+    padding-left: 30px !important; }
+
+  .tab-pl-40 {
+    padding-left: 40px !important; }
+
+  .tab-pl-50 {
+    padding-left: 50px !important; }
+
+  .tab-m-0 {
+    margin: 0px !important; }
+
+  .tab-m-5 {
+    margin: 5px !important; }
+
+  .tab-m-10 {
+    margin: 10px !important; }
+
+  .tab-m-15 {
+    margin: 15px !important; }
+
+  .tab-m-20 {
+    margin: 20px !important; }
+
+  .tab-m-30 {
+    margin: 30px !important; }
+
+  .tab-m-40 {
+    margin: 40px !important; }
+
+  .tab-m-50 {
+    margin: 50px !important; }
+
+  .tab-mt-0 {
+    margin-top: 0px !important; }
+
+  .tab-mt-5 {
+    margin-top: 5px !important; }
+
+  .tab-mt-10 {
+    margin-top: 10px !important; }
+
+  .tab-mt-15 {
+    margin-top: 15px !important; }
+
+  .tab-mt-20 {
+    margin-top: 20px !important; }
+
+  .tab-mt-30 {
+    margin-top: 30px !important; }
+
+  .tab-mt-40 {
+    margin-top: 40px !important; }
+
+  .tab-mt-50 {
+    margin-top: 50px !important; }
+
+  .tab-mr-0 {
+    margin-right: 0px !important; }
+
+  .tab-mr-5 {
+    margin-right: 5px !important; }
+
+  .tab-mr-10 {
+    margin-right: 10px !important; }
+
+  .tab-mr-15 {
+    margin-right: 15px !important; }
+
+  .tab-mr-20 {
+    margin-right: 20px !important; }
+
+  .tab-mr-30 {
+    margin-right: 30px !important; }
+
+  .tab-mr-40 {
+    margin-right: 40px !important; }
+
+  .tab-mr-50 {
+    margin-right: 50px !important; }
+
+  .tab-mb-0 {
+    margin-bottom: 0px !important; }
+
+  .tab-mb-5 {
+    margin-bottom: 5px !important; }
+
+  .tab-mb-10 {
+    margin-bottom: 10px !important; }
+
+  .tab-mb-15 {
+    margin-bottom: 15px !important; }
+
+  .tab-mb-20 {
+    margin-bottom: 20px !important; }
+
+  .tab-mb-30 {
+    margin-bottom: 30px !important; }
+
+  .tab-mb-40 {
+    margin-bottom: 40px !important; }
+
+  .tab-mb-50 {
+    margin-bottom: 50px !important; }
+
+  .tab-ml-0 {
+    margin-left: 0px !important; }
+
+  .tab-ml-5 {
+    margin-left: 5px !important; }
+
+  .tab-ml-10 {
+    margin-left: 10px !important; }
+
+  .tab-ml-15 {
+    margin-left: 15px !important; }
+
+  .tab-ml-20 {
+    margin-left: 20px !important; }
+
+  .tab-ml-30 {
+    margin-left: 30px !important; }
+
+  .tab-ml-40 {
+    margin-left: 40px !important; }
+
+  .tab-ml-50 {
+    margin-left: 50px !important; } }
+@media screen and (min-width: 1056) {
+  .desk-p-0 {
+    padding: 0px !important; }
+
+  .desk-p-5 {
+    padding: 5px !important; }
+
+  .desk-p-10 {
+    padding: 10px !important; }
+
+  .desk-p-15 {
+    padding: 15px !important; }
+
+  .desk-p-20 {
+    padding: 20px !important; }
+
+  .desk-p-30 {
+    padding: 30px !important; }
+
+  .desk-p-40 {
+    padding: 40px !important; }
+
+  .desk-p-50 {
+    padding: 50px !important; }
+
+  .desk-pt-0 {
+    padding-top: 0px !important; }
+
+  .desk-pt-5 {
+    padding-top: 5px !important; }
+
+  .desk-pt-10 {
+    padding-top: 10px !important; }
+
+  .desk-pt-15 {
+    padding-top: 15px !important; }
+
+  .desk-pt-20 {
+    padding-top: 20px !important; }
+
+  .desk-pt-30 {
+    padding-top: 30px !important; }
+
+  .desk-pt-40 {
+    padding-top: 40px !important; }
+
+  .desk-pt-50 {
+    padding-top: 50px !important; }
+
+  .desk-pr-0 {
+    padding-right: 0px !important; }
+
+  .desk-pr-5 {
+    padding-right: 5px !important; }
+
+  .desk-pr-10 {
+    padding-right: 10px !important; }
+
+  .desk-pr-15 {
+    padding-right: 15px !important; }
+
+  .desk-pr-20 {
+    padding-right: 20px !important; }
+
+  .desk-pr-30 {
+    padding-right: 30px !important; }
+
+  .desk-pr-40 {
+    padding-right: 40px !important; }
+
+  .desk-pr-50 {
+    padding-right: 50px !important; }
+
+  .desk-pb-0 {
+    padding-bottom: 0px !important; }
+
+  .desk-pb-5 {
+    padding-bottom: 5px !important; }
+
+  .desk-pb-10 {
+    padding-bottom: 10px !important; }
+
+  .desk-pb-15 {
+    padding-bottom: 15px !important; }
+
+  .desk-pb-20 {
+    padding-bottom: 20px !important; }
+
+  .desk-pb-30 {
+    padding-bottom: 30px !important; }
+
+  .desk-pb-40 {
+    padding-bottom: 40px !important; }
+
+  .desk-pb-50 {
+    padding-bottom: 50px !important; }
+
+  .desk-pl-0 {
+    padding-left: 0px !important; }
+
+  .desk-pl-5 {
+    padding-left: 5px !important; }
+
+  .desk-pl-10 {
+    padding-left: 10px !important; }
+
+  .desk-pl-15 {
+    padding-left: 15px !important; }
+
+  .desk-pl-20 {
+    padding-left: 20px !important; }
+
+  .desk-pl-30 {
+    padding-left: 30px !important; }
+
+  .desk-pl-40 {
+    padding-left: 40px !important; }
+
+  .desk-pl-50 {
+    padding-left: 50px !important; }
+
+  .desk-m-0 {
+    margin: 0px !important; }
+
+  .desk-m-5 {
+    margin: 5px !important; }
+
+  .desk-m-10 {
+    margin: 10px !important; }
+
+  .desk-m-15 {
+    margin: 15px !important; }
+
+  .desk-m-20 {
+    margin: 20px !important; }
+
+  .desk-m-30 {
+    margin: 30px !important; }
+
+  .desk-m-40 {
+    margin: 40px !important; }
+
+  .desk-m-50 {
+    margin: 50px !important; }
+
+  .desk-mt-0 {
+    margin-top: 0px !important; }
+
+  .desk-mt-5 {
+    margin-top: 5px !important; }
+
+  .desk-mt-10 {
+    margin-top: 10px !important; }
+
+  .desk-mt-15 {
+    margin-top: 15px !important; }
+
+  .desk-mt-20 {
+    margin-top: 20px !important; }
+
+  .desk-mt-30 {
+    margin-top: 30px !important; }
+
+  .desk-mt-40 {
+    margin-top: 40px !important; }
+
+  .desk-mt-50 {
+    margin-top: 50px !important; }
+
+  .desk-mr-0 {
+    margin-right: 0px !important; }
+
+  .desk-mr-5 {
+    margin-right: 5px !important; }
+
+  .desk-mr-10 {
+    margin-right: 10px !important; }
+
+  .desk-mr-15 {
+    margin-right: 15px !important; }
+
+  .desk-mr-20 {
+    margin-right: 20px !important; }
+
+  .desk-mr-30 {
+    margin-right: 30px !important; }
+
+  .desk-mr-40 {
+    margin-right: 40px !important; }
+
+  .desk-mr-50 {
+    margin-right: 50px !important; }
+
+  .desk-mb-0 {
+    margin-bottom: 0px !important; }
+
+  .desk-mb-5 {
+    margin-bottom: 5px !important; }
+
+  .desk-mb-10 {
+    margin-bottom: 10px !important; }
+
+  .desk-mb-15 {
+    margin-bottom: 15px !important; }
+
+  .desk-mb-20 {
+    margin-bottom: 20px !important; }
+
+  .desk-mb-30 {
+    margin-bottom: 30px !important; }
+
+  .desk-mb-40 {
+    margin-bottom: 40px !important; }
+
+  .desk-mb-50 {
+    margin-bottom: 50px !important; }
+
+  .desk-ml-0 {
+    margin-left: 0px !important; }
+
+  .desk-ml-5 {
+    margin-left: 5px !important; }
+
+  .desk-ml-10 {
+    margin-left: 10px !important; }
+
+  .desk-ml-15 {
+    margin-left: 15px !important; }
+
+  .desk-ml-20 {
+    margin-left: 20px !important; }
+
+  .desk-ml-30 {
+    margin-left: 30px !important; }
+
+  .desk-ml-40 {
+    margin-left: 40px !important; }
+
+  .desk-ml-50 {
+    margin-left: 50px !important; } }
+@media screen and (min-width: 1302) {
+  .lgdesk-p-0 {
+    padding: 0px !important; }
+
+  .lgdesk-p-5 {
+    padding: 5px !important; }
+
+  .lgdesk-p-10 {
+    padding: 10px !important; }
+
+  .lgdesk-p-15 {
+    padding: 15px !important; }
+
+  .lgdesk-p-20 {
+    padding: 20px !important; }
+
+  .lgdesk-p-30 {
+    padding: 30px !important; }
+
+  .lgdesk-p-40 {
+    padding: 40px !important; }
+
+  .lgdesk-p-50 {
+    padding: 50px !important; }
+
+  .lgdesk-pt-0 {
+    padding-top: 0px !important; }
+
+  .lgdesk-pt-5 {
+    padding-top: 5px !important; }
+
+  .lgdesk-pt-10 {
+    padding-top: 10px !important; }
+
+  .lgdesk-pt-15 {
+    padding-top: 15px !important; }
+
+  .lgdesk-pt-20 {
+    padding-top: 20px !important; }
+
+  .lgdesk-pt-30 {
+    padding-top: 30px !important; }
+
+  .lgdesk-pt-40 {
+    padding-top: 40px !important; }
+
+  .lgdesk-pt-50 {
+    padding-top: 50px !important; }
+
+  .lgdesk-pr-0 {
+    padding-right: 0px !important; }
+
+  .lgdesk-pr-5 {
+    padding-right: 5px !important; }
+
+  .lgdesk-pr-10 {
+    padding-right: 10px !important; }
+
+  .lgdesk-pr-15 {
+    padding-right: 15px !important; }
+
+  .lgdesk-pr-20 {
+    padding-right: 20px !important; }
+
+  .lgdesk-pr-30 {
+    padding-right: 30px !important; }
+
+  .lgdesk-pr-40 {
+    padding-right: 40px !important; }
+
+  .lgdesk-pr-50 {
+    padding-right: 50px !important; }
+
+  .lgdesk-pb-0 {
+    padding-bottom: 0px !important; }
+
+  .lgdesk-pb-5 {
+    padding-bottom: 5px !important; }
+
+  .lgdesk-pb-10 {
+    padding-bottom: 10px !important; }
+
+  .lgdesk-pb-15 {
+    padding-bottom: 15px !important; }
+
+  .lgdesk-pb-20 {
+    padding-bottom: 20px !important; }
+
+  .lgdesk-pb-30 {
+    padding-bottom: 30px !important; }
+
+  .lgdesk-pb-40 {
+    padding-bottom: 40px !important; }
+
+  .lgdesk-pb-50 {
+    padding-bottom: 50px !important; }
+
+  .lgdesk-pl-0 {
+    padding-left: 0px !important; }
+
+  .lgdesk-pl-5 {
+    padding-left: 5px !important; }
+
+  .lgdesk-pl-10 {
+    padding-left: 10px !important; }
+
+  .lgdesk-pl-15 {
+    padding-left: 15px !important; }
+
+  .lgdesk-pl-20 {
+    padding-left: 20px !important; }
+
+  .lgdesk-pl-30 {
+    padding-left: 30px !important; }
+
+  .lgdesk-pl-40 {
+    padding-left: 40px !important; }
+
+  .lgdesk-pl-50 {
+    padding-left: 50px !important; }
+
+  .lgdesk-m-0 {
+    margin: 0px !important; }
+
+  .lgdesk-m-5 {
+    margin: 5px !important; }
+
+  .lgdesk-m-10 {
+    margin: 10px !important; }
+
+  .lgdesk-m-15 {
+    margin: 15px !important; }
+
+  .lgdesk-m-20 {
+    margin: 20px !important; }
+
+  .lgdesk-m-30 {
+    margin: 30px !important; }
+
+  .lgdesk-m-40 {
+    margin: 40px !important; }
+
+  .lgdesk-m-50 {
+    margin: 50px !important; }
+
+  .lgdesk-mt-0 {
+    margin-top: 0px !important; }
+
+  .lgdesk-mt-5 {
+    margin-top: 5px !important; }
+
+  .lgdesk-mt-10 {
+    margin-top: 10px !important; }
+
+  .lgdesk-mt-15 {
+    margin-top: 15px !important; }
+
+  .lgdesk-mt-20 {
+    margin-top: 20px !important; }
+
+  .lgdesk-mt-30 {
+    margin-top: 30px !important; }
+
+  .lgdesk-mt-40 {
+    margin-top: 40px !important; }
+
+  .lgdesk-mt-50 {
+    margin-top: 50px !important; }
+
+  .lgdesk-mr-0 {
+    margin-right: 0px !important; }
+
+  .lgdesk-mr-5 {
+    margin-right: 5px !important; }
+
+  .lgdesk-mr-10 {
+    margin-right: 10px !important; }
+
+  .lgdesk-mr-15 {
+    margin-right: 15px !important; }
+
+  .lgdesk-mr-20 {
+    margin-right: 20px !important; }
+
+  .lgdesk-mr-30 {
+    margin-right: 30px !important; }
+
+  .lgdesk-mr-40 {
+    margin-right: 40px !important; }
+
+  .lgdesk-mr-50 {
+    margin-right: 50px !important; }
+
+  .lgdesk-mb-0 {
+    margin-bottom: 0px !important; }
+
+  .lgdesk-mb-5 {
+    margin-bottom: 5px !important; }
+
+  .lgdesk-mb-10 {
+    margin-bottom: 10px !important; }
+
+  .lgdesk-mb-15 {
+    margin-bottom: 15px !important; }
+
+  .lgdesk-mb-20 {
+    margin-bottom: 20px !important; }
+
+  .lgdesk-mb-30 {
+    margin-bottom: 30px !important; }
+
+  .lgdesk-mb-40 {
+    margin-bottom: 40px !important; }
+
+  .lgdesk-mb-50 {
+    margin-bottom: 50px !important; }
+
+  .lgdesk-ml-0 {
+    margin-left: 0px !important; }
+
+  .lgdesk-ml-5 {
+    margin-left: 5px !important; }
+
+  .lgdesk-ml-10 {
+    margin-left: 10px !important; }
+
+  .lgdesk-ml-15 {
+    margin-left: 15px !important; }
+
+  .lgdesk-ml-20 {
+    margin-left: 20px !important; }
+
+  .lgdesk-ml-30 {
+    margin-left: 30px !important; }
+
+  .lgdesk-ml-40 {
+    margin-left: 40px !important; }
+
+  .lgdesk-ml-50 {
+    margin-left: 50px !important; } }
 /*Definition container de taille fixe*/
 @media screen and (min-width: 365px) {
   .container {
@@ -1647,7 +2607,7 @@ img {
 /*
 LAYOUT
 ----------------------------------------------------------------
-Contient les classes suppl├®mentaires pour la mise en page du site + les styles pour la structure g├®n├®rale du site (header, menus et footer)
+Contient les classes suppl?�mentaires pour la mise en page du site + les styles pour la structure g?�n?�rale du site (header, menus et footer)
 */
 .container-wrapper {
   margin-right: auto;
@@ -1726,6 +2686,34 @@ Contient les classes suppl├®mentaires pour la mise en page du site + les styl
   -ms-flex-align: start;
   align-items: flex-start; }
 
+.align-bottom {
+  position: absolute !important;
+  bottom: 0; }
+
+@media screen and (min-width: 1056px) {
+  .same-height-col {
+    display: table !important;
+    width: 100%;
+    border-collapse: separate; }
+
+  .same-height-col .row-col {
+    /* display: table-row; */
+    }
+
+  .same-height-col .col {
+    display: table-cell;
+    float: none !important;
+    vertical-align: top;
+    height: 100%;
+    padding-bottom: 0 !important;
+    margin: 0 !important; }
+    .same-height-col .col:first-child {
+      padding-left: 0; }
+    .same-height-col .col:last-child {
+      padding-right: 0; }
+    .same-height-col .col > * {
+      display: table;
+      width: 100%; } }
 .margin-bottom-phone {
   margin-bottom: 20px; }
 
@@ -1937,7 +2925,7 @@ section {
 /*
 MODULE
 ----------------------------------------------------------------
-Contient les styles pour les ├®l├®ments de l'interface utilisateur
+Contient les styles pour les ?�l?�ments de l'interface utilisateur
 */
 svg:not(:root) {
   overflow: visible; }
@@ -2034,7 +3022,7 @@ img.fill-height {
   text-align: justify; }
 
 .grey-border-box, .orange-border-box {
-  width: 100%;
+  position: relative;
   padding: 10px 20px;
   border-radius: 3px;
   border: 3px solid;
@@ -2043,7 +3031,10 @@ img.fill-height {
   -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
+  -ms-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .grey-border-box {
   border-color: #dfdfdf; }
@@ -2183,7 +3174,7 @@ img.fill-height {
 /*
 RESPONSIVE
 ----------------------------------------------------------------
-Contient les media queries pour adapter les styles sur les diff├®rents formats
+Contient les media queries pour adapter les styles sur les diff?�rents formats
 */
 @media screen and (max-width: 671px) {
   .container-wrapper {
@@ -2204,7 +3195,7 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     width: 50%; }
 
   .row .phone-auto, .row .tab-auto, .row .desk-auto, .row .lgdesk-auto, .row .phone-0, .row .tab-0, .row .desk-0, .row .lgdesk-0, .row .phone-1, .row .tab-1, .row .desk-1, .row .lgdesk-1, .row .phone-2, .row .tab-2, .row .desk-2, .row .lgdesk-2, .row .phone-3, .row .tab-3, .row .desk-3, .row .lgdesk-3, .row .phone-4, .row .tab-4, .row .desk-4, .row .lgdesk-4, .row .phone-5, .row .tab-5, .row .desk-5, .row .lgdesk-5, .row .phone-6, .row .tab-6, .row .desk-6, .row .lgdesk-6, .row .phone-7, .row .tab-7, .row .desk-7, .row .lgdesk-7, .row .phone-8, .row .tab-8, .row .desk-8, .row .lgdesk-8, .row .phone-9, .row .tab-9, .row .desk-9, .row .lgdesk-9, .row .phone-10, .row .tab-10, .row .desk-10, .row .lgdesk-10, .row .phone-11, .row .tab-11, .row .desk-11, .row .lgdesk-11, .row .phone-12, .row .tab-12, .row .desk-12, .row .lgdesk-12, .clearfix .phone-auto, .clearfix .tab-auto, .clearfix .desk-auto, .clearfix .lgdesk-auto, .clearfix .phone-0, .clearfix .tab-0, .clearfix .desk-0, .clearfix .lgdesk-0, .clearfix .phone-1, .clearfix .tab-1, .clearfix .desk-1, .clearfix .lgdesk-1, .clearfix .phone-2, .clearfix .tab-2, .clearfix .desk-2, .clearfix .lgdesk-2, .clearfix .phone-3, .clearfix .tab-3, .clearfix .desk-3, .clearfix .lgdesk-3, .clearfix .phone-4, .clearfix .tab-4, .clearfix .desk-4, .clearfix .lgdesk-4, .clearfix .phone-5, .clearfix .tab-5, .clearfix .desk-5, .clearfix .lgdesk-5, .clearfix .phone-6, .clearfix .tab-6, .clearfix .desk-6, .clearfix .lgdesk-6, .clearfix .phone-7, .clearfix .tab-7, .clearfix .desk-7, .clearfix .lgdesk-7, .clearfix .phone-8, .clearfix .tab-8, .clearfix .desk-8, .clearfix .lgdesk-8, .clearfix .phone-9, .clearfix .tab-9, .clearfix .desk-9, .clearfix .lgdesk-9, .clearfix .phone-10, .clearfix .tab-10, .clearfix .desk-10, .clearfix .lgdesk-10, .clearfix .phone-11, .clearfix .tab-11, .clearfix .desk-11, .clearfix .lgdesk-11, .clearfix .phone-12, .clearfix .tab-12, .clearfix .desk-12, .clearfix .lgdesk-12 {
-    padding: 0 15px; }
+    padding: 0 2%; }
     .row .phone-auto:first-child, .row .tab-auto:first-child, .row .desk-auto:first-child, .row .lgdesk-auto:first-child, .row .phone-0:first-child, .row .tab-0:first-child, .row .desk-0:first-child, .row .lgdesk-0:first-child, .row .phone-1:first-child, .row .tab-1:first-child, .row .desk-1:first-child, .row .lgdesk-1:first-child, .row .phone-2:first-child, .row .tab-2:first-child, .row .desk-2:first-child, .row .lgdesk-2:first-child, .row .phone-3:first-child, .row .tab-3:first-child, .row .desk-3:first-child, .row .lgdesk-3:first-child, .row .phone-4:first-child, .row .tab-4:first-child, .row .desk-4:first-child, .row .lgdesk-4:first-child, .row .phone-5:first-child, .row .tab-5:first-child, .row .desk-5:first-child, .row .lgdesk-5:first-child, .row .phone-6:first-child, .row .tab-6:first-child, .row .desk-6:first-child, .row .lgdesk-6:first-child, .row .phone-7:first-child, .row .tab-7:first-child, .row .desk-7:first-child, .row .lgdesk-7:first-child, .row .phone-8:first-child, .row .tab-8:first-child, .row .desk-8:first-child, .row .lgdesk-8:first-child, .row .phone-9:first-child, .row .tab-9:first-child, .row .desk-9:first-child, .row .lgdesk-9:first-child, .row .phone-10:first-child, .row .tab-10:first-child, .row .desk-10:first-child, .row .lgdesk-10:first-child, .row .phone-11:first-child, .row .tab-11:first-child, .row .desk-11:first-child, .row .lgdesk-11:first-child, .row .phone-12:first-child, .row .tab-12:first-child, .row .desk-12:first-child, .row .lgdesk-12:first-child, .clearfix .phone-auto:first-child, .clearfix .tab-auto:first-child, .clearfix .desk-auto:first-child, .clearfix .lgdesk-auto:first-child, .clearfix .phone-0:first-child, .clearfix .tab-0:first-child, .clearfix .desk-0:first-child, .clearfix .lgdesk-0:first-child, .clearfix .phone-1:first-child, .clearfix .tab-1:first-child, .clearfix .desk-1:first-child, .clearfix .lgdesk-1:first-child, .clearfix .phone-2:first-child, .clearfix .tab-2:first-child, .clearfix .desk-2:first-child, .clearfix .lgdesk-2:first-child, .clearfix .phone-3:first-child, .clearfix .tab-3:first-child, .clearfix .desk-3:first-child, .clearfix .lgdesk-3:first-child, .clearfix .phone-4:first-child, .clearfix .tab-4:first-child, .clearfix .desk-4:first-child, .clearfix .lgdesk-4:first-child, .clearfix .phone-5:first-child, .clearfix .tab-5:first-child, .clearfix .desk-5:first-child, .clearfix .lgdesk-5:first-child, .clearfix .phone-6:first-child, .clearfix .tab-6:first-child, .clearfix .desk-6:first-child, .clearfix .lgdesk-6:first-child, .clearfix .phone-7:first-child, .clearfix .tab-7:first-child, .clearfix .desk-7:first-child, .clearfix .lgdesk-7:first-child, .clearfix .phone-8:first-child, .clearfix .tab-8:first-child, .clearfix .desk-8:first-child, .clearfix .lgdesk-8:first-child, .clearfix .phone-9:first-child, .clearfix .tab-9:first-child, .clearfix .desk-9:first-child, .clearfix .lgdesk-9:first-child, .clearfix .phone-10:first-child, .clearfix .tab-10:first-child, .clearfix .desk-10:first-child, .clearfix .lgdesk-10:first-child, .clearfix .phone-11:first-child, .clearfix .tab-11:first-child, .clearfix .desk-11:first-child, .clearfix .lgdesk-11:first-child, .clearfix .phone-12:first-child, .clearfix .tab-12:first-child, .clearfix .desk-12:first-child, .clearfix .lgdesk-12:first-child {
       padding-left: 0; }
     .row .phone-auto:last-child, .row .tab-auto:last-child, .row .desk-auto:last-child, .row .lgdesk-auto:last-child, .row .phone-0:last-child, .row .tab-0:last-child, .row .desk-0:last-child, .row .lgdesk-0:last-child, .row .phone-1:last-child, .row .tab-1:last-child, .row .desk-1:last-child, .row .lgdesk-1:last-child, .row .phone-2:last-child, .row .tab-2:last-child, .row .desk-2:last-child, .row .lgdesk-2:last-child, .row .phone-3:last-child, .row .tab-3:last-child, .row .desk-3:last-child, .row .lgdesk-3:last-child, .row .phone-4:last-child, .row .tab-4:last-child, .row .desk-4:last-child, .row .lgdesk-4:last-child, .row .phone-5:last-child, .row .tab-5:last-child, .row .desk-5:last-child, .row .lgdesk-5:last-child, .row .phone-6:last-child, .row .tab-6:last-child, .row .desk-6:last-child, .row .lgdesk-6:last-child, .row .phone-7:last-child, .row .tab-7:last-child, .row .desk-7:last-child, .row .lgdesk-7:last-child, .row .phone-8:last-child, .row .tab-8:last-child, .row .desk-8:last-child, .row .lgdesk-8:last-child, .row .phone-9:last-child, .row .tab-9:last-child, .row .desk-9:last-child, .row .lgdesk-9:last-child, .row .phone-10:last-child, .row .tab-10:last-child, .row .desk-10:last-child, .row .lgdesk-10:last-child, .row .phone-11:last-child, .row .tab-11:last-child, .row .desk-11:last-child, .row .lgdesk-11:last-child, .row .phone-12:last-child, .row .tab-12:last-child, .row .desk-12:last-child, .row .lgdesk-12:last-child, .clearfix .phone-auto:last-child, .clearfix .tab-auto:last-child, .clearfix .desk-auto:last-child, .clearfix .lgdesk-auto:last-child, .clearfix .phone-0:last-child, .clearfix .tab-0:last-child, .clearfix .desk-0:last-child, .clearfix .lgdesk-0:last-child, .clearfix .phone-1:last-child, .clearfix .tab-1:last-child, .clearfix .desk-1:last-child, .clearfix .lgdesk-1:last-child, .clearfix .phone-2:last-child, .clearfix .tab-2:last-child, .clearfix .desk-2:last-child, .clearfix .lgdesk-2:last-child, .clearfix .phone-3:last-child, .clearfix .tab-3:last-child, .clearfix .desk-3:last-child, .clearfix .lgdesk-3:last-child, .clearfix .phone-4:last-child, .clearfix .tab-4:last-child, .clearfix .desk-4:last-child, .clearfix .lgdesk-4:last-child, .clearfix .phone-5:last-child, .clearfix .tab-5:last-child, .clearfix .desk-5:last-child, .clearfix .lgdesk-5:last-child, .clearfix .phone-6:last-child, .clearfix .tab-6:last-child, .clearfix .desk-6:last-child, .clearfix .lgdesk-6:last-child, .clearfix .phone-7:last-child, .clearfix .tab-7:last-child, .clearfix .desk-7:last-child, .clearfix .lgdesk-7:last-child, .clearfix .phone-8:last-child, .clearfix .tab-8:last-child, .clearfix .desk-8:last-child, .clearfix .lgdesk-8:last-child, .clearfix .phone-9:last-child, .clearfix .tab-9:last-child, .clearfix .desk-9:last-child, .clearfix .lgdesk-9:last-child, .clearfix .phone-10:last-child, .clearfix .tab-10:last-child, .clearfix .desk-10:last-child, .clearfix .lgdesk-10:last-child, .clearfix .phone-11:last-child, .clearfix .tab-11:last-child, .clearfix .desk-11:last-child, .clearfix .lgdesk-11:last-child, .clearfix .phone-12:last-child, .clearfix .tab-12:last-child, .clearfix .desk-12:last-child, .clearfix .lgdesk-12:last-child {
