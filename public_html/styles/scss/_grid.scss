@@ -60,7 +60,7 @@ $breakpoints : $grid-breakpoints;
       @each $attr-short, $attr-long in $prefixes {
         @each $value in $values {
           .#{$breakpoint-name}-#{$attr-short}-#{$value} {
-            #{$attr-long}: #{$value + px};
+            #{$attr-long}: #{$value + px !important};
           }
         }
       }
@@ -71,7 +71,7 @@ $breakpoints : $grid-breakpoints;
         @each $attr-short, $attr-long in $prefixes {
           @each $value in $values {
             .#{$breakpoint-name}-#{$attr-short}-#{$value} {
-              #{$attr-long}: #{$value + px};
+              #{$attr-long}: #{$value + px !important};
             }
           }
         }

@@ -211,7 +211,7 @@ img.fill-height{
     label{
         display: none;
     }
-    select{
+    select, input[type="text"]{
         display: block;
         width: 100%;
         border-color: $grey-border;
@@ -219,6 +219,32 @@ img.fill-height{
         padding-left: 10px;
         font-size: 13px;
         cursor: pointer;
+    }
+    &.search{
+        width: 100%;
+        min-width: 275px;
+        padding: 5px 10px;
+        form{
+            @include clearfix;
+        }
+        input, button{
+            display: inline-block;
+            height: 35px;
+            float: left;
+        }
+        input{
+            width: 80%;
+            border-width: 1px;
+            border-color: $blue;
+        }
+        button{
+            width: 18%;
+            background-color: #004994;
+            color: #fff;
+            line-height: 5px;
+            font-size: 1.2em;
+            border-radius: 0 5px 5px 0;
+        }
     }
 }
 

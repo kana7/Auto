@@ -48,7 +48,14 @@
                             <li><a href="">Accueil</a></li>
                             <li>
                                 <button>Rechercher</button>
-                                <ul class="dropdown">
+                                <ul class="dropdown left hidden">
+                                    <li>
+                                        <div class="group-input search">
+                                            <form action="">
+                                                <input type="text" placeholder="Rechercher un véhicule"/><button type="submit"><span class="icon-recherche"></span></button>
+                                            </form>
+                                        </div>
+                                    </li>
                                     <li><a href="#">Lien</a></li>
                                     <li><a href="#">Lien</a></li>
                                     <li><a href="#">Lien</a></li>
@@ -60,15 +67,13 @@
                             <li><a href="">Aide</a></li>
                             <li><a href="">S'inscrire</a></li>
                             <li><a href="">Se connecter</a></li>
-                            <li class="hidden-phone hidden-tab">
-                                <div>
-                                    <button>FR <span class="icon-down-arrow"></span></button>
-                                    <ul class="dropdown hidden">
-                                        <li>AN</li>
-                                        <li>DE</li>
-                                        <li>PT</li>
+                            <li>
+                                    <button>FR <span style="font-size: 0.7em;" class="icon-down-arrow"></span></button>
+                                    <ul class="dropdown right hidden">
+                                        <li><a href="">AN</a></li>
+                                        <li><a href="">DE</a></li>
+                                        <li><a href="">PT</a></li>
                                     </ul>
-                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -436,7 +441,7 @@
                         <div class="phone-3 hidden-phone hidden-tab desk-5 lgdesk-4">
                             <div class="grey-border-box align-center">
                                 <h2>Je veux vendre : </h2>
-                                <img class="desk-mt-20 lgdesk-mt-30 fill-width" src="images/key.jpg" alt="clé vendre" />
+                                <img class="desk-mt-20 lgdesk-mt-10 fill-width" src="images/key.jpg" alt="clé vendre" />
                                 <div style="left: 0; padding: 0 20px 15px 20px;" class="phone-12 align-bottom">
                                     <a class="btn-orange" href="#">Créer mon annonce gratuite</a>
                                 </div>
@@ -448,20 +453,21 @@
             <section id="pubs">
                 <div class="container-wrapper">
                     <div class="row">
-                        <div class="phone-12 tab-6 desk-4">
+                        <div class="phone-12 tab-6 desk-4 phone-mb-15 desk-mb-0">
                             <div class="grey-border-box">
                                 <h2>Garages partenaires : </h2>
                                 <p>Cars Benelux S.A</p>
                                 <img class="fill-width" src="images/garage.jpg" alt="garages benelux" />
                             </div>
                         </div>
-                        <div class="phone-12 tab-6 desk-4">
+                        <div class="phone-12 tab-6 desk-4 phone-mb-15 desk-mb-0">
                             <div class="orange-border-box">
                                 <h2>La bonne affaire : </h2>
                             </div>
                         </div>
-                        <div class="phone-12 tab-6 desk-4">
-                            <div id="pub2-lgdesktop" class="grey-border-box no-border" style="background-color: #004994;"></div>
+                        <div class="phone-12 desk-4 desk-pl-0">
+                            <div id="pub2-lgdesktop" class="grey-border-box no-border hidden display-desk display-lgdesk" style="background-color: #004994;"></div>
+                            <div id="pub2-mobile" style="background-color: #004994; height: 90px;" class="hidden display-phone display-tab"></div>
                         </div>
                     </div>
             </section>
@@ -477,7 +483,10 @@
                                 Vivamus ut magna volutpat, tempus orci eu, fermentum magna. Nunc facilisis odio sed dolor eleifend, eu accumsan lorem bibendum. Sed eu est a nibh laoreet congue. Sed tellus urna, blandit ut bibendum eu, eleifend id sapien. Aliquam placerat pretium nisl eget pellentesque. Donec interdum at turpis vel eleifend. Proin fringilla, dolor vitae viverra pharetra, augue enim efficitur quam, <strong>vel dictum tortor metus non lectus.</strong> 
                             </p>
                         </div>
-                        <div id="pub3-lgdesktop" style="background-color: #004994; height: 200px; width: 200px;" class="pull-right hidden display-lgdesk"></div>
+                        <div class="phone-12 tab-2">
+                            <div id="pub3-lgdesktop" style="background-color: #004994; height: 200px; width: 200px;" class="pull-right hidden display-lgdesk"></div>
+                            <div id="pub3-mobile" style="background-color: #004994; height: 90px;" class="hidden display-phone display-tab"></div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -486,7 +495,7 @@
                     <div class="row">
                         <h2>Nos partenaires</h2>
                         <div class="clearfix">
-                            <div class="phone-12 tab-6 lgdesk-4">
+                            <div class="phone-12 tab-6 lgdesk-4 phone-mb-15 desk-mb-0">
                                 <div class="grey-border-box">
                                     <a class="annonce-link" href=""></a>
                                     <div class="partners-container">
@@ -498,7 +507,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="phone-pr-0 phone-12 tab-6 lgdesk-4">
+                            <div class="phone-12 tab-6 lgdesk-4 phone-mb-15 desk-mb-0 desk-pr-0">
                                 <div class="grey-border-box">
                                     <a class="annonce-link" href=""></a>
                                     <div class="partners-container">

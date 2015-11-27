@@ -7,6 +7,7 @@ $(function () {
         });
     }
     resizeAllImages();
+    DesktopMenuDrop.init();
 });
 
 
@@ -68,6 +69,43 @@ var matchHeightBox = function () {
 
 
 };
+
+var DesktopMenuDrop = (function(){
+    
+    var $document = $('html');
+    var $desktopMenu = $('.desktop-menu');
+    var $dropButton = $desktopMenu.find('li>button');
+    var $menuDrop = $desktopMenu.find('.dropdown');
+    
+    var flag = 1;
+    
+    var init = function(){
+        _bindEvents();
+    };
+    
+    var _bindEvents = function () {
+        $dropButton.on('click', _toggleMenu);
+        $document.on('click', function () {
+            if (flag != "0") {
+                _closeMenu();
+            }
+            else {
+                flag = "1";
+            }
+        });
+    };
+    var _toggleMenu = function () {
+        flag = "0";
+        $(this).next('.dropdown').toggleClass('hidden');
+    };
+    var _closeMenu = function () {
+        $menuDrop.addClass('hidden');
+    };
+    
+    return{
+      init : init
+    };
+})();
 
 // Menu mobile pour le choix de la langue
 var languageSelection = (function () {
