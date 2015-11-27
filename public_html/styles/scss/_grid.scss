@@ -4,6 +4,13 @@ GRID
 Contient les classes pour la grille de mise en page
 */
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
 // mapping des noms de classe avec leur attribut css
 $space-prefixes : (
 p  : padding,

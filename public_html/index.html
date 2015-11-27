@@ -46,7 +46,14 @@
                     <nav class="row desktop-menu">
                         <ul class="pull-left">
                             <li><a href="">Accueil</a></li>
-                            <li><a href="">Rechercher</a></li>
+                            <li>
+                                <button>Rechercher</button>
+                                <ul class="dropdown">
+                                    <li><a href="#">Lien</a></li>
+                                    <li><a href="#">Lien</a></li>
+                                    <li><a href="#">Lien</a></li>
+                                </ul>
+                            </li>
                             <li><a href="">Vendre</a></li>
                         </ul>
                         <ul class="pull-right">
@@ -430,15 +437,15 @@
                             <div class="grey-border-box align-center">
                                 <h2>Je veux vendre : </h2>
                                 <img class="fill-width" src="images/key.jpg" alt="clé vendre" />
-                                <a class="btn-orange phone-mt-10" href="#">Créer mon annonce gratuite</a>
+                                <a class="btn-orange phone-mt-30" href="#">Créer mon annonce gratuite</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="pubs">
-                <div class="container-wrapper same-height-col">
-                    <div class="row row-col">
+                <div class="container-wrapper">
+                    <div class="row">
                         <div class="phone-12 tab-6 desk-4">
                             <div class="grey-border-box">
                                 <h2>Garages partenaires : </h2>
@@ -452,7 +459,7 @@
                             </div>
                         </div>
                         <div class="phone-12 tab-6 desk-4">
-                            <div id="pub2-lgdesktop" class="grey-border-box" style="background-color: #004994;"></div>
+                            <div id="pub2-lgdesktop" class="grey-border-box no-border" style="background-color: #004994;"></div>
                         </div>
                     </div>
             </section>
@@ -551,6 +558,7 @@
         <script type="text/javascript" src="scripts/main.js"></script>
         <script type="text/javascript">
             $(function () {
+                matchHeightBox();
                 //Init du slider
                 $('.main-gallery').flickity({
                     // options

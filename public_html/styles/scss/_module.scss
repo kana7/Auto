@@ -124,6 +124,11 @@ img.fill-height{
     height: 100%;
     margin-top: 0;
     margin-bottom: 0;
+    &.no-border{
+        border-radius: 0;
+        border: none;
+        @include box-shadow(none);
+    }
 }
 .grey-border-box{
     border-color: $grey-border;

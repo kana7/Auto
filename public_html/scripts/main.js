@@ -50,6 +50,25 @@ var resizeAllImages = function () {
     });
 };
 
+var matchHeightBox = function () {
+    var highest;
+    var row = $('.row, .clearfix');
+    var boxes;
+    row.each(function () {
+        highest = 0;
+        boxes = $(this).find('.grey-border-box, .orange-border-box');
+        boxes.each(function () {
+            var currColumnHeight = $(this).outerHeight();
+            if (currColumnHeight > highest) {
+                highest = currColumnHeight;
+            }
+        });
+        boxes.css('height', highest);
+    });
+
+
+};
+
 // Menu mobile pour le choix de la langue
 var languageSelection = (function () {
     var $el = $('.language-selection.mobile');
@@ -58,8 +77,8 @@ var languageSelection = (function () {
     var $document = $('html');
 
     /*var $overlay = $('<div id="bazar_language_overlay"></div>');
-    $overlay.css('height', $(document).height());
-    $document.append($overlay);*/
+     $overlay.css('height', $(document).height());
+     $document.append($overlay);*/
 
     var init = function () {
         _bindEvents();

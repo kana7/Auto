@@ -128,8 +128,13 @@ section{
         @include item-spread(350);
     }
     li{
+        position: relative;
         line-height: 25px;
         font-size: 13px;
+    }
+    .dropdown{
+        position: absolute;
+        
     }
 }
 .menu-mobile{
