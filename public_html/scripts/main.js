@@ -1,4 +1,6 @@
 $(function () {
+
+    $('#content').prepend($overlay);
 //Resize du slider au chargement de la page et lors du resize de la fenêtre
     if ($('.main-gallery')) {
         resizeSlider();
@@ -13,6 +15,8 @@ $(function () {
     DesktopMenuDrop.init();
 });
 
+
+var $overlay = $('<div id="overlay"></div>');
 
 var resizeSlider = function () {
     $('.gallery-cell .img-annonce').css('height', ($('.gallery-cell').innerWidth() / 4) * 3);
@@ -101,9 +105,6 @@ var languageSelection = (function () {
     var $button = $el.find('button');
     var $menu = $el.find('.dropdown');
     var $document = $('html');
-    /*var $overlay = $('<div id="bazar_language_overlay"></div>');
-     $overlay.css('height', $(document).height());
-     $document.append($overlay);*/
 
     var init = function () {
         _bindEvents();
@@ -137,7 +138,7 @@ var languageSelection = (function () {
 
 
 var sideMenu = (function () {
-    
+
     var $document = $('html');
     var $sideMenu = $('.mobile-sidebar-menu');
     var $leftButtonMenu = $('#categoryButton');
@@ -169,17 +170,20 @@ var sideMenu = (function () {
         flag = "0";
 
         var buttonId = $(element).attr('id');
-        var sideMenuTemp = $('.mobile-sidebar-menu[data-button="'+buttonId+'"]');
+        var sideMenuTemp = $('.mobile-sidebar-menu[data-button="' + buttonId + '"]');
         if (sideMenuTemp.hasClass('open')) {
             $(sideMenuTemp).removeClass('open');
+            $overlay.removeClass('is-visible');
         } else {
             _closeMenu();
             $(sideMenuTemp).addClass('open');
+            $overlay.addClass('is-visible');
         }
     };
 
     var _closeMenu = function () {
         $sideMenu.removeClass('open');
+        $overlay.removeClass('is-visible');
     };
 
     return {
