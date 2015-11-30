@@ -68,28 +68,24 @@
                             <li><a href="">S'inscrire</a></li>
                             <li><a href="">Se connecter</a></li>
                             <li>
-                                    <button>FR <span style="font-size: 0.7em;" class="icon-down-arrow"></span></button>
-                                    <ul class="dropdown right hidden">
-                                        <li><a href="">AN</a></li>
-                                        <li><a href="">DE</a></li>
-                                        <li><a href="">PT</a></li>
-                                    </ul>
+                                <button>FR <span style="font-size: 0.7em;" class="icon-down-arrow"></span></button>
+                                <ul class="dropdown right hidden">
+                                    <li><a href="">AN</a></li>
+                                    <li><a href="">DE</a></li>
+                                    <li><a href="">PT</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
                     <nav class="menu-mobile">
                         <ul>
-                            <li class="menu-mobile-icon">
-                                <a href="#">
-                                    <div class="icon-categorie"></div>
-                                    <div>Categories</div>
-                                </a>
+                            <li id="categoryButton" class="menu-mobile-icon">
+                                <div class="icon-categorie"></div>
+                                <div>Categories</div>
                             </li>
-                            <li class="menu-mobile-icon">
-                                <a href="#">
-                                    <div class="icon-recherche"></div>
-                                    <div>Recherche</div>
-                                </a>
+                            <li id="searchButton" class="menu-mobile-icon">
+                                <div class="icon-recherche"></div>
+                                <div>Recherche</div>
                             </li>
                             <li class="menu-mobile-icon">
                                 <a href="#">
@@ -97,11 +93,9 @@
                                     <div>Insérer</div>
                                 </a>
                             </li>
-                            <li class="menu-mobile-icon">
-                                <a href="#">
-                                    <div class="icon-connexion"></div>
-                                    <div>Connexion</div>
-                                </a>
+                            <li id="profilButton" class="menu-mobile-icon">
+                                <div class="icon-connecte"></div>
+                                <div>Connexion</div>
                             </li>
                         </ul>
                     </nav>
@@ -119,10 +113,10 @@
                     </div>
                 </form>
             </div>
-            <div id="categoriesMenu" class="mobile-sidebar-menu left">
+            <div data-button="categoryButton" id="goSuckAFuck" class="mobile-sidebar-menu left">
                 <div id="category" class="category">
-                    <div id="category_title" class="category_title hidden-tab hidden-phone">Catégories</div>
-                    <ul id="categories" class="categories">
+                    <div class="category_title hidden-tab hidden-phone">Catégories</div>
+                    <ul  class="categories">
                         <li class="category-entry">
                             <div>
                                 Voitures<span class="category-number">(1740)</span>
@@ -134,10 +128,10 @@
                     </ul>
                 </div>
             </div>
-            <div id="userMenu" class="mobile-sidebar-menu right">
+            <div data-button="profilButton" class="mobile-sidebar-menu right">
                 <div id="category" class="category">
-                    <div id="category_title" class="category_title profil">quentin_fonck</div>
-                    <ul id="categories" class="categories">
+                    <div class="category_title profil">quentin_fonck</div>
+                    <ul class="categories">
                         <li class="category_entry">
                             <div>Mes données personnelles</div>
                         </li>
