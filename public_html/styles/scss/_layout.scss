@@ -325,7 +325,7 @@ section{
     left: 0;
     right: 0;
     z-index: 2;
-    padding: 15px 15px 10px 15px;
+    padding: 12px 10px 10px 15px;
     @include transform(translateY(0px));
     background-color: lighten($grey, 4%);;
     @include transition(transform 0.3s ease);

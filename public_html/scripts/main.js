@@ -1,5 +1,4 @@
 $(function () {
-
     $('#content').prepend($overlay);
 //Resize du slider au chargement de la page et lors du resize de la fenêtre
     if ($('.main-gallery')) {
@@ -13,6 +12,24 @@ $(function () {
     }
     resizeAllImages();
     DesktopMenuDrop.init();
+
+//Init du slider
+    if ($('.main-gallery')) {
+        $('.main-gallery').flickity({
+            // options
+            cellAlign: 'left',
+            pageDots: false,
+            freeScroll: true,
+            wrapAround: true,
+            arrowShape: "M32.272,53.375l20.117,18.96c1.975,1.859,5.178,1.859,7.149,0c1.975-1.863,1.975-4.881,0-6.74l-16.538-15.59l16.538-15.59c1.975-1.863,1.975-4.882,0-6.743c-1.975-1.863-5.178-1.863-7.149,0l-20.117,18.96C30.298,48.497,30.298,51.512,32.272,53.375z"
+        });
+    }
+
+//Met les boites à bord gris et orange, sur la même ligne, à la même hauteur
+    if ($('.grey-border-box, .orange-border-box')) {
+        matchHeightBox();
+        /*$('window').on('resize', matchHeightBox());*/
+    }
 });
 
 
@@ -168,7 +185,7 @@ var menuMobile = (function () {
                 flag = "1";
             }
         });
-        $sideMenu.on('click', function(){
+        $sideMenu.on('click', function () {
             flag = 0;
         });
     };
@@ -177,9 +194,9 @@ var menuMobile = (function () {
         flag = "0";
         var buttonId = $(element).attr('id');
         var sideMenuTemp;
-        if(buttonId === "searchButton"){
+        if (buttonId === "searchButton") {
             sideMenuTemp = $('.search-box[data-button="' + buttonId + '"]');
-        }else{
+        } else {
             sideMenuTemp = $('.mobile-sidebar-menu[data-button="' + buttonId + '"]');
         }
         if (sideMenuTemp.hasClass('open')) {
