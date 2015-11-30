@@ -20,15 +20,16 @@ Contient les media queries pour adapter les styles sur les différents formats
     .container-wrapper{
         width: 640px;
     }
-    .main-gallery{
-        .gallery-cell{
-            width: 33.3333%;
+    .header-logo{
+        .logo img{
+            height: 45px;
         }
     }
+
     .main-gallery{
         .gallery-cell{
             padding: 0 5px;
-            width: 50%;
+            width: 33.3333%;
         }
     }
     .row, .clearfix{

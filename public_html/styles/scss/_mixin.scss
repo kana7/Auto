@@ -7,7 +7,7 @@ Contient les fonctions SCSS
 @mixin base-style(){
     font-family: $font-stack;
     font-size: $font-size;
-    color: darken($grey, 45%);
+    color: $grey-font;
     line-height: $base-line-height;
 }
 

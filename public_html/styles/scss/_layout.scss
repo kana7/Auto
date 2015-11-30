@@ -340,6 +340,11 @@ section{
         position: relative;
         vertical-align: middle;
     }
+    .logo{
+        img{
+            height: 32px;
+        }
+    }
     .logo-description{
         width: 80px;
         color: $white;

@@ -104,6 +104,41 @@ img.fill-height{
 
 //TEXT STYLES
 //--------------------------------------------------
+#welcome-message{
+    padding: 10px 0;
+    font-size: 15px;
+    span[class^=icon-]{
+        font-size: 1.6em;
+        position: relative;
+        top: 3px;
+    }
+    ul{
+        display: inline;
+        vertical-align: baseline;
+        &>li{
+            margin: 0 3px;
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .social-icon{
+        height: 28px;
+        width: 28px;
+        background-color: $grey-font;
+        text-align: center;
+        vertical-align: middle;
+        span[class^=icon-]{
+            color: $white;
+        font-size: 1em;
+        position: relative;
+        top: 6px;
+    }
+    }
+}
 #propos{
     p{
         font-size: 15px;
