@@ -2731,10 +2731,17 @@ Contient les classes suppl├®mentaires pour la mise en page du site + les styl
 .align-left {
   text-align: left !important; }
 
+header {
+  z-index: 3; }
+
+.header-bottom {
+  z-index: 1;
+  background-color: #ededed; }
+
 .header-top, .header-bottom, footer-top, .footer-bottom {
   display: block;
   position: relative;
-  padding: 15px 0; }
+  padding: 15px 0 13px; }
 
 .header-top, .footer-bottom {
   background-color: #004994;
@@ -2783,7 +2790,7 @@ section {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
-  z-index: 5;
+  z-index: 1;
   cursor: pointer; }
   #overlay.is-visible {
     opacity: 0.6;
@@ -2811,7 +2818,7 @@ section {
   .desktop-menu .dropdown {
     display: inline-block;
     position: absolute;
-    background-color: white;
+    background-color: #f7f7f7;
     color: #004994;
     z-index: 1;
     border: 1px solid #004994;
@@ -2838,7 +2845,7 @@ section {
         padding: 0 10px;
         line-height: 35px; }
         .desktop-menu .dropdown li a:hover {
-          background-color: #f2f2f2;
+          background-color: #f0f0f0;
           text-decoration: underline; }
 
 .menu-mobile {
@@ -2857,7 +2864,14 @@ section {
 
 .menu-mobile-icon {
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer; }
   .menu-mobile-icon div[class^="icon-"] {
     font-size: 24px;
     margin-bottom: 5px; }
@@ -2880,27 +2894,77 @@ section {
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
   -o-transform: translateX(0px);
-  border-right: 2px solid #dfdfdf;
-  z-index: 5;
-  background-color: #ffffff; }
+  border-right: 1px solid #dfdfdf;
+  z-index: 3;
+  background-color: #f7f7f7; }
   .mobile-sidebar-menu.right {
-    right: -303px; }
+    right: -300px; }
     .mobile-sidebar-menu.right.open {
       transform: translateX(-300px);
       -webkit-transform: translateX(-300px);
       -ms-transform: translateX(-300px);
       -o-transform: translateX(-300px); }
   .mobile-sidebar-menu.left {
-    left: -303px; }
+    left: -300px; }
     .mobile-sidebar-menu.left.open {
       transform: translateX(300px);
       -webkit-transform: translateX(300px);
       -ms-transform: translateX(300px);
       -o-transform: translateX(300px); }
 
+.categories {
+  width: 100%;
+  font-size: 11pt;
+  line-height: 15px; }
+
+.category-title.profil {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14pt;
+  color: #e75e0a; }
+
 .category-entry, .sub-categories, .sub-category-entry {
   display: block;
-  position: relative; }
+  position: relative;
+  width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer; }
+
+.category-entry a:active, .sub-category-entry a:active {
+  background-color: #f0f0f0; }
+
+.category-number {
+  font-size: 0.95em;
+  color: #e75e0a;
+  margin-left: 5px; }
+
+.categories .category-entry {
+  margin: 0px; }
+  .categories .category-entry > a {
+    padding: 12px 0px;
+    padding-left: 20px !important;
+    border-bottom: 1px solid #dfdfdf; }
+
+.sub-category-entry a {
+  padding: 12px 0px;
+  padding-left: 20px !important; }
+
+.sub-categories {
+  display: none;
+  font-size: 0.95em;
+  padding-left: 15px;
+  border-left: 3px solid #004994;
+  border-bottom: 1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf; }
+  .sub-categories > .sub-category-entry:last-child {
+    margin-bottom: 0; }
 
 .search-box {
   display: block;
@@ -2915,7 +2979,7 @@ section {
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
   -o-transform: translateY(0px);
-  background-color: #ffffff;
+  background-color: #f7f7f7;
   -moz-transition: transform 0.3s ease;
   -o-transition: transform 0.3s ease;
   -webkit-transition: transform 0.3s ease;

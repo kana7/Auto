@@ -82,10 +82,18 @@ Contient les classes supplémentaires pour la mise en page du site + les styles 
     text-align: left !important;
 }
 
+header{
+    z-index: 3;
+}
+.header-bottom{
+    z-index: 1;
+    background-color: $grey;
+}
+
 .header-top, .header-bottom, footer-top, .footer-bottom{
     display: block;
     position: relative;
-    padding: 15px 0;
+    padding: 15px 0 13px;
 }
 
 .header-top, .footer-bottom{
@@ -134,7 +142,7 @@ section{
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity 0.3s linear;
-    z-index: 5;
+    z-index: 1;
     cursor: pointer;
     &.is-visible{
         opacity: 0.6;
@@ -158,7 +166,7 @@ section{
     .dropdown{
         display: inline-block;
         position: absolute;
-        background-color: white;
+        background-color: lighten($grey, 4%);;
         color: $blue;
         z-index: 1;
         border: 1px solid $blue;
@@ -184,7 +192,7 @@ section{
                 padding: 0 10px;
                 line-height: 35px;
                 &:hover{
-                    background-color: darken($white, 5%);
+                    background-color: darken($white, 6%);
                     text-decoration: underline;
                 }
             }
@@ -211,6 +219,8 @@ section{
 .menu-mobile-icon{
     display: inline-block;
     text-align: center;
+    @include noselect;
+    cursor: pointer;
     div[class^="icon-"]{
         font-size: 24px;
         margin-bottom: 5px;
@@ -231,25 +241,80 @@ section{
     bottom: 0;
     @include transition(transform 0.3s ease);
     @include transform(translateX(0px));
-    border-right: 2px solid $grey-border;
-    z-index: 5;
-    background-color: #ffffff;
+    border-right: 1px solid $grey-border;
+    z-index: 3;
+    background-color: lighten($grey, 4%);
     &.right{
-        right: -303px; 
+        right: -300px; 
         &.open{
             @include transform(translateX(-300px));
         }
     }
     &.left{
-        left: -303px;
+        left: -300px;
         &.open{
             @include transform(translateX(300px));
         }
     }
 }
+.categories{
+    width: 100%;
+    font-size: 11pt;
+    line-height: 15px;
+}
+
+.category-title.profil {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14pt;
+    color: $orange;
+}
+
 .category-entry, .sub-categories, .sub-category-entry{
     display: block;
     position: relative;
+    width: 100%;
+    @include noselect;
+    cursor: pointer;
+}
+.category-entry, .sub-category-entry{
+    & a:active{
+        background-color: darken($white, 6%);
+    }
+}
+
+.category-number{
+    font-size: 0.95em;
+    color: $orange;
+    margin-left: 5px;   
+}
+
+.categories .category-entry{
+    margin: 0px;
+    &>a{
+        padding: 12px 0px;
+        padding-left: 20px !important;
+        border-bottom: 1px solid $grey-border;
+    }
+}
+
+.sub-category-entry a {
+    padding: 12px 0px;
+    padding-left: 20px !important;
+}
+
+.sub-categories{
+    display: none;
+    font-size: 0.95em;
+    padding-left: 15px;
+    border-left: 3px solid $blue;
+    border-bottom: 1px solid $grey-border;
+    border-top: 1px solid $grey-border;
+    &>.sub-category-entry:last-child{
+        margin-bottom: 0;
+    }
 }
 
 .search-box{
@@ -262,7 +327,7 @@ section{
     z-index: 2;
     padding: 15px 15px 10px 15px;
     @include transform(translateY(0px));
-    background-color: #ffffff;
+    background-color: lighten($grey, 4%);;
     @include transition(transform 0.3s ease);
     &.open{
         box-shadow: 0px 4px 15px 0px #575757;

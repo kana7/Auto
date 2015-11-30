@@ -103,7 +103,7 @@
             </div>
         </header>
         <div id="content">
-            <div class="phone-12 search-box hidden">
+            <div data-button="searchButton" class="phone-12 search-box">
                 <form class="clearfix" action="sql.exe?SqlDB=bazar&amp;Sql=Search.phs" method="POST">
                     <div class="search-input-group">
                         <input id="searchText" type="text" name="_name" value="" placeholder="Chercher une annonce">
@@ -114,38 +114,56 @@
                 </form>
             </div>
             <div data-button="categoryButton" class="mobile-sidebar-menu left">
-                <div id="category" class="category">
-                    <div class="category_title hidden-tab hidden-phone">Catégories</div>
-                    <ul  class="categories">
+                <div class="category">
+                    <ul class="categories">
                         <li class="category-entry">
-                            <div>
-                                Voitures<span class="category-number">(1740)</span>
-                            </div>
+                                <a href="#">Voitures <span class="category-number">(1740)</span></a>
                             <ul class="sub-categories">
-                                <li class="sub-category-entry"></li>
+                                <li class="sub-category-entry">
+                                    <a href="#">Nissan <span class="category-number">(1740)</span></a>
+                                    <ul class="sub-categories">
+                                        <li class="sub-category-entry">
+                                            <a href="#">350Z <span class="category-number">(1740)</span></a>
+                                        </li> 
+                                        <li class="sub-category-entry">
+                                            <a href="#">Skyline GTR <span class="category-number">(1740)</span></a>
+                                        </li> 
+                                    </ul>
+                                </li>
+                                <li class="sub-category-entry">
+                                    <a href="#">Honda <span class="category-number">(1740)</span></a>
+                                </li>
+                            </ul>
+                        </li>        
+                        <li class="category-entry">
+                            <a href="#">Bâteau <span class="category-number">(1740)</span></a>
+                            <ul class="sub-categories">
+                                <li class="sub-category-entry">
+                                    <a href="#">SuperBoat2000 <span class="category-number">(1740)</span></a>
+                                </li>
                             </ul>
                         </li>        
                     </ul>
                 </div>
             </div>
             <div data-button="profilButton" class="mobile-sidebar-menu right">
-                <div id="category" class="category">
-                    <div class="category_title profil">quentin_fonck</div>
+                <div class="category">
+                    <div class="category-title profil">quentin_fonck</div>
                     <ul class="categories">
-                        <li class="category_entry">
-                            <div>Mes données personnelles</div>
+                        <li class="category-entry">
+                            <a href="#">Mes données personnelles</a>
                         </li>
-                        <li class="category_entry">
-                            <div>Mes Messages<span class="category_number"></span></div>
+                        <li class="category-entry">
+                            <a href="#">Mes Messages<span class="category_number"></span></a>
                         </li>
-                        <li class="category_entry">
-                            <div>Mes Annonces</div>
+                        <li class="category-entry">
+                            <a href="#">Mes Annonces</a>
                         </li>
-                        <li class="category_entry">
-                            <div>Mes annonces sauvegardées</div>
+                        <li class="category-entry">
+                            <a href="#">Mes annonces sauvegardées</a>
                         </li>
-                        <li class="category_entry">
-                            <div>Se déconnecter</div>
+                        <li class="category-entry">
+                            <a href="#">Se déconnecter</a>
                         </li>
                     </ul>
                 </div>
@@ -426,7 +444,7 @@
                                         <div style="text-align: center; padding-bottom: 0;" class="group-input">
                                             <p style="font-size: 16px; margin: 8px 0 12px;" class="orange hidden-phone"><strong>2376 véhicules</strong> en ligne</p>
                                             <button class="btn-orange" type="submit">Rechercher</button>
-                                            <a class="btn-outline-orange hidden display-phone-inline-block phone-mt-10" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
+                                            <a class="btn-outline-orange hidden display-phone-inline-block phone-mt-10 phone-mb-5 tab-mb-0" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
                                         </div>
                                     </div>
                                 </div>
