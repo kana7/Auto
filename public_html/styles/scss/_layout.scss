@@ -371,7 +371,7 @@ section{
             border-radius: 0px 0px 0px 7px;
             background-color: lighten($blue, 10%);
             border: 1px solid darken($blue, 25%);
-            z-index: 2;
+            z-index: 3;
             div[class^="icon-"]{
                 margin-top: 2px;
                 color: $white;
@@ -385,7 +385,7 @@ section{
             background-color: $white;
             border: 1px solid $blue;
             border-radius: 0px 0px 0px 7px;
-            z-index: 1;
+            z-index: 2;
             &.open{
                 display: block;
             }

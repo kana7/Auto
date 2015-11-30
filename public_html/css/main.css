@@ -13,7 +13,7 @@ Contient les fonctions SCSS
 /*
 BASE
 ----------------------------------------------------------------
-Contient la base des styles pour constuire le site. Reset des propri?�t?�s de base des diff?�rents navigateurs
+Contient la base des styles pour constuire le site. Reset des propri├®t├®s de base des diff├®rents navigateurs
 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -2613,7 +2613,7 @@ img {
 /*
 LAYOUT
 ----------------------------------------------------------------
-Contient les classes suppl?�mentaires pour la mise en page du site + les styles pour la structure g?�n?�rale du site (header, menus et footer)
+Contient les classes suppl├®mentaires pour la mise en page du site + les styles pour la structure g├®n├®rale du site (header, menus et footer)
 */
 .container-wrapper {
   margin-right: auto;
@@ -2915,8 +2915,7 @@ section {
 .categories {
   width: 100%;
   font-size: 11pt;
-  line-height: 15px;
-  }
+  line-height: 15px; }
 
 .category-title.profil {
   margin-top: 20px;
@@ -3023,7 +3022,7 @@ section {
     border-radius: 0px 0px 0px 7px;
     background-color: #0062c7;
     border: 1px solid #000a15;
-    z-index: 2; }
+    z-index: 3; }
     .language-selection.mobile button div[class^="icon-"] {
       margin-top: 2px;
       color: #fff; }
@@ -3035,7 +3034,7 @@ section {
     background-color: #fff;
     border: 1px solid #004994;
     border-radius: 0px 0px 0px 7px;
-    z-index: 1; }
+    z-index: 2; }
     .language-selection.mobile .dropdown.open {
       display: block; }
     .language-selection.mobile .dropdown li {
@@ -3048,7 +3047,7 @@ section {
 /*
 MODULE
 ----------------------------------------------------------------
-Contient les styles pour les ?�l?�ments de l'interface utilisateur
+Contient les styles pour les ├®l├®ments de l'interface utilisateur
 */
 svg:not(:root) {
   overflow: visible; }
@@ -3333,7 +3332,7 @@ img.fill-height {
 /*
 RESPONSIVE
 ----------------------------------------------------------------
-Contient les media queries pour adapter les styles sur les diff?�rents formats
+Contient les media queries pour adapter les styles sur les diff├®rents formats
 */
 @media screen and (max-width: 671px) {
   .container-wrapper {
