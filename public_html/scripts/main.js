@@ -173,12 +173,13 @@ var sideMenu = (function () {
         if (sideMenuTemp.hasClass('open')) {
             $(sideMenuTemp).removeClass('open');
         } else {
+            _closeMenu();
             $(sideMenuTemp).addClass('open');
         }
     };
 
     var _closeMenu = function () {
-        $(sideMenu).removeClass('open');
+        $sideMenu.removeClass('open');
     };
 
     return {
