@@ -7,7 +7,7 @@ Contient les media queries pour adapter les styles sur les différents formats
 
 @include media(phone){
     .container-wrapper{
-        width: 320px;
+        width: 300px;
         padding: 0 15px;
     }
     #annonces-une{
@@ -61,6 +61,9 @@ Contient les media queries pour adapter les styles sur les différents formats
         left: 0;
         bottom: 0;
     }
+    #search_result{
+        padding: 20px 10px;
+    }
 }
 @include viewport(max, $max: 1055){
     .header-top .container-wrapper, .footer-bottom .container-wrapper {
@@ -104,6 +107,12 @@ Contient les media queries pour adapter les styles sur les différents formats
     .grey-border-box, .orange-border-box{
         padding: 15px 20px;
     }
+    .footer-bottom{
+        text-align: left;
+        .pull-right{
+            text-align: right;
+        }
+    }
 }
 @include media(lgdesk){
     .container-wrapper{
@@ -113,5 +122,8 @@ Contient les media queries pour adapter les styles sur les différents formats
         .gallery-cell{
             width: 20%;
         }
+    }
+    #search_result .container-wrapper{
+        width: 100%;
     }
 }

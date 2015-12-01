@@ -39,59 +39,80 @@
 }
 
 .icon-right-arrow:before {
-  content: "a";
+  content: "\61";
 }
 .icon-left-arrow:before {
-  content: "b";
+  content: "\62";
 }
 .icon-x-icone:before {
-  content: "c";
+  content: "\63";
 }
 .icon-facebook:before {
-  content: "d";
+  content: "\64";
 }
 .icon-home:before {
-  content: "e";
+  content: "\65";
 }
 .icon-google:before {
-  content: "f";
+  content: "\66";
 }
 .icon-twitter:before {
-  content: "g";
+  content: "\67";
 }
 .icon-mobile-ico:before {
-  content: "h";
+  content: "\68";
 }
 .icon-envelope:before {
-  content: "j";
+  content: "\6a";
 }
 .icon-print:before {
-  content: "i";
+  content: "\69";
 }
 .icon-floppy-o:before {
-  content: "k";
+  content: "\6b";
 }
 .icon-exclamation-triangle:before {
-  content: "l";
+  content: "\6c";
 }
 .icon-categorie:before {
-  content: "m";
+  content: "\6d";
 }
 .icon-connecte:before {
-  content: "n";
+  content: "\6e";
 }
 .icon-connexion:before {
-  content: "o";
+  content: "\6f";
 }
 .icon-inserer:before {
-  content: "p";
+  content: "\70";
 }
 .icon-recherche:before {
-  content: "q";
+  content: "\71";
 }
 .icon-down-arrow:before {
-  content: "r";
+  content: "\72";
 }
 .icon-up-arrow:before {
-  content: "s";
+  content: "\73";
+}
+.icon-accessory-ico:before {
+  content: "\74";
+}
+.icon-bike-ico:before {
+  content: "\75";
+}
+.icon-campingcar-ico:before {
+  content: "\76";
+}
+.icon-car-ico:before {
+  content: "\77";
+}
+.icon-heart-ico:before {
+  content: "\78";
+}
+.icon-truck-ico:before {
+  content: "\79";
+}
+.icon-wheel-ico:before {
+  content: "\7a";
 }
