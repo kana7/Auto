@@ -3536,7 +3536,6 @@ img.fill-height {
   font-size: 21px; }
   .annonce-entry-header h1 {
     display: inline-block;
-    width: 100%;
     text-align: center;
     color: #616161;
     font-size: 0.9em;
@@ -3560,7 +3559,7 @@ img.fill-height {
     white-space: nowrap;
     text-overflow: ellipsis; }
   .annonce-entry-header .annonce-entry-header-actions {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #878787; }
     .annonce-entry-header .annonce-entry-header-actions li:not(:first-child):not(:last-child) {
       margin: 0 7px; }
@@ -3603,8 +3602,11 @@ img.fill-height {
     display: none;
     position: absolute;
     top: 5px;
-    left: 5px;
-    color: #8a9eb3; }
+    left: 10px;
+    color: #8a9eb3;
+    line-height: initial;
+    font-weight: 400;
+    font-size: 12px; }
   .annonce-entry-details .price {
     color: #e75e0a;
     font-weight: 800;
@@ -3618,10 +3620,14 @@ img.fill-height {
   .annonce-entry-bottom h3 {
     color: #7a7a7a;
     margin: 0;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    text-transform: capitalize; }
   .annonce-entry-bottom .annonce-entry-options {
     text-align: center; }
     .annonce-entry-bottom .annonce-entry-options ul {
+      display: block;
+      vertical-align: top;
       text-align: center; }
       .annonce-entry-bottom .annonce-entry-options ul li {
         display: block;
@@ -3640,11 +3646,14 @@ img.fill-height {
   padding: 15px 10px;
   text-align: center; }
   .annonce-entry-seller .annonce-entry-seller-details {
-    padding-bottom: 10px; }
+    padding-bottom: 15px; }
   .annonce-entry-seller li {
     display: block; }
+  .annonce-entry-seller .seller-logo img {
+    max-width: 200px;
+    max-height: 200px; }
   .annonce-entry-seller .seller-name {
-    margin: 7px 0;
+    margin: 10px 0 7px;
     font-size: 1.4em;
     font-weight: 800;
     text-transform: uppercase; }
@@ -3652,7 +3661,7 @@ img.fill-height {
     line-height: 22px;
     font-size: 1.15em; }
   .annonce-entry-seller .annonce-entry-seller-options {
-    padding-top: 10px;
+    padding-top: 15px;
     border-top: 1px solid #dfdfdf; }
     .annonce-entry-seller .annonce-entry-seller-options ul li {
       margin: 10px 0; }
@@ -3709,7 +3718,33 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     bottom: 0; }
 
   #search_result {
-    padding: 20px 10px; } }
+    padding: 20px 10px; }
+
+  .main-gallery.annonce-entry-slider .gallery-cell {
+    padding: 0 1px;
+    width: 33.3333%; }
+
+  .annonce-entry-bottom .annonce-entry-options ul {
+    display: inline-block;
+    text-align: left;
+    padding: 0 7px;
+    width: 32.95%; }
+    .annonce-entry-bottom .annonce-entry-options ul:last-child {
+      padding-right: 0px; }
+    .annonce-entry-bottom .annonce-entry-options ul:first-child {
+      padding-left: 0px; }
+
+  .annonce-entry-bottom .annonce-entry-comment > p, .annonce-entry-bottom .annonce-entry-options-list {
+    padding-left: 17px;
+    text-align: left; }
+
+  .annonce-entry-header .annonce-entry-header-actions {
+    font-size: 1.4em; }
+
+  .annonce-entry-details {
+    font-size: 1.3em; }
+    .annonce-entry-details > * {
+      width: 25.159%; } }
 @media screen and (max-width: 1055px) {
   .header-top .container-wrapper, .footer-bottom .container-wrapper {
     width: auto;
@@ -3763,7 +3798,32 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
   .footer-bottom {
     text-align: left; }
     .footer-bottom .pull-right {
-      text-align: right; } }
+      text-align: right; }
+
+  .annonce-entry-img {
+    display: inline-block;
+    width: 75%; }
+
+  .main-gallery.annonce-entry-slider .gallery-cell {
+    padding: 0 1px;
+    width: 25%; }
+
+  .annonce-entry-details {
+    vertical-align: top;
+    display: inline-block;
+    width: 24.58%; }
+    .annonce-entry-details > * {
+      display: block;
+      width: 100%;
+      border-left: none;
+      border-right: none;
+      height: 70px;
+      line-height: 60px;
+      text-align: right;
+      padding-right: 15px; }
+
+  .annonce-entry-details .annonce-entry-details-label {
+    display: block; } }
 @media screen and (min-width: 1302px) {
   .container-wrapper {
     width: 1280px; }

@@ -491,7 +491,6 @@ img.fill-height{
     font-size: 21px;
     h1{
         display: inline-block;
-        width: 100%;
         text-align: center;
         color: darken($grey-font, 10%);
         font-size: 0.9em;
@@ -515,7 +514,7 @@ img.fill-height{
         @include ellipsis;
     }
     .annonce-entry-header-actions{
-        font-size: 1.1em;
+        font-size: 1.2em;
         color: lighten($grey-font, 5%);
         li:not(:first-child):not(:last-child){
             margin: 0 7px;
@@ -568,8 +567,12 @@ img.fill-height{
         display: none;
         position: absolute;
         top: 5px;
-        left: 5px;
+        left: 10px;
         color: #8a9eb3;
+        line-height: initial;
+        font-weight: 400;
+        font-size: 12px;
+        
     }
     .price{
         color: $orange;
@@ -579,8 +582,6 @@ img.fill-height{
     .km, .year{
         font-weight: 800;
     }
-    .km{
-    }
 }
 .annonce-entry-bottom{
     padding: 15px 10px;
@@ -589,10 +590,14 @@ img.fill-height{
         color: $grey-font;
         margin: 0;
         margin-bottom: 10px;
+        font-size: 1.3em;
+        text-transform: capitalize;
     }
     .annonce-entry-options{
         text-align: center;
         ul{
+            display: block;
+            vertical-align: top;
             text-align: center;
             li{
                 display: block;
@@ -615,13 +620,19 @@ img.fill-height{
     padding: 15px 10px;
     text-align: center;
     .annonce-entry-seller-details{
-        padding-bottom: 10px;
+        padding-bottom: 15px;
     }
     li{
         display: block;
     }
+    .seller-logo{
+        img{
+            max-width: 200px;
+            max-height: 200px;
+        }
+    }
     .seller-name{
-        margin: 7px 0;
+        margin: 10px 0 7px;
         font-size: 1.4em;
         font-weight: 800;
         text-transform: uppercase;
@@ -633,7 +644,7 @@ img.fill-height{
         }
     }
     .annonce-entry-seller-options{
-        padding-top: 10px;
+        padding-top: 15px;
         border-top: 1px solid $grey-border;
         ul{
             li{
