@@ -173,7 +173,7 @@ img.fill-height{
 }
 @mixin annonce-detail-box{
     background-color: #dfdfdf;
-    border: 2px solid $grey-border;
+    border: 2px solid darken($grey-border, 5%);
     border-radius: 5px;
 }
 
@@ -340,6 +340,22 @@ img.fill-height{
         background-color: lighten($orange, 50%);
     }
 }
+.btn-blue{
+    @include btn($blue, $white);
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 23px;
+    padding: 9px 32px 12px;
+    text-transform: uppercase;
+    &:hover{
+        background-color: lighten($blue, 5%);
+    }
+    span{
+        font-size: 1.4em;
+        margin-right: 7px;
+        top: 3px;
+    }
+}
 
 //ANNONCE SEARCH ENTRY
 //-------------------------------------------------------------
@@ -475,11 +491,14 @@ img.fill-height{
     font-size: 21px;
     h1{
         display: inline-block;
+        width: 100%;
+        text-align: center;
         color: darken($grey-font, 10%);
         font-size: 0.9em;
         font-weight: 800;
         line-height: 22px;
         margin: 0;
+        @include ellipsis;
     }
     .options-container{
         text-align: center;
@@ -493,18 +512,19 @@ img.fill-height{
         font-weight: 400;
         font-size: 0.9em;
         display: block;
+        @include ellipsis;
     }
     .annonce-entry-header-actions{
         font-size: 1.1em;
         color: lighten($grey-font, 5%);
         li:not(:first-child):not(:last-child){
-            margin: 0 5px;
+            margin: 0 7px;
         }
         li:first-child{
-            margin-right: 5px;
+            margin-right: 7px;
         }
         li:last-child{
-            margin-left: 5px;
+            margin-left: 7px;
         }
     }
     .annonce-entry-header-previous-next{
@@ -584,6 +604,50 @@ img.fill-height{
         line-height: 20px;
         &>p{
             margin-top: 0;
+        }
+    }
+}
+
+.annonce-entry-seller{
+    @include annonce-detail-box;
+    background-color: darken($white, 2%);
+    color: darken($grey-font, 10%);
+    padding: 15px 10px;
+    text-align: center;
+    .annonce-entry-seller-details{
+        padding-bottom: 10px;
+    }
+    li{
+        display: block;
+    }
+    .seller-name{
+        margin: 7px 0;
+        font-size: 1.4em;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .seller-address{
+        div{
+            line-height: 22px;
+            font-size: 1.15em;
+        }
+    }
+    .annonce-entry-seller-options{
+        padding-top: 10px;
+        border-top: 1px solid $grey-border;
+        ul{
+            li{
+                margin: 10px 0;
+            }
+            li:first-child{
+                margin-top: 0;
+            }
+            li:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .btn-outline-orange{
+            padding: 12px 15px;
         }
     }
 }
