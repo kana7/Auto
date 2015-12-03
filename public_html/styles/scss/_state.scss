@@ -7,10 +7,10 @@ Contient les media queries pour adapter les styles sur les différents formats
 
 @include media(phone){
     .container-wrapper{
-        width: 300px;
+        width: 320px;
         padding: 0 15px;
     }
-    #annonces-une{
+    #annonces-une, #annonces-similaires{
         .container-wrapper{
             width: auto;
         }
@@ -80,7 +80,7 @@ Contient les media queries pour adapter les styles sur les différents formats
             width: 25%;
         }
     }
-    .annonce-une-item-content{
+    .annonce-slider-item-content{
         font-size: 15px;
         .price{
             font-size: 1.2em;

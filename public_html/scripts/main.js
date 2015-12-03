@@ -1,33 +1,15 @@
 $(function () {
     $('#content').prepend($overlay);
+    resizeAllImages(callbackInitSlider);
 //Resize du slider au chargement de la page et lors du resize de la fenêtre
-    if ($('.main-gallery')) {
-        resizeSlider();
-        $(window).resize(function () {
-            resizeSlider();
-        });
-    }
     if ($('.mobile-sidebar-menu')) {
         menuMobile.init();
     }
-    if($('.language-selection.mobile')){
+    if ($('.language-selection.mobile')) {
         languageSelection.init();
     }
-    
-    resizeAllImages();
-    DesktopMenuDrop.init();
 
-//Init du slider
-    if ($('.main-gallery')) {
-        $('.main-gallery').flickity({
-            // options
-            cellAlign: 'left',
-            pageDots: false,
-            freeScroll: true,
-            wrapAround: true,
-            arrowShape: "M32.272,53.375l20.117,18.96c1.975,1.859,5.178,1.859,7.149,0c1.975-1.863,1.975-4.881,0-6.74l-16.538-15.59l16.538-15.59c1.975-1.863,1.975-4.882,0-6.743c-1.975-1.863-5.178-1.863-7.149,0l-20.117,18.96C30.298,48.497,30.298,51.512,32.272,53.375z"
-        });
-    }
+    DesktopMenuDrop.init();
 
 //Met les boites à bord gris et orange, sur la même ligne, à la même hauteur
     /*if ($('.grey-border-box, .orange-border-box')) {
@@ -39,11 +21,49 @@ $(function () {
 
 var $overlay = $('<div id="overlay"></div>');
 
-var resizeSlider = function () {
-    $('.gallery-cell .img-annonce').css('height', ($('.gallery-cell').innerWidth() / 4) * 3);
-    $('.main-gallery').css('height', $('.annonces_une_entry').innerHeight());
+var getTallestImageHeight = function (imgCollection) {
+    var max_height = 0;
+
+    $(imgCollection).each(function () {
+        var cur_height = $(this).height();
+        if (cur_height > max_height) {
+            max_height = cur_height;
+            image = this;
+        }
+    });
+    /* just an example
+     $(image).addClass('tallest');*/
+    return max_height;
+
 };
-var resizeAllImages = function () {
+
+//le resize du slider se fait une fois que toutes les images de la page ont été traité par la fonction resizeAllimage 
+var callbackInitSlider = function () {
+    //Init du slider
+    if ($('.main-gallery')) {
+        $('.main-gallery').flickity({
+            // options
+            cellAlign: 'left',
+            pageDots: false,
+            freeScroll: true,
+            wrapAround: true,
+            arrowShape: "M32.272,53.375l20.117,18.96c1.975,1.859,5.178,1.859,7.149,0c1.975-1.863,1.975-4.881,0-6.74l-16.538-15.59l16.538-15.59c1.975-1.863,1.975-4.882,0-6.743c-1.975-1.863-5.178-1.863-7.149,0l-20.117,18.96C30.298,48.497,30.298,51.512,32.272,53.375z"
+        });
+        resizeSlider();
+        $(window).resize(function () {
+            resizeSlider();
+        });
+    }
+};
+
+var resizeSlider = function () {
+    $('.main-gallery').each(function () {
+        $(this).find('.img-annonce').css('height', ($(this).find('.gallery-cell').innerWidth() / 4) * 3);
+        $(this).find('.flickity-viewport').css('height', $('.annonce-slider-item').innerHeight());
+    });
+};
+
+var resizeAllImages = function (callback) {
 
     $('.img-annonce').each(function () {
 
@@ -70,8 +90,8 @@ var resizeAllImages = function () {
             element.removeClass('fill-height');
             element.addClass('fill-width');
         }
-
     });
+    callback();
 };
 var matchHeightBox = function () {
     var highest;
@@ -133,8 +153,8 @@ var languageSelection = (function () {
         _bindEvents();
     };
     var _bindEvents = function () {
-        $button.on('click', function(){
-             _toggleMenu();
+        $button.on('click', function () {
+            _toggleMenu();
         });
         $document.on('click', function () {
             if (flag != "0") {

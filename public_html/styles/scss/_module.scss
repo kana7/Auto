@@ -171,6 +171,11 @@ img.fill-height{
 .orange-border-box{
     border-color: $orange;
 }
+@mixin annonce-detail-box{
+    background-color: #dfdfdf;
+    border: 2px solid $grey-border;
+    border-radius: 5px;
+}
 
 .partners-container{
     margin: 0 auto;
@@ -184,22 +189,29 @@ img.fill-height{
 
 //SLIDER ANNONCE UNE STYLES
 //--------------------------------------------------
-.main-gallery{
+.main-gallery:not(.annonce-entry-slider){
     margin: 0 -5px;
     .gallery-cell{
         padding: 0 2px;
         width: 50%;
     }
 }
-.annonce-une-item{
+.main-gallery.annonce-entry-slider{
+    .gallery-cell{
+        padding: 0 1px;
+        width: 50%;
+    }
+}
+.annonce-slider-item{
     display: block;
     position: relative;
     text-align: center;
+    overflow: hidden;
     .img-annonce{
-        overflow: hidden;
+        display: inline-block;
     }
 }
-.annonce-une-item-content{
+.annonce-slider-item-content{
     padding: 5px 0;
     font-size: 14px;
     line-height: 20px;
@@ -284,7 +296,7 @@ img.fill-height{
     }
 }
 
-//BUTTON StYLES
+//BUTTON STYLES
 //--------------------------------------------------------
 
 @mixin btn($back-color, $font-color){
@@ -438,6 +450,140 @@ img.fill-height{
             color: $orange;
             font-weight: 800;
         }
+    }
+}
 
+//ANNONCE DETAILS ENTRY
+//-------------------------------------------------------------
+.annonce-entry{
+    @include annonce-detail-box;
+}
+.annonce-entry-top, .annonce-entry-bottom, .annonce-entry-header{
+    display: block;
+    position: relative;
+}
+.annonce-entry-top{
+    overflow: hidden;
+}
+.annonce-entry-details, .annonce-entry-bottom{
+    background-color: darken($white, 1%);
+}
+.annonce-entry-header{
+    background-color: #dfdfdf;
+    padding: 15px 15px 10px;
+    border-radius: 5px 5px 0 0;
+    font-size: 21px;
+    h1{
+        display: inline-block;
+        color: darken($grey-font, 10%);
+        font-size: 0.9em;
+        font-weight: 800;
+        line-height: 22px;
+        margin: 0;
+    }
+    .options-container{
+        text-align: center;
+        vertical-align: middle;
+    }
+    .brand{
+        text-transform: uppercase;
+    }
+    .engin{
+        color: $grey-font;
+        font-weight: 400;
+        font-size: 0.9em;
+        display: block;
+    }
+    .annonce-entry-header-actions{
+        font-size: 1.1em;
+        color: lighten($grey-font, 5%);
+        li:not(:first-child):not(:last-child){
+            margin: 0 5px;
+        }
+        li:first-child{
+            margin-right: 5px;
+        }
+        li:last-child{
+            margin-left: 5px;
+        }
+    }
+    .annonce-entry-header-previous-next{
+        li:first-child{
+            margin-right: 5px;
+        }
+        li:last-child{
+            margin-left: 5px;
+        }
+        a{
+            background-color: $grey;
+            border-radius: 4px;
+            border: 1px solid darken($grey-border, 5%);
+            text-align: center;
+            padding: 4px 10px;
+        }
+        span[class^=icon-]{
+            position: relative;
+            top: 1px;
+        }
+    }
+}
+
+.annonce-entry-details{
+    display: block;
+    width: 100%;
+    &>*{
+        display: inline-block;
+        position: relative;
+        width: 25.3315%;;
+        height: 60px;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid $grey;
+        line-height: 50px;
+        @include ellipsis;
+        margin:-1px 0 0 -1px;
+    }
+    .annonce-entry-details-label{
+        display: none;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: #8a9eb3;
+    }
+    .price{
+        color: $orange;
+        font-weight: 800;
+        font-size: 1.1em;
+    }
+    .km, .year{
+        font-weight: 800;
+    }
+    .km{
+    }
+}
+.annonce-entry-bottom{
+    padding: 15px 10px;
+    font-size: 1.1em;
+    h3{
+        color: $grey-font;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .annonce-entry-options{
+        text-align: center;
+        ul{
+            text-align: center;
+            li{
+                display: block;
+                line-height: 22px;
+            }
+        }
+    }
+    .annonce-entry-comment{
+        line-height: 20px;
+        &>p{
+            margin-top: 0;
+        }
     }
 }

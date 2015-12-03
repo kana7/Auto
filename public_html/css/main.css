@@ -2604,32 +2604,35 @@ img {
 .icon-recherche:before {
   content: "\71"; }
 
-.icon-down-arrow:before {
-  content: "\72"; }
-
 .icon-up-arrow:before {
   content: "\73"; }
 
-.icon-accessory-ico:before {
+.icon-arrow-ico:before {
   content: "\74"; }
 
-.icon-bike-ico:before {
+.icon-left-full-arrow:before {
   content: "\75"; }
 
-.icon-campingcar-ico:before {
+.icon-right-full-arrow:before {
   content: "\76"; }
 
-.icon-car-ico:before {
+.icon-accessory-ico:before {
   content: "\77"; }
 
-.icon-heart-ico:before {
+.icon-bike-ico:before {
   content: "\78"; }
 
-.icon-truck-ico:before {
+.icon-car-ico:before {
   content: "\79"; }
 
-.icon-wheel-ico:before {
+.icon-truck-ico:before {
   content: "\7a"; }
+
+.icon-wheel-ico:before {
+  content: "\41"; }
+
+.icon-campingcar-ico:before {
+  content: "\42"; }
 
 /*
 LAYOUT
@@ -3232,27 +3235,32 @@ img.fill-height {
   min-height: 150px;
   text-align: center; }
 
-.main-gallery {
+.main-gallery:not(.annonce-entry-slider) {
   margin: 0 -5px; }
-  .main-gallery .gallery-cell {
+  .main-gallery:not(.annonce-entry-slider) .gallery-cell {
     padding: 0 2px;
     width: 50%; }
 
-.annonce-une-item {
+.main-gallery.annonce-entry-slider .gallery-cell {
+  padding: 0 1px;
+  width: 50%; }
+
+.annonce-slider-item {
   display: block;
   position: relative;
-  text-align: center; }
-  .annonce-une-item .img-annonce {
-    overflow: hidden; }
+  text-align: center;
+  overflow: hidden; }
+  .annonce-slider-item .img-annonce {
+    display: inline-block; }
 
-.annonce-une-item-content {
+.annonce-slider-item-content {
   padding: 5px 0;
   font-size: 14px;
   line-height: 20px; }
-  .annonce-une-item-content .brand {
+  .annonce-slider-item-content .brand {
     text-transform: uppercase;
     font-weight: 800; }
-  .annonce-une-item-content .price {
+  .annonce-slider-item-content .price {
     color: #e75e0a;
     font-weight: 800;
     font-size: 1.1em; }
@@ -3474,6 +3482,115 @@ img.fill-height {
     color: #e75e0a;
     font-weight: 800; }
 
+.annonce-entry {
+  background-color: #dfdfdf;
+  border: 2px solid #dfdfdf;
+  border-radius: 5px; }
+
+.annonce-entry-top, .annonce-entry-bottom, .annonce-entry-header {
+  display: block;
+  position: relative; }
+
+.annonce-entry-top {
+  overflow: hidden; }
+
+.annonce-entry-details, .annonce-entry-bottom {
+  background-color: #fcfcfc; }
+
+.annonce-entry-header {
+  background-color: #dfdfdf;
+  padding: 15px 15px 10px;
+  border-radius: 5px 5px 0 0;
+  font-size: 21px; }
+  .annonce-entry-header h1 {
+    display: inline-block;
+    color: #616161;
+    font-size: 0.9em;
+    font-weight: 800;
+    line-height: 22px;
+    margin: 0; }
+  .annonce-entry-header .options-container {
+    text-align: center;
+    vertical-align: middle; }
+  .annonce-entry-header .brand {
+    text-transform: uppercase; }
+  .annonce-entry-header .engin {
+    color: #7a7a7a;
+    font-weight: 400;
+    font-size: 0.9em;
+    display: block; }
+  .annonce-entry-header .annonce-entry-header-actions {
+    font-size: 1.1em;
+    color: #878787; }
+    .annonce-entry-header .annonce-entry-header-actions li:not(:first-child):not(:last-child) {
+      margin: 0 5px; }
+    .annonce-entry-header .annonce-entry-header-actions li:first-child {
+      margin-right: 5px; }
+    .annonce-entry-header .annonce-entry-header-actions li:last-child {
+      margin-left: 5px; }
+  .annonce-entry-header .annonce-entry-header-previous-next li:first-child {
+    margin-right: 5px; }
+  .annonce-entry-header .annonce-entry-header-previous-next li:last-child {
+    margin-left: 5px; }
+  .annonce-entry-header .annonce-entry-header-previous-next a {
+    background-color: #ededed;
+    border-radius: 4px;
+    border: 1px solid #d2d2d2;
+    text-align: center;
+    padding: 4px 10px; }
+  .annonce-entry-header .annonce-entry-header-previous-next span[class^=icon-] {
+    position: relative;
+    top: 1px; }
+
+.annonce-entry-details {
+  display: block;
+  width: 100%; }
+  .annonce-entry-details > * {
+    display: inline-block;
+    position: relative;
+    width: 25.3315%;
+    height: 60px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ededed;
+    line-height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: -1px 0 0 -1px; }
+  .annonce-entry-details .annonce-entry-details-label {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #8a9eb3; }
+  .annonce-entry-details .price {
+    color: #e75e0a;
+    font-weight: 800;
+    font-size: 1.1em; }
+  .annonce-entry-details .km, .annonce-entry-details .year {
+    font-weight: 800; }
+
+.annonce-entry-bottom {
+  padding: 15px 10px;
+  font-size: 1.1em; }
+  .annonce-entry-bottom h3 {
+    color: #7a7a7a;
+    margin: 0;
+    margin-bottom: 10px; }
+  .annonce-entry-bottom .annonce-entry-options {
+    text-align: center; }
+    .annonce-entry-bottom .annonce-entry-options ul {
+      text-align: center; }
+      .annonce-entry-bottom .annonce-entry-options ul li {
+        display: block;
+        line-height: 22px; }
+  .annonce-entry-bottom .annonce-entry-comment {
+    line-height: 20px; }
+    .annonce-entry-bottom .annonce-entry-comment > p {
+      margin-top: 0; }
+
 /*
 RESPONSIVE
 ----------------------------------------------------------------
@@ -3481,10 +3598,10 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
 */
 @media screen and (max-width: 671px) {
   .container-wrapper {
-    width: 300px;
+    width: 320px;
     padding: 0 15px; }
 
-  #annonces-une .container-wrapper {
+  #annonces-une .container-wrapper, #annonces-similaires .container-wrapper {
     width: auto; } }
 @media screen and (min-width: 672px) {
   .container-wrapper {
@@ -3532,9 +3649,9 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
   .main-gallery .gallery-cell {
     width: 25%; }
 
-  .annonce-une-item-content {
+  .annonce-slider-item-content {
     font-size: 15px; }
-    .annonce-une-item-content .price {
+    .annonce-slider-item-content .price {
       font-size: 1.2em; }
 
   .footer-top nav li {
