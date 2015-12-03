@@ -3113,6 +3113,15 @@ svg:not(:root) {
   width: 100%;
   font-size: 30px !important; }
 
+.color-grey-transition, .return, .annonce-entry-header .annonce-entry-header-actions li {
+  color: #7a7a7a;
+  -moz-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
+  -o-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
+  -webkit-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out; }
+  .color-grey-transition:hover, .return:hover, .annonce-entry-header .annonce-entry-header-actions li:hover {
+    color: #616161; }
+
 .background-border {
   border: 1px solid #dfdfdf;
   background-color: #fff;
@@ -3164,6 +3173,13 @@ img.fill-height {
   height: 100%;
   z-index: 1; }
 
+.return {
+  padding: 5px 0;
+  font-weight: 600;
+  display: inline-block; }
+  .return span {
+    padding-right: 10px; }
+
 #welcome-message {
   padding: 10px 0;
   font-size: 15px; }
@@ -3171,6 +3187,8 @@ img.fill-height {
     font-size: 1.6em;
     position: relative;
     top: 3px; }
+    #welcome-message span[class^=icon-].icon-left-arrow {
+      font-size: 1.05em; }
   #welcome-message ul {
     display: inline;
     vertical-align: baseline; }
@@ -3691,7 +3709,7 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
   .header-logo .logo img {
     height: 45px; }
 
-  .main-gallery .gallery-cell {
+  .main-gallery:not(.annonce-entry-slider) .gallery-cell {
     padding: 0 5px;
     width: 33.3333%; }
 
@@ -3753,7 +3771,7 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
   .container-wrapper {
     width: 1024px; }
 
-  .main-gallery .gallery-cell {
+  .main-gallery:not(.annonce-entry-slider) .gallery-cell {
     width: 25%; }
 
   .annonce-slider-item-content {
@@ -3828,7 +3846,7 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
   .container-wrapper {
     width: 1280px; }
 
-  .main-gallery .gallery-cell {
+  .main-gallery:not(.annonce-entry-slider) .gallery-cell {
     width: 20%; }
 
   #search_result .container-wrapper {

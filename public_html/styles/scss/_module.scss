@@ -51,6 +51,20 @@ svg:not(:root) {
     width: 100%;
     font-size: 30px !important;
 }
+
+// TRANSITION EFFECT
+// --------------------------------------------------
+@mixin color-transition($color, $pourcent){
+    color: $color;
+    @include transition($transitionUi);
+    &:hover{
+        color: darken($color, $pourcent);
+    }
+}
+.color-grey-transition{
+    @include color-transition($grey-font, 10%);
+}
+
 // BACKGROUND-COLOR CLASS
 // --------------------------------------------------
 .background-border{
@@ -101,6 +115,15 @@ img.fill-height{
     height: 100%;
     z-index: 1;
 }
+.return{
+    padding: 5px 0;
+    font-weight: 600;
+    display: inline-block;
+    span{
+        padding-right: 10px;
+    }
+    @extend .color-grey-transition;
+}
 
 //TEXT STYLES
 //--------------------------------------------------
@@ -111,6 +134,9 @@ img.fill-height{
         font-size: 1.6em;
         position: relative;
         top: 3px;
+        &.icon-left-arrow{
+            font-size: 1.05em;
+        }
     }
     ul{
         display: inline;
@@ -525,6 +551,9 @@ img.fill-height{
         li:last-child{
             margin-left: 7px;
         }
+        li{
+            @extend .color-grey-transition;
+        }
     }
     .annonce-entry-header-previous-next{
         li:first-child{
@@ -572,7 +601,7 @@ img.fill-height{
         line-height: initial;
         font-weight: 400;
         font-size: 12px;
-        
+
     }
     .price{
         color: $orange;
