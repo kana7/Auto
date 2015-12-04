@@ -215,6 +215,16 @@ img.fill-height{
 
 //SLIDER ANNONCE UNE STYLES
 //--------------------------------------------------
+figure{
+    margin: 0;
+}
+.pswp__image{
+    max-width: 150px !important;
+    padding: 10px 15px;
+}
+.annonce-entry-img figcaption{
+    display: none;
+}
 .main-gallery:not(.annonce-entry-slider){
     margin: 0 -5px;
     .gallery-cell{
@@ -223,9 +233,6 @@ img.fill-height{
     }
 }
 .main-gallery.annonce-entry-slider{
-    figure.gallery-cell{
-        margin: 0;
-    }
     .gallery-cell{
         padding: 0 1px;
         width: 50%;
@@ -576,10 +583,10 @@ img.fill-height{
             padding: 4px 10px;
             @include transition($transitionUi);
             &:hover, &:active{
-                 background-color: lighten($grey, 5%);
-                 span[class^=icon-]{
-                     color: ($grey-font, 10%);
-                 }
+                background-color: lighten($grey, 5%);
+                span[class^=icon-]{
+                    color: ($grey-font, 10%);
+                }
             }
         }
         span[class^=icon-]{

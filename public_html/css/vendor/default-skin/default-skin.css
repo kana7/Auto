@@ -61,8 +61,11 @@
   /* Serve SVG sprite if browser supports SVG and resolution is more than 105dpi */
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
-  .pswp--svg .pswp__button--arrow--right:before {
-    background-image: url(default-skin.svg); }
+	.pswp--svg .pswp__button--arrow--right:before {
+		/* svg not working */
+		//background-image: url(default-skin.svg);
+		background-image: url(default-skin.png);
+	}
   .pswp--svg .pswp__button--arrow--left,
   .pswp--svg .pswp__button--arrow--right {
     background: none; } }
@@ -108,7 +111,8 @@
   margin-top: -50px;
   width: 70px;
   height: 100px;
-  position: absolute; }
+  position: absolute;
+  }
 
 .pswp__button--arrow--left {
   left: 0; }
@@ -162,7 +166,8 @@
   will-change: opacity; }
 
 .pswp__share-modal--hidden {
-  display: none; }
+  display: none;
+  }
 
 .pswp__share-tooltip {
   z-index: 1620;
@@ -247,7 +252,7 @@ a.pswp__share--download:hover {
  */
 .pswp__counter {
   position: absolute;
-  left: 0;
+  left: 50%;
   top: 0;
   height: 44px;
   font-size: 13px;
@@ -273,7 +278,6 @@ a.pswp__share--download:hover {
 
 .pswp__caption__center {
   text-align: left;
-  max-width: 420px;
   margin: 0 auto;
   font-size: 13px;
   padding: 10px;

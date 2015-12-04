@@ -2498,9 +2498,6 @@ article, aside {
   display: inline-block;
   position: relative; }
 
-div, p {
-  position: relative; }
-
 a {
   display: block;
   position: relative;
@@ -2873,6 +2870,7 @@ section {
           text-decoration: underline; }
 
 #content {
+  position: relative;
   overflow-x: hidden; }
 
 .menu-mobile {
@@ -3256,14 +3254,22 @@ img.fill-height {
   min-height: 150px;
   text-align: center; }
 
+figure {
+  margin: 0; }
+
+.pswp__image {
+  max-width: 150px !important;
+  padding: 10px 15px; }
+
+.annonce-entry-img figcaption {
+  display: none; }
+
 .main-gallery:not(.annonce-entry-slider) {
   margin: 0 -5px; }
   .main-gallery:not(.annonce-entry-slider) .gallery-cell {
     padding: 0 2px;
     width: 50%; }
 
-.main-gallery.annonce-entry-slider figure.gallery-cell {
-  margin: 0; }
 .main-gallery.annonce-entry-slider .gallery-cell {
   padding: 0 1px;
   width: 50%; }
@@ -3916,6 +3922,9 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
   .annonce-entry-details .annonce-entry-details-label {
     display: block;
     top: 5px;
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .annonce-entry-details {
+    font-size: 1.4em; } }
 
 /*# sourceMappingURL=main.css.map */
