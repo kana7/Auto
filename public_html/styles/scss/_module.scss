@@ -227,6 +227,9 @@ img.fill-height{
         padding: 0 1px;
         width: 50%;
     }
+    .flickity-prev-next-button{
+        top: 47%;
+    }
 }
 .annonce-slider-item{
     display: block;
@@ -568,6 +571,13 @@ img.fill-height{
             border: 1px solid darken($grey-border, 5%);
             text-align: center;
             padding: 4px 10px;
+            @include transition($transitionUi);
+            &:hover, &:active{
+                 background-color: lighten($grey, 5%);
+                 span[class^=icon-]{
+                     color: ($grey-font, 10%);
+                 }
+            }
         }
         span[class^=icon-]{
             position: relative;
@@ -587,24 +597,26 @@ img.fill-height{
         text-align: center;
         vertical-align: middle;
         border: 1px solid $grey;
-        line-height: 50px;
+        line-height: 60px;
         @include ellipsis;
         margin:-1px 0 0 -1px;
     }
     .annonce-entry-details-label{
         display: none;
         position: absolute;
-        top: 5px;
+        top: 1px;
         left: 10px;
         color: #8a9eb3;
         line-height: initial;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 11px;
     }
     .annonce-entry-details-detail{
         display: inline-block;
         vertical-align: middle;
+        width: 100%;
         @include vertical-align-middle;
+        @include ellipsis;
     }
     .price{
         color: $orange;
@@ -616,7 +628,7 @@ img.fill-height{
     }
 }
 .annonce-entry-bottom{
-    padding: 15px 10px;
+    padding: 0 10px 15px;
     font-size: 1.1em;
     h3{
         color: $grey-font;
@@ -626,6 +638,7 @@ img.fill-height{
         text-transform: capitalize;
     }
     .annonce-entry-options{
+        padding-top: 15px; 
         text-align: center;
         ul{
             display: block;
@@ -634,6 +647,7 @@ img.fill-height{
             li{
                 display: block;
                 line-height: 22px;
+                @include ellipsis;
             }
         }
     }

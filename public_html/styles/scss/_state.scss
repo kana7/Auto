@@ -171,8 +171,23 @@ Contient les media queries pour adapter les styles sur les différents formats
             padding-right: 15px;
         }
     }
+    .annonce-entry-details .annonce-entry-details-detail{
+        @include vertical-align-middle(absolute);
+        line-height: initial;
+        right: 20px;
+        left: 10px;
+        width: auto;
+    }
     .annonce-entry-details .annonce-entry-details-label{
         display: block;
+        top: 5px;
+        font-size: 12px;
+    }
+    .annonce-entry-details .price{
+        font-size: 1.6em;
+    }
+    .annonce-entry-details .km, .annonce-entry-details .year{
+        font-size: 1.1em;
     }
 }
 @include media(lgdesk){
@@ -186,5 +201,11 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
     #search_result .container-wrapper{
         width: 100%;
+    }
+    .annonce-entry-details .price{
+        font-size: 2em;
+    }
+    .annonce-entry-details .km, .annonce-entry-details .year{
+        font-size: 1.4em;
     }
 }
