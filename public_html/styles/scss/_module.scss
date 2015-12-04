@@ -575,7 +575,6 @@ img.fill-height{
         }
     }
 }
-
 .annonce-entry-details{
     display: block;
     width: 100%;
@@ -601,7 +600,11 @@ img.fill-height{
         line-height: initial;
         font-weight: 400;
         font-size: 12px;
-
+    }
+    .annonce-entry-details-detail{
+        display: inline-block;
+        vertical-align: middle;
+        @include vertical-align-middle;
     }
     .price{
         color: $orange;
