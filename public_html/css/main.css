@@ -3262,6 +3262,8 @@ img.fill-height {
     padding: 0 2px;
     width: 50%; }
 
+.main-gallery.annonce-entry-slider figure.gallery-cell {
+  margin: 0; }
 .main-gallery.annonce-entry-slider .gallery-cell {
   padding: 0 1px;
   width: 50%; }

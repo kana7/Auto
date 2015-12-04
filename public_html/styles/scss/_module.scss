@@ -223,6 +223,9 @@ img.fill-height{
     }
 }
 .main-gallery.annonce-entry-slider{
+    figure.gallery-cell{
+        margin: 0;
+    }
     .gallery-cell{
         padding: 0 1px;
         width: 50%;
