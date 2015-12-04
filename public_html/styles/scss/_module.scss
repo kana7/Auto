@@ -597,7 +597,7 @@ img.fill-height{
         text-align: center;
         vertical-align: middle;
         border: 1px solid $grey;
-        line-height: 60px;
+        line-height: 47px;
         @include ellipsis;
         margin:-1px 0 0 -1px;
     }
@@ -615,7 +615,6 @@ img.fill-height{
         display: inline-block;
         vertical-align: middle;
         width: 100%;
-        @include vertical-align-middle;
         @include ellipsis;
     }
     .price{

@@ -14,7 +14,13 @@ Contient les media queries pour adapter les styles sur les différents formats
         .container-wrapper{
             width: auto;
         }
-    }    
+    }
+    .annonce-entry-details{
+        font-size: 0.9em;
+        &> *{
+            width: 25.331%;
+        }
+    }
 }
 @include media(tab){
     .container-wrapper{
@@ -90,9 +96,15 @@ Contient les media queries pour adapter les styles sur les différents formats
         font-size: 1.4em;
     }
     .annonce-entry-details{
-        font-size: 1.3em;
+        font-size: 1.2em;
         &> *{
             width:  25.159%;
+        }
+        .price{
+            font-size: 1.6em;
+        }
+        .km, .year{
+            font-size: 1.25em;
         }
     }
 }
@@ -180,14 +192,12 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
     .annonce-entry-details .annonce-entry-details-label{
         display: block;
-        top: 5px;
-        font-size: 12px;
     }
     .annonce-entry-details .price{
-        font-size: 1.6em;
+        font-size: 1.7em;
     }
     .annonce-entry-details .km, .annonce-entry-details .year{
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 }
 @include media(lgdesk){
@@ -207,5 +217,10 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
     .annonce-entry-details .km, .annonce-entry-details .year{
         font-size: 1.4em;
+    }
+    .annonce-entry-details .annonce-entry-details-label{
+        display: block;
+        top: 5px;
+        font-size: 12px;
     }
 }

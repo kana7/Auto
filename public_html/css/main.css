@@ -3624,7 +3624,7 @@ img.fill-height {
     text-align: center;
     vertical-align: middle;
     border: 1px solid #ededed;
-    line-height: 60px;
+    line-height: 47px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -3642,12 +3642,6 @@ img.fill-height {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
@@ -3731,7 +3725,12 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     padding: 0 15px; }
 
   #annonces-une .container-wrapper, #annonces-similaires .container-wrapper {
-    width: auto; } }
+    width: auto; }
+
+  .annonce-entry-details {
+    font-size: 0.9em; }
+    .annonce-entry-details > * {
+      width: 25.331%; } }
 @media screen and (min-width: 672px) {
   .container-wrapper {
     width: 640px; }
@@ -3790,9 +3789,13 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     font-size: 1.4em; }
 
   .annonce-entry-details {
-    font-size: 1.3em; }
+    font-size: 1.2em; }
     .annonce-entry-details > * {
-      width: 25.159%; } }
+      width: 25.159%; }
+    .annonce-entry-details .price {
+      font-size: 1.6em; }
+    .annonce-entry-details .km, .annonce-entry-details .year {
+      font-size: 1.25em; } }
 @media screen and (max-width: 1055px) {
   .header-top .container-wrapper, .footer-bottom .container-wrapper {
     width: auto;
@@ -3885,15 +3888,13 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     width: auto; }
 
   .annonce-entry-details .annonce-entry-details-label {
-    display: block;
-    top: 5px;
-    font-size: 12px; }
+    display: block; }
 
   .annonce-entry-details .price {
-    font-size: 1.6em; }
+    font-size: 1.7em; }
 
   .annonce-entry-details .km, .annonce-entry-details .year {
-    font-size: 1.1em; } }
+    font-size: 1.3em; } }
 @media screen and (min-width: 1302px) {
   .container-wrapper {
     width: 1280px; }
@@ -3908,6 +3909,11 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     font-size: 2em; }
 
   .annonce-entry-details .km, .annonce-entry-details .year {
-    font-size: 1.4em; } }
+    font-size: 1.4em; }
+
+  .annonce-entry-details .annonce-entry-details-label {
+    display: block;
+    top: 5px;
+    font-size: 12px; } }
 
 /*# sourceMappingURL=main.css.map */
