@@ -36,6 +36,10 @@ Contient les classes supplémentaires pour la mise en page du site + les styles 
     bottom: 0;
 }
 
+.relative{
+    position: relative;
+}
+
 //SAME COL HEIGHT STYLES
 //----------------------------------------------
 @include media(desk){
