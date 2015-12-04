@@ -74,7 +74,7 @@ Contient les media queries pour adapter les styles sur les différents formats
         display: inline-block;
         text-align: left;
         padding: 0 7px;
-        width: 32.95%;
+        width: 33.3333%;
         &:last-child{
             padding-right: 0px;
         }
@@ -147,6 +147,7 @@ Contient les media queries pour adapter les styles sur les différents formats
     .annonce-entry-img{
         display: inline-block;
         width: 75%;
+        z-index: 1;
     }
     .main-gallery.annonce-entry-slider{
         .gallery-cell{
@@ -157,14 +158,15 @@ Contient les media queries pour adapter les styles sur les différents formats
     .annonce-entry-details{
         vertical-align: top;
         display: inline-block;
-        width: 24.58%;
+        width: 25%;
+        height: 100%;
         & > *{
             display: block;
             width: 100%;
             border-left: none;
             border-right: none;
-            height: 70px;
-            line-height: 60px;
+            height: 12.65%;
+            line-height: 72px;
             text-align: right;
             padding-right: 15px;
         }

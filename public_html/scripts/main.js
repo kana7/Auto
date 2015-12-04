@@ -11,6 +11,9 @@ $(function () {
 
     DesktopMenuDrop.init();
 
+    resizeAnnonceDetail();
+    $(window).resize(resizeAnnonceDetail);
+
 //Met les boites à bord gris et orange, sur la même ligne, à la même hauteur
     /*if ($('.grey-border-box, .orange-border-box')) {
      matchHeightBox();
@@ -56,10 +59,23 @@ var callbackInitSlider = function () {
     }
 };
 
+//ajoute une hauteur au container dans le detail d'une annonce pour subdiviser la liste verticale en parties égales
+var resizeAnnonceDetail = function () {
+    if (viewport().width > 1055) {
+        if ($('.annonce-entry')) {
+            var height = $('.annonce-entry .annonce-entry-img').innerHeight();
+            $('.annonce-entry-content').height(height);
+        }
+    }else{
+        $('.annonce-entry-content').css("height", "");
+    }
+};
+
 var resizeSlider = function () {
     $('.main-gallery').each(function () {
         $(this).find('.img-annonce').css('height', ($(this).find('.gallery-cell').innerWidth() / 4) * 3);
         $(this).find('.flickity-viewport').css('height', $('.annonce-slider-item').innerHeight());
+        $(this).show().flickity('resize');
     });
 };
 
@@ -109,6 +125,7 @@ var matchHeightBox = function () {
         boxes.css('height', highest);
     });
 };
+
 var DesktopMenuDrop = (function () {
     var $document = $('html');
     var $desktopMenu = $('.desktop-menu');
@@ -181,7 +198,6 @@ var languageSelection = (function () {
     };
 })();
 
-
 var menuMobile = (function () {
 
     var $document = $('html');
@@ -247,3 +263,13 @@ var menuMobile = (function () {
     };
 
 })();
+
+//size of viewport
+function viewport() {
+    var e = window, a = 'inner';
+    if (!('innerWidth' in window)) {
+        a = 'client';
+        e = document.documentElement || document.body;
+    }
+    return {width: e[ a + 'Width' ], height: e[ a + 'Height' ]};
+}
