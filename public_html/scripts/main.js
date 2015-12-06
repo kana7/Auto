@@ -19,6 +19,10 @@ $(function () {
      matchHeightBox();
      $('window').on('resize', matchHeightBox());
      }*/
+    
+    if($('#catMenu')){
+        catSelection.init();
+    }
 });
 
 
@@ -109,6 +113,7 @@ var resizeAllImages = function (callback) {
     });
     callback();
 };
+
 var matchHeightBox = function () {
     var highest;
     var row = $('.row, .clearfix');
@@ -125,6 +130,41 @@ var matchHeightBox = function () {
         boxes.css('height', highest);
     });
 };
+
+// Permet de modifier l'input pour le choix de la catégorie dans la recherche rapide
+var catSelection = (function () {
+    var $inputCatValue = $('#catMenuValue');
+    var $catMenuList = $('#catMenu>li');
+
+    var init = function () {
+        _bindEvents();
+    };
+
+    var _bindEvents = function () {
+        $catMenuList.on('click', function () {
+            _selectCat($(this));
+        });
+    };
+
+    var _selectCat = function ($element) {
+        if (!$element.hasClass('active')) {
+            _resetSelect();
+            $element.addClass('active');
+            $inputCatValue.val($element.attr('data-value'));
+        }else{
+            _resetSelect();
+        }
+    };
+
+    var _resetSelect = function () {
+        $inputCatValue.val(0);
+        $catMenuList.removeClass('active');
+    };
+
+    return{
+        init: init
+    };
+})();
 
 var DesktopMenuDrop = (function () {
     var $document = $('html');

@@ -265,8 +265,18 @@ figure{
     }
 }
 
-//FORM INPUT STYLES - SPEED SEARCH
+//FORM INPUT STYLES - FAST SEARCH
 //---------------------------------------------
+.fast-search-box{
+    .fast-search-result{
+        color: $orange;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .btn-orange{
+        margin-top: 7px;
+    }
+}
 .cat-selection{
     text-align: center;
     margin-bottom: 10px;
@@ -285,7 +295,7 @@ figure{
         font-size: 28px;
         cursor: pointer;
         @include transition($transitionUi);
-        &:hover{
+        &:hover, &.active{
             color: $orange;
         }
     }
@@ -296,7 +306,10 @@ figure{
     width: 100%;
     padding: 4px 0;
     label{
-        display: none;
+        display: block;
+        line-height: 20px;
+        padding-bottom: 4px;
+        font-size: 14px;
     }
     select, input[type="text"]{
         display: block;

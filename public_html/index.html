@@ -384,126 +384,120 @@
                     <div class="row">
                         <div class="phone-12 desk-8 desk-pr-15">
                             <div class="fast-search-box grey-border-box">
-                                <div class="clearfix">
-                                    <div class="phone-12 lgdesk-4">
-                                        <h2>Recherche rapide : </h2>
-                                    </div>
-                                    <div class="phone-12 lgdesk-7">
-                                        <nav class="cat-selection">
-                                            <ul>
-                                                <li><span class="icon-car-ico"></span></li>
-                                                <li><span class="icon-bike-ico"></span></li>
-                                                <li><span class="icon-truck-ico"></span></li>
-                                                <li><span class="icon-campingcar-ico"></span></li>
-                                                <li><span class="icon-wheel-ico"></span></li>
-                                                <li><span class="icon-accessory-ico"></span></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                                <div class="clearfix relative">
-                                    <a class="btn-outline-orange hidden-phone detailed-search" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
-                                    <div class="phone-12 tab-6 tab-pr-10">
-                                        <div class="group-input">
-                                            <label for="state">Etat : </label>
-                                            <div class="phone-12">
-                                                <select id="state" name="state">
-                                                    <option value="" disabled selected hidden>Etat</option>
-                                                    <option value="0"></option>
-                                                    <option value="1"></option>
-                                                </select>
-                                            </div>
+                                <form action="">
+                                    <div class="clearfix">
+                                        <div class="phone-12 lgdesk-4">
+                                            <h2>Recherche rapide : </h2>
                                         </div>
-                                        <div class="group-input">
-                                            <label for="brand">Marque : </label>
-                                            <div class="phone-12">
-                                                <select id="brand" name="_brand">
-                                                    <option value="" disabled selected hidden>Marque</option>
-                                                    <option value="0">-</option>
-                                                    <option value="1"></option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="group-input">
-                                            <label for="model">Modèle : </label>
-                                            <div class="phone-12">
-                                                <select id="model" name="_model">
-                                                    <option value="" disabled selected hidden>Modèle</option>
-                                                    <option value="0">-</option>
-                                                    <option value="1"></option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="group-input">
-                                            <label for="fuel">Carburant</label>
-                                            <div class="phone-12">
-                                                <select id="fuel" name="_fuel">
-                                                    <option value="" disabled selected hidden>Carburant</option>
-                                                    <option value="0">-</option>
-                                                    <option value="1"></option>
-                                                </select>
+                                        <div class="phone-12 lgdesk-7">
+                                            <div class="cat-selection">
+                                                <!--#CatMenu change la valeur de l'input hidden #catMenuValue-->
+                                                <input id="catMenuValue" type="hidden" value="0">
+                                                <ul id="catMenu">
+                                                    <li data-value="1"><span class="icon-car-ico"></span></li>
+                                                    <li data-value="2"><span class="icon-bike-ico"></span></li>
+                                                    <li data-value="3"><span class="icon-truck-ico"></span></li>
+                                                    <li data-value="4"><span class="icon-campingcar-ico"></span></li>
+                                                    <li data-value="5"><span class="icon-wheel-ico"></span></li>
+                                                    <li data-value="6"><span class="icon-accessory-ico"></span></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="phone-12 tab-6 tab-pl-10">
-                                        <div class="group-input">
-                                            <label for="price1">Prix (€)</label>
-                                            <div class="phone-6 phone-pr-5">
-                                                <select id="price1" name="_price1">
-                                                    <option value="" disabled selected hidden>Prix (€)</option>
-                                                    <option value="0">jusqu'à</option>
-                                                    <option value="1"></option>
-                                                </select>
+                                    <div class="clearfix relative">
+                                        <a class="btn-outline-orange hidden-phone detailed-search" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
+                                        <div class="phone-12 tab-6 tab-pr-10">
+                                            <div class="group-input">
+                                                <label for="state">Etat : </label>
+                                                <div class="phone-12">
+                                                    <select id="state" name="_state">
+                                                        <option value="0">Tous</option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                            <div class="phone-6 phone-pl-5">
-                                                <select id="price2" name="_price2">
-                                                    <option value="" disabled selected hidden>Prix (€)</option>
-                                                    <option value="0">jusqu'à</option>
-                                                    <option value="1"></option>
-                                                </select>
+                                            <div class="group-input">
+                                                <label for="brand">Marque : </label>
+                                                <div class="phone-12">
+                                                    <select id="brand" name="_brand">
+                                                        <option value="0">Tous</option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="group-input">
-                                            <label for="year1">Année : </label>
-                                            <div class="phone-6 phone-pr-5">
-                                                <select id="year1" class="phone-6 phone-pr-5" name="_year1">
-                                                    <option value="" disabled selected hidden>Année</option>
-                                                    <option value="0">à partir de</option>
-                                                    <option value="1"></option>
-                                                </select>
+                                            <div class="group-input">
+                                                <label for="model">Modèle : </label>
+                                                <div class="phone-12">
+                                                    <select id="model" name="_model">
+                                                        <option value="0">Tous</option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                            <div class="phone-6 phone-pl-5">
-                                                <select id="year2" class="phone-6 phone-pl-5" name="_year2">
-                                                    <option value="" disabled selected hidden>Année</option>
-                                                    <option value="0">à partir de</option>
-                                                    <option value="1"></option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="group-input">
-                                            <label for="km1">Kilométrage : </label>
-                                            <div class="phone-6 phone-pr-5">
-                                                <select id="km1" name="_km">
-                                                    <option value="" disabled selected hidden>Kilométrage</option>
-                                                    <option value="0">jusqu'à</option>
-                                                    <option value="1"></option>
-                                                </select>
-                                            </div>
-                                            <div class="phone-6 phone-pl-5">
-                                                <select id="km2" name="_km">
-                                                    <option value="" disabled selected hidden>Kilométrage</option>
-                                                    <option value="0">jusqu'à</option>
-                                                    <option value="1"></option>
-                                                </select>
+                                            <div class="group-input">
+                                                <label for="fuel">Carburant : </label>
+                                                <div class="phone-12">
+                                                    <select id="fuel" name="_fuel">
+                                                        <option value="0" selected>Tout type</option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div style="text-align: center; padding-bottom: 0;" class="group-input">
-                                            <p style="font-size: 16px; margin: 8px 0 12px;" class="orange hidden-phone"><strong>2376 véhicules</strong> en ligne</p>
-                                            <button class="btn-orange" type="submit">Rechercher</button>
-                                            <a class="btn-outline-orange hidden display-phone-inline-block phone-mt-10 phone-mb-5 tab-mb-0" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
+                                        <div class="phone-12 tab-6 tab-pl-10">
+                                            <div class="group-input">
+                                                <label for="price1">Prix (€) : </label>
+                                                <div class="phone-6 phone-pr-5">
+                                                    <select id="price1" name="_price1">
+                                                        <option value="0">De</option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
+                                                <div class="phone-6 phone-pl-5">
+                                                    <select id="price2" name="_price2">
+                                                        <option value="0">Jusqu'à</option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="group-input">
+                                                <label for="year1">Année : </label>
+                                                <div class="phone-6 phone-pr-5">
+                                                    <select id="year1" class="phone-6 phone-pr-5" name="_year1">
+                                                        <option value="0">De</option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
+                                                <div class="phone-6 phone-pl-5">
+                                                    <select id="year2" class="phone-6 phone-pl-5" name="_year2">
+                                                        <option value="0">Jusqu'à</option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="group-input">
+                                                <label for="km1">Kilométrage : </label>
+                                                <div class="phone-6 phone-pr-5">
+                                                    <select id="km1" name="_km">
+                                                        <option value="0">De</option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
+                                                <div class="phone-6 phone-pl-5">
+                                                    <select id="km2" name="_km">
+                                                        <option value="0">Jusqu'à</option>
+                                                        <option value="1"></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div style="text-align: center; padding-bottom: 0;" class="group-input desk-mt-5">
+                                                <button class="btn-orange" type="submit">Rechercher</button>
+                                                <p class="fast-search-result hidden-phone"><strong>2376 véhicules</strong> en ligne</p>
+                                                <a class="btn-outline-orange hidden display-phone-inline-block phone-mt-10 phone-mb-5 tab-mb-0" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                         <div class="phone-3 hidden-phone hidden-tab desk-4 tab-pl-15">

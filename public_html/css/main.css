@@ -3299,6 +3299,13 @@ figure {
     font-weight: 800;
     font-size: 1.1em; }
 
+.fast-search-box .fast-search-result {
+  color: #e75e0a;
+  font-size: 16px;
+  margin-bottom: 5px; }
+.fast-search-box .btn-orange {
+  margin-top: 7px; }
+
 .cat-selection {
   text-align: center;
   margin-bottom: 10px; }
@@ -3318,7 +3325,7 @@ figure {
     -o-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
     -webkit-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
     transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out; }
-    .cat-selection li:hover {
+    .cat-selection li:hover, .cat-selection li.active {
       color: #e75e0a; }
 
 .group-input {
@@ -3327,7 +3334,10 @@ figure {
   width: 100%;
   padding: 4px 0; }
   .group-input label {
-    display: none; }
+    display: block;
+    line-height: 20px;
+    padding-bottom: 4px;
+    font-size: 14px; }
   .group-input select, .group-input input[type="text"] {
     display: block;
     width: 100%;
@@ -3749,6 +3759,9 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
 
   .header-logo .logo img {
     height: 45px; }
+
+  .fast-search-box .btn-orange {
+    margin-top: 19px; }
 
   .main-gallery:not(.annonce-entry-slider) .gallery-cell {
     padding: 0 5px;

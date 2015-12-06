@@ -31,7 +31,11 @@ Contient les media queries pour adapter les styles sur les différents formats
             height: 45px;
         }
     }
-
+    .fast-search-box{
+        .btn-orange{
+            margin-top: 19px;
+        }
+    }
     .main-gallery:not(.annonce-entry-slider){
         .gallery-cell{
             padding: 0 5px;
