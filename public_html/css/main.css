@@ -3955,16 +3955,16 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     font-size: 1.7em; }
 
   .annonce-entry-details .km, .annonce-entry-details .year {
-    font-size: 1.3em; } }
+    font-size: 1.3em; }
+
+  #search_result .row .container-wrapper {
+    width: 100%; } }
 @media screen and (min-width: 1302px) {
   .container-wrapper {
     width: 1280px; }
 
   .main-gallery:not(.annonce-entry-slider) .gallery-cell {
     width: 20%; }
-
-  #search_result .container-wrapper {
-    width: 100%; }
 
   .annonce-entry-details .price {
     font-size: 2em; }

@@ -35,8 +35,8 @@
                                     <img src="images/logo.png" alt="auto.lu logo" />
                                 </div>
                             </li>
-                            <li style="height: 45px;" class="separator"></li>
-                            <li><div class="logo-description"><strong><span style="font-size: 10px;">Vos annonces</span><span style="font-size: 21px;">100%</span><span style="font-size: 12px; text-transform: uppercase;">gratuites</span></strong></div></li>
+                            <li style="height: 45px;" class="separator hidden-desk hidden-lgdesk"></li>
+                            <li><div class="logo-description desk-ml-10 lgdesk-ml-30"><strong><span class="first" style="">Vos annonces</span><span class="sec">100%</span><span class="third">gratuites</span></strong></div></li>
                         </ul>
                         <div id="pub1-desktop" class="hidden display-desk display-lgdesk pull-right" style=" display: inline-block; background-color: #E75E0A; width: 728px;  height: 90px;"></div>
                     </div>
@@ -169,168 +169,197 @@
                 </div>
             </div>
             <section id="search_result">
-                <div class="clearfix">
-                    <div class="phone-12 lgdesk-5 desk-pr-15 phone-mb-15">
-                        <div class="container-wrapper">
-                            <div class="fast-search-box grey-border-box row">
-                                <div class="clearfix">
-                                    <div class="phone-12 lgdesk-4">
-                                        <h2>Recherche rapide : </h2>
-                                    </div>
-                                    <div class="phone-12 lgdesk-7">
-                                        <nav class="cat-selection">
-                                            <ul>
-                                                <li><span class="icon-car-ico"></span></li>
-                                                <li><span class="icon-bike-ico"></span></li>
-                                                <li><span class="icon-truck-ico"></span></li>
-                                                <li><span class="icon-campingcar-ico"></span></li>
-                                                <li><span class="icon-wheel-ico"></span></li>
-                                                <li><span class="icon-accessory-ico"></span></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                                <div class="clearfix relative">
-                                    <a class="btn-outline-orange hidden-phone detailed-search" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
-                                    <div class="phone-12 tab-6 tab-pr-10">
-                                        <div class="group-input">
-                                            <label for="state">Etat : </label>
-                                            <select id="state" name="state">
-                                                <option value="" disabled selected hidden>Etat</option>
-                                                <option value="0"></option>
-                                                <option value="1"></option>
-                                            </select>
+                <div class="container-wrapper">
+                    <div class="row">
+                        <div class="phone-12 desk-4 lgdesk-3 desk-pr-15 phone-mb-15">
+                            <div class="container-wrapper">
+                                <div class="fast-search-box grey-border-box aside">
+                                    <form action="">
+                                        <div class="clearfix">
+                                            <div class="phone-12">
+                                                <h2>Recherche rapide : </h2>
+                                            </div>
+                                            <div class="phone-12">
+                                                <div class="cat-selection">
+                                                    <input id="catMenuValue" type="hidden" value="0">
+                                                    <ul id="catMenu">
+                                                        <li data-value="1"><span class="icon-car-ico"></span></li>
+                                                        <li data-value="2"><span class="icon-bike-ico"></span></li>
+                                                        <li data-value="3"><span class="icon-truck-ico"></span></li>
+                                                        <li data-value="4"><span class="icon-campingcar-ico"></span></li>
+                                                        <li data-value="5"><span class="icon-wheel-ico"></span></li>
+                                                        <li data-value="6"><span class="icon-accessory-ico"></span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="group-input">
-                                            <label for="brand">Marque : </label>
-                                            <select id="brand" name="_brand">
-                                                <option value="" disabled selected hidden>Marque</option>
-                                                <option value="0">-</option>
-                                                <option value="1"></option>
-                                            </select>
+                                        <div class="clearfix relative">
+                                            <div class="phone-12">
+                                                <div class="group-input">
+                                                    <label for="state">Etat : </label>
+                                                    <div class="phone-12">
+                                                        <select id="state" name="_state">
+                                                            <option value="0">Tous</option>
+                                                            <option value="1"></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="group-input">
+                                                    <label for="brand">Marque : </label>
+                                                    <div class="phone-12">
+                                                        <select id="brand" name="_brand">
+                                                            <option value="0">Tous</option>
+                                                            <option value="1"></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="group-input">
+                                                    <label for="model">Modèle : </label>
+                                                    <div class="phone-12">
+                                                        <select id="model" name="_model">
+                                                            <option value="0">Tous</option>
+                                                            <option value="1"></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="group-input">
+                                                    <label for="fuel">Carburant : </label>
+                                                    <div class="phone-12">
+                                                        <select id="fuel" name="_fuel">
+                                                            <option value="0" selected>Tout type</option>
+                                                            <option value="1"></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="phone-12">
+                                                <div class="group-input">
+                                                    <label for="price1">Prix (€) : </label>
+                                                    <div class="phone-6 phone-pr-5">
+                                                        <select id="price1" name="_price1">
+                                                            <option value="0">De</option>
+                                                            <option value="1"></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="phone-6 phone-pl-5">
+                                                        <select id="price2" name="_price2">
+                                                            <option value="0">Jusqu'à</option>
+                                                            <option value="1"></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="group-input">
+                                                    <label for="year1">Année : </label>
+                                                    <div class="phone-6 phone-pr-5">
+                                                        <select id="year1" class="phone-6 phone-pr-5" name="_year1">
+                                                            <option value="0">De</option>
+                                                            <option value="1"></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="phone-6 phone-pl-5">
+                                                        <select id="year2" class="phone-6 phone-pl-5" name="_year2">
+                                                            <option value="0">Jusqu'à</option>
+                                                            <option value="1"></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="group-input">
+                                                    <label for="km1">Kilométrage : </label>
+                                                    <div class="phone-6 phone-pr-5">
+                                                        <select id="km1" name="_km">
+                                                            <option value="0">De</option>
+                                                            <option value="1"></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="phone-6 phone-pl-5">
+                                                        <select id="km2" name="_km">
+                                                            <option value="0">Jusqu'à</option>
+                                                            <option value="1"></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div style="text-align: center; padding-bottom: 0;" class="group-input desk-mt-5">
+                                                    <button class="btn-orange" type="submit">Rechercher</button>
+                                                    <p class="fast-search-result hidden-phone"><strong>2376 véhicules</strong> en ligne</p>
+                                                    <a class="btn-outline-orange phone-mt-10 phone-mb-5 tab-mb-0" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="group-input">
-                                            <label for="model">Modèle : </label>
-                                            <select id="model" name="_model">
-                                                <option value="" disabled selected hidden>Modèle</option>
-                                                <option value="0">-</option>
-                                                <option value="1"></option>
-                                            </select>
-                                        </div>
-                                        <div class="group-input">
-                                            <label for="fuel">Carburant</label>
-                                            <select id="fuel" name="_fuel">
-                                                <option value="" disabled selected hidden>Carburant</option>
-                                                <option value="0">-</option>
-                                                <option value="1"></option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="phone-12 tab-6 tab-pl-10">
-                                        <div class="group-input">
-                                            <label for="price">Prix (€)</label>
-                                            <select id="price" name="_price">
-                                                <option value="" disabled selected hidden>Prix (€)</option>
-                                                <option value="0">jusqu'à</option>
-                                                <option value="1"></option>
-                                            </select>
-                                        </div>
-                                        <div class="group-input">
-                                            <label for="year">Année : </label>
-                                            <select id="year" name="_year">
-                                                <option value="" disabled selected hidden>Année</option>
-                                                <option value="0">à partir de</option>
-                                                <option value="1"></option>
-                                            </select>
-                                        </div>
-                                        <div class="group-input">
-                                            <label for="km">Kilométrage : </label>
-                                            <select id="km" name="_km">
-                                                <option value="" disabled selected hidden>Kilométrage</option>
-                                                <option value="0">jusqu'à</option>
-                                                <option value="1"></option>
-                                            </select>
-                                        </div>
-                                        <div style="text-align: center; padding-bottom: 0;" class="group-input">
-                                            <p style="font-size: 16px; margin: 8px 0 12px;" class="orange hidden-phone"><strong>2376 véhicules</strong> en ligne</p>
-                                            <button class="btn-orange" type="submit">Rechercher</button>
-                                            <a class="btn-outline-orange hidden display-phone-inline-block phone-mt-10 phone-mb-5 tab-mb-0" href="#"><span class="icon-recherche"></span>Recherche détaillée</a>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="phone-12 lgdesk-7">
-                        <div id="search-result-table">
-                            <div class="search-result-entry">
-                                <a class="annonce-link" href="#"></a>
-                                <div class="search-result-entry-img"><img class="fill-width" src="images/exemples-annonces/bmw.jpg" alt="bmw 530XD pack" /></div>
-                                <div class="search-result-entry-infos">
-                                    <div class="infos-container">
-                                        <div class="search-result-entry-infos-header">
-                                            <div class="header-container">
-                                                <div class="vehicle-infos">
-                                                    <span class="brand">BMW</span><span class="model">530XD pack</span>
-                                                    <div class="engin">1.6 DCI</div>
+                        <div class="phone-12 desk-8 lgdesk-9">
+                            <div id="search-result-table">
+                                <div class="search-result-entry">
+                                    <a class="annonce-link" href="#"></a>
+                                    <div class="search-result-entry-img"><img class="fill-width" src="images/exemples-annonces/bmw.jpg" alt="bmw 530XD pack" /></div>
+                                    <div class="search-result-entry-infos">
+                                        <div class="infos-container">
+                                            <div class="search-result-entry-infos-header">
+                                                <div class="header-container">
+                                                    <div class="vehicle-infos">
+                                                        <span class="brand">BMW</span><span class="model">530XD pack</span>
+                                                        <div class="engin">1.6 DCI</div>
+                                                    </div>
+                                                    <div class="country"><img src="images/icons/png/lu.png" alt="luxembourg" /></div>
+                                                    <div class="seller-type">Privé</div>
+                                                    <div class="fuel-type">Diesel</div>
                                                 </div>
-                                                <div class="country"><img src="images/icons/png/lu.png" alt="luxembourg" /></div>
-                                                <div class="seller-type">Privé</div>
-                                                <div class="fuel-type">Diesel</div>
                                             </div>
-                                        </div>
-                                        <div class="search-result-entry-infos-details">
-                                            <div class="year">2003</div>
-                                            <div class="km">86.500 Km</div>
-                                            <div class="price">11.599€</div>
+                                            <div class="search-result-entry-infos-details">
+                                                <div class="year">2003</div>
+                                                <div class="km">86.500 Km</div>
+                                                <div class="price">11.599€</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="search-result-entry">
-                                <a class="annonce-link" href="#"></a>
-                                <div class="search-result-entry-img"><img class="fill-width" src="images/exemples-annonces/bmw.jpg" alt="bmw 530XD pack" /></div>
-                                <div class="search-result-entry-infos">
-                                    <div class="infos-container">
-                                        <div class="search-result-entry-infos-header">
-                                            <div class="header-container">
-                                                <div class="vehicle-infos">
-                                                    <span class="brand">BMW</span> <span class="model">530XD pack</span>
-                                                    <div class="engin">1.6 DCI</div>
+                                <div class="search-result-entry">
+                                    <a class="annonce-link" href="#"></a>
+                                    <div class="search-result-entry-img"><img class="fill-width" src="images/exemples-annonces/bmw.jpg" alt="bmw 530XD pack" /></div>
+                                    <div class="search-result-entry-infos">
+                                        <div class="infos-container">
+                                            <div class="search-result-entry-infos-header">
+                                                <div class="header-container">
+                                                    <div class="vehicle-infos">
+                                                        <span class="brand">BMW</span> <span class="model">530XD pack</span>
+                                                        <div class="engin">1.6 DCI</div>
+                                                    </div>
+                                                    <div class="country"><img src="images/icons/png/lu.png" alt="luxembourg" /></div>
+                                                    <div class="seller-type">Privé</div>
+                                                    <div class="fuel-type">Diesel</div>
                                                 </div>
-                                                <div class="country"><img src="images/icons/png/lu.png" alt="luxembourg" /></div>
-                                                <div class="seller-type">Privé</div>
-                                                <div class="fuel-type">Diesel</div>
                                             </div>
-                                        </div>
-                                        <div class="search-result-entry-infos-details">
-                                            <div class="year">2003</div>
-                                            <div class="km">86.500 Km</div>
-                                            <div class="price">11.599€</div>
+                                            <div class="search-result-entry-infos-details">
+                                                <div class="year">2003</div>
+                                                <div class="km">86.500 Km</div>
+                                                <div class="price">11.599€</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="search-result-entry">
-                                <a class="annonce-link" href="#"></a>
-                                <div class="search-result-entry-img"><img class="fill-width" src="images/exemples-annonces/bmw.jpg" alt="bmw 530XD pack" /></div>
-                                <div class="search-result-entry-infos">
-                                    <div class="infos-container">
-                                        <div class="search-result-entry-infos-header">
-                                            <div class="header-container">
-                                                <div class="vehicle-infos">
-                                                    <span class="brand">BMW</span> <span class="model">530XD pack</span>
-                                                    <div class="engin">1.6 DCI</div>
+                                <div class="search-result-entry">
+                                    <a class="annonce-link" href="#"></a>
+                                    <div class="search-result-entry-img"><img class="fill-width" src="images/exemples-annonces/bmw.jpg" alt="bmw 530XD pack" /></div>
+                                    <div class="search-result-entry-infos">
+                                        <div class="infos-container">
+                                            <div class="search-result-entry-infos-header">
+                                                <div class="header-container">
+                                                    <div class="vehicle-infos">
+                                                        <span class="brand">BMW</span> <span class="model">530XD pack</span>
+                                                        <div class="engin">1.6 DCI</div>
+                                                    </div>
+                                                    <div class="country"><img src="images/icons/png/lu.png" alt="luxembourg" /></div>
+                                                    <div class="seller-type">Privé</div>
+                                                    <div class="fuel-type">Diesel</div>
                                                 </div>
-                                                <div class="country"><img src="images/icons/png/lu.png" alt="luxembourg" /></div>
-                                                <div class="seller-type">Privé</div>
-                                                <div class="fuel-type">Diesel</div>
                                             </div>
-                                        </div>
-                                        <div class="search-result-entry-infos-details">
-                                            <div class="year">2003</div>
-                                            <div class="km">86.500 Km</div>
-                                            <div class="price">11.599€</div>
+                                            <div class="search-result-entry-infos-details">
+                                                <div class="year">2003</div>
+                                                <div class="km">86.500 Km</div>
+                                                <div class="price">11.599€</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -347,6 +376,24 @@
                                 <h2>Garages partenaires : </h2>
                                 <p>Cars Benelux S.A</p>
                                 <img class="fill-width" src="images/garage.jpg" alt="garages benelux" />
+                            </div>
+                        </div>
+                        <div class="phone-12 tab-6 desk-4 phone-mb-15 desk-mb-0 tab-pl-15 desk-pl-15 desk-pr-15">
+                            <div class="good-deal orange-border-box">
+                                <h2>La bonne affaire : </h2>
+                                <p class="good-deal-price"><strong>Renault</strong> Mégane : <span>3690 €</span></p>
+                                <div class="clearfix">
+                                    <div class="img-container phone-7">
+                                        <img class="fill-width" src="images/pub-voiture.jpg" alt="image bonne affaire">
+                                    </div>
+                                    <ul class="pull-left phone-5">
+                                        <li>&gt; essence</li>
+                                        <li>&gt; 25.600 km<li>
+                                        <li>&gt; 2005<li>
+                                        <li>&nbsp;</li>
+                                        <li class="link"><a href="#">&gt;&gt; Voir l'annonce</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="phone-12 desk-4 desk-pl-15 ">

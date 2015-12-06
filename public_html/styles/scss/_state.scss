@@ -207,6 +207,9 @@ Contient les media queries pour adapter les styles sur les différents formats
     .annonce-entry-details .km, .annonce-entry-details .year{
         font-size: 1.3em;
     }
+    #search_result .row .container-wrapper{
+        width: 100%;
+    }
 }
 @include media(lgdesk){
     .container-wrapper{
@@ -216,9 +219,6 @@ Contient les media queries pour adapter les styles sur les différents formats
         .gallery-cell{
             width: 20%;
         }
-    }
-    #search_result .container-wrapper{
-        width: 100%;
     }
     .annonce-entry-details .price{
         font-size: 2em;
