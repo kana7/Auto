@@ -2790,7 +2790,7 @@ header {
     .footer-top nav li:not(:last-child) {
       margin-bottom: 10px; }
 
-section, .header-bottom {
+section:not(:last-child), .header-bottom, #content {
   border-bottom: 1px solid #dfdfdf;
   -webkit-box-shadow: 0 1px 0 0 #fff;
   -moz-box-shadow: 0 1px 0 0 #fff;
@@ -3031,13 +3031,21 @@ section {
   text-align: center; }
   .header-logo .logo-description span {
     display: block;
-    margin-bottom: 3px;
     letter-spacing: 0.05em; }
+    .header-logo .logo-description span.first {
+      font-size: 10px; }
+    .header-logo .logo-description span.sec {
+      font-size: 21px; }
+    .header-logo .logo-description span.third {
+      font-size: 12px;
+      text-transform: uppercase; }
+    .header-logo .logo-description span:not(.third) {
+      margin-bottom: 3px; }
 
 .separator {
   width: 1px;
   background-color: #fff;
-  margin: 0 5px; }
+  margin: 0 10px 0 16px; }
 
 .language-selection.mobile {
   display: block;
@@ -3256,6 +3264,30 @@ img.fill-height {
   width: 100%;
   min-height: 150px;
   text-align: center; }
+
+.garage-partner p {
+  font-size: 14px; }
+
+.good-deal .good-deal-price {
+  font-size: 14px; }
+  .good-deal .good-deal-price strong {
+    text-transform: uppercase; }
+  .good-deal .good-deal-price span {
+    color: #e75e0a;
+    font-weight: 800; }
+.good-deal .img-container {
+  text-align: center; }
+.good-deal ul {
+  display: block;
+  padding-left: 15px;
+  margin-top: -5px; }
+.good-deal li {
+  display: block;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 600; }
+  .good-deal li.link {
+    text-decoration: underline; }
 
 figure {
   margin: 0; }
@@ -3826,6 +3858,10 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     width: auto;
     padding: 0 25px; } }
 @media screen and (min-width: 1056px) {
+  .logo-description {
+    position: relative;
+    top: 5px; }
+
   .container-wrapper {
     width: 1024px; }
 

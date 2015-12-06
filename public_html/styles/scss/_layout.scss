@@ -125,7 +125,7 @@ header{
         }
     }
 }
-section, .header-bottom{
+section:not(:last-child), .header-bottom, #content{
     border-bottom: 1px solid $grey-border;
     @include box-shadow(0 1px 0 0 $white);
 }
@@ -359,15 +359,27 @@ section{
         text-align: center;
         span{
             display: block;
-            margin-bottom: 3px;
-            letter-spacing: 0.05em
+            letter-spacing: 0.05em;
+            &.first{
+                font-size: 10px;
+            }
+            &.sec{
+                font-size: 21px;
+            }
+            &.third{
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            &:not(.third){
+                margin-bottom: 3px;
+            }
         }
     }
 }
 .separator{
     width: 1px;
     background-color: $white;
-    margin: 0 5px;
+    margin: 0 10px 0 16px;
 
 }
 .language-selection{

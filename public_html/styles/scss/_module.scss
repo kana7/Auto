@@ -213,6 +213,39 @@ img.fill-height{
     text-align: center;
 }
 
+.garage-partner{
+    p{font-size: 14px;}
+}
+.good-deal{
+    .good-deal-price{
+        font-size: 14px;
+        strong{
+            text-transform: uppercase;
+        }
+        span{
+            color: $orange;
+            font-weight: 800;
+        }
+    }
+    .img-container{
+        text-align: center;
+    }
+    ul{
+        display: block;
+        padding-left: 15px;
+        margin-top: -5px;
+    }
+    li{
+        display: block;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        &.link{
+            text-decoration: underline;
+        }
+    }
+}
+
 //SLIDER ANNONCE UNE STYLES
 //--------------------------------------------------
 figure{

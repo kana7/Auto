@@ -119,6 +119,10 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
 }
 @include media(desk){
+    .logo-description{
+        position: relative;
+        top: 5px;
+    }
     .container-wrapper{
         width: 1024px;
     }
