@@ -124,12 +124,16 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
 }
 @include media(desk){
-    .logo-description{
-        position: relative;
-        top: 5px;
-    }
     .container-wrapper{
         width: 1024px;
+    }
+    .logo-description{
+        position: relative;
+        top: 0px;
+        margin-left: 15px;
+    }
+    .header-logo li.separator{
+        display: none;
     }
     .main-gallery:not(.annonce-entry-slider){
         .gallery-cell{
@@ -218,6 +222,7 @@ Contient les media queries pour adapter les styles sur les différents formats
 
     .annonce-entry-img{
         display: inline-block;
+        position: relative;
         width: 75%;
         z-index: 1;
     }
@@ -272,6 +277,9 @@ Contient les media queries pour adapter les styles sur les différents formats
         .gallery-cell{
             width: 20%;
         }
+    }
+    .logo-description{
+        margin-left: 50px;
     }
     .search-sort .byBrand {
         width: 65.5%;

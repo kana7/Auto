@@ -84,9 +84,7 @@ var resizeSlider = function () {
 };
 
 var resizeAllImages = function (callback) {
-
     $('.img-annonce').each(function () {
-
         var element = $(this);
         var container = element.parent();
         var width = element.width();
@@ -99,7 +97,7 @@ var resizeAllImages = function (callback) {
             element.addClass('fill-width');
         }
 
-        var newWidth = element.width();
+        /*var newWidth = element.width();
         var newHeight = element.height();
         if (newHeight > containerHeight) {
 
@@ -109,7 +107,7 @@ var resizeAllImages = function (callback) {
 
             element.removeClass('fill-height');
             element.addClass('fill-width');
-        }
+        }*/
     });
     callback();
 };

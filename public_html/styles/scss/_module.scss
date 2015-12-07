@@ -308,6 +308,14 @@ figure{
         display: inline-block;
     }
 }
+
+.annonce-slider-item-img-container{
+    width: 100%;
+    background-color: darken($grey, 5%);
+    .annonce-entry-slider &{
+        background-color: darken($white, 1%);
+    }
+}
 .annonce-slider-item-content{
     padding: 5px 0;
     font-size: 14px;

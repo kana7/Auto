@@ -3035,18 +3035,20 @@ section {
 .header-logo .logo img {
   height: 32px; }
 .header-logo .logo-description {
-  width: 80px;
+  display: inline-block;
+  position: relative;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  font-size: 12px; }
   .header-logo .logo-description span {
     display: block;
     letter-spacing: 0.05em; }
     .header-logo .logo-description span.first {
-      font-size: 10px; }
+      font-size: 0.9em; }
     .header-logo .logo-description span.sec {
-      font-size: 21px; }
+      font-size: 1.9em; }
     .header-logo .logo-description span.third {
-      font-size: 12px;
+      font-size: 1em;
       text-transform: uppercase; }
     .header-logo .logo-description span:not(.third) {
       margin-bottom: 3px; }
@@ -3348,6 +3350,12 @@ figure {
   overflow: hidden; }
   .annonce-slider-item .img-annonce {
     display: inline-block; }
+
+.annonce-slider-item-img-container {
+  width: 100%;
+  background-color: #e0e0e0; }
+  .annonce-entry-slider .annonce-slider-item-img-container {
+    background-color: #fcfcfc; }
 
 .annonce-slider-item-content {
   padding: 5px 0;
@@ -3897,12 +3905,16 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
   #search_result > .container-wrapper {
     width: 100%; } }
 @media screen and (min-width: 1056px) {
-  .logo-description {
-    position: relative;
-    top: 5px; }
-
   .container-wrapper {
     width: 1024px; }
+
+  .logo-description {
+    position: relative;
+    top: 0px;
+    margin-left: 15px; }
+
+  .header-logo li.separator {
+    display: none; }
 
   .main-gallery:not(.annonce-entry-slider) .gallery-cell {
     width: 25%; }
@@ -3991,6 +4003,7 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
 
   .annonce-entry-img {
     display: inline-block;
+    position: relative;
     width: 75%;
     z-index: 1; }
 
@@ -4043,6 +4056,9 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
 
   .main-gallery:not(.annonce-entry-slider) .gallery-cell {
     width: 20%; }
+
+  .logo-description {
+    margin-left: 50px; }
 
   .search-sort .byBrand {
     width: 65.5%; }

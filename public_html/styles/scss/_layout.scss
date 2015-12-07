@@ -354,20 +354,22 @@ section{
         }
     }
     .logo-description{
-        width: 80px;
+        display: inline-block;
+        position: relative;
         color: $white;
         text-align: center;
+        font-size: 12px;
         span{
             display: block;
             letter-spacing: 0.05em;
             &.first{
-                font-size: 10px;
+                font-size: 0.9em;
             }
             &.sec{
-                font-size: 21px;
+                font-size: 1.9em;
             }
             &.third{
-                font-size: 12px;
+                font-size: 1em;
                 text-transform: uppercase;
             }
             &:not(.third){
