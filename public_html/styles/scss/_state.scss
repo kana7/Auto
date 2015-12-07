@@ -175,6 +175,25 @@ Contient les media queries pour adapter les styles sur les différents formats
         width: auto;
         height: 100%;
         float: left;
+        border-bottom: 1px solid $grey-border;
+    }
+    .search-sort{
+        text-align: left;
+        font-size: 15px;
+        .byBrand{
+            width: 59.5%;
+        }
+        .search-sort-container{
+            width: 100%;
+            text-align: center;
+            .byYear, .byKm, .byPrice{
+                width: 33.3333%;
+            }
+        }
+        span[class^=icon-]{
+            top: 0;
+            font-size: 1em !important;
+        }
     }
     .search-result-entry-infos .search-result-entry-infos-details{
         display: table;
@@ -253,7 +272,11 @@ Contient les media queries pour adapter les styles sur les différents formats
         .gallery-cell{
             width: 20%;
         }
-    }.search-result-entry-infos .search-result-entry-infos-header{
+    }
+    .search-sort .byBrand {
+        width: 65.5%;
+    }
+    .search-result-entry-infos .search-result-entry-infos-header{
         width: 60%;
     }
     .search-result-entry-infos .search-result-entry-infos-details{
