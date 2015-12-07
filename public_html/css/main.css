@@ -13,7 +13,7 @@ Contient les fonctions SCSS
 /*
 BASE
 ----------------------------------------------------------------
-Contient la base des styles pour constuire le site. Reset des propri?®t?®s de base des diff?®rents navigateurs
+Contient la base des styles pour constuire le site. Reset des propriâ”œÂ®tâ”œÂ®s de base des diffâ”œÂ®rents navigateurs
 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -2643,7 +2643,7 @@ img {
 /*
 LAYOUT
 ----------------------------------------------------------------
-Contient les classes suppl?®mentaires pour la mise en page du site + les styles pour la structure g?®n?®rale du site (header, menus et footer)
+Contient les classes supplâ”œÂ®mentaires pour la mise en page du site + les styles pour la structure gâ”œÂ®nâ”œÂ®rale du site (header, menus et footer)
 */
 .container-wrapper {
   margin-right: auto;
@@ -2851,6 +2851,7 @@ section {
   .desktop-menu .dropdown {
     display: inline-block;
     position: absolute;
+    top: 28px;
     background-color: #f7f7f7;
     color: #004994;
     z-index: 1;
@@ -3096,7 +3097,7 @@ section {
 /*
 MODULE
 ----------------------------------------------------------------
-Contient les styles pour les ?®l?®ments de l'interface utilisateur
+Contient les styles pour les â”œÂ®lâ”œÂ®ments de l'interface utilisateur
 */
 svg:not(:root) {
   overflow: visible; }
@@ -3770,7 +3771,7 @@ figure {
     top: 1px;
     left: 10px;
     color: #8a9eb3;
-    line-height: initial;
+    line-height: normal;
     font-weight: 400;
     font-size: 11px; }
   .annonce-entry-details .annonce-entry-details-detail {
@@ -3852,7 +3853,7 @@ figure {
 /*
 RESPONSIVE
 ----------------------------------------------------------------
-Contient les media queries pour adapter les styles sur les diff?®rents formats
+Contient les media queries pour adapter les styles sur les diffâ”œÂ®rents formats
 */
 @media screen and (max-width: 671px) {
   .container-wrapper {
@@ -4044,8 +4045,7 @@ Contient les media queries pour adapter les styles sur les diff?®rents formats
     width: 55%; }
 
   .search-result-entry-infos .search-result-entry-infos-details {
-    margin-left: -1px;
-    }
+    margin-left: -1px; }
 
   .annonce-entry-img {
     display: inline-block;

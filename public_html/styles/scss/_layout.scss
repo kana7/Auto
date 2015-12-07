@@ -170,6 +170,7 @@ section{
     .dropdown{
         display: inline-block;
         position: absolute;
+        top: 28px;
         background-color: lighten($grey, 4%);;
         color: $blue;
         z-index: 1;
