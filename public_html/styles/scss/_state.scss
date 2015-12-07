@@ -99,6 +99,13 @@ Contient les media queries pour adapter les styles sur les différents formats
     .annonce-entry-header .annonce-entry-header-actions{
         font-size: 1.4em;
     }
+    .pagination{
+        text-align: right;
+        .page-link{
+            margin: 0 5px;
+            padding: 0px 15px;
+        }
+    }
     .annonce-entry-details{
         font-size: 1.2em;
         &> *{
@@ -185,7 +192,7 @@ Contient les media queries pour adapter les styles sur les différents formats
         text-align: left;
         font-size: 15px;
         .byBrand{
-            width: 59.5%;
+            width: 55.5%;
         }
         .search-sort-container{
             width: 100%;
@@ -201,7 +208,6 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
     .search-result-entry-infos .search-result-entry-infos-details{
         display: table;
-        width: 50%;
         .year, .km, .price{
             width: 33.3333%;
             height: 100%;
@@ -214,7 +220,10 @@ Contient les media queries pour adapter les styles sur les différents formats
         }
     }
     .search-result-entry-infos .search-result-entry-infos-header{
-        width: 50%;
+        width: 45%;
+    }
+    .search-result-entry-infos .search-result-entry-infos-details{
+        width: 55%;
     }
     .search-result-entry-infos .search-result-entry-infos-details{
         margin-left: -1px;
@@ -282,13 +291,13 @@ Contient les media queries pour adapter les styles sur les différents formats
         margin-left: 50px;
     }
     .search-sort .byBrand {
-        width: 65.5%;
+        width: 61.1%;
     }
     .search-result-entry-infos .search-result-entry-infos-header{
-        width: 60%;
+        width: 55%;
     }
     .search-result-entry-infos .search-result-entry-infos-details{
-        width: 40%;
+        width: 45%;
     }
     .annonce-entry-details .price{
         font-size: 2em;

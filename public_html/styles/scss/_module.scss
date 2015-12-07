@@ -477,6 +477,46 @@ figure{
         top: 3px;
     }
 }
+.pagination{
+    text-align: center;
+    font-size: 14px;
+    .page-link{
+        margin: 0 3px;
+        line-height: 38px;
+        height: 40px;
+        border: 1px solid #dfdfdf;
+        padding: 0px 9px;
+        border-radius: 4px;
+        text-align: center;
+        background-color: #fff;
+        @include transition($transitionUi);
+        &:not(.page-ellipsis){
+            cursor: pointer;
+            &:hover:not(.selectedPage){
+                border-color: $blue;
+            }
+        }
+        &.page-ellipsis{
+            cursor: default;
+        }
+        &.selectedPage{
+            background-color: $blue;
+            color: $white;
+        }
+
+        background-color: $white;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        span[class^=icon-]{
+            position: relative;
+            top: 2px;
+        }
+    }
+}
 
 //ANNONCE SEARCH ENTRY
 //-------------------------------------------------------------
@@ -519,7 +559,10 @@ figure{
 }
 .search-result-entry-img{
     width: 132px;
-    background-color: #DFDFDF;
+    background-color: darken($grey, 5%);
+    vertical-align: middle !important;
+    text-align: center;
+    height: 100px;
 }
 .search-result-entry-infos{
     .infos-container{
