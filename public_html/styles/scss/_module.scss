@@ -127,7 +127,7 @@ img.fill-height{
 
 //TEXT STYLES
 //--------------------------------------------------
-#welcome-message{
+#welcome-message, #filter{
     padding: 10px 0;
     font-size: 15px;
     span[class^=icon-]{
@@ -149,6 +149,29 @@ img.fill-height{
             &:last-child{
                 margin-right: 0;
             }
+        }
+    }
+    .search-sort{
+        display: table;
+        font-weight: 600;
+        &>div{
+            display: table-cell;
+        }
+        #byBrand{
+            width: 65.5%;
+        }
+        .search-sort-container{
+            display: table;
+            width: 100%;
+            text-align: center;
+            #byYear, #byKm, #byPrice{
+                display: table-cell;
+                width: 33.3333%;
+            }
+        }
+        span{
+            font-size: 1.0em;
+            padding-left: 5px;
         }
     }
     .social-icon{
@@ -475,6 +498,7 @@ figure{
 .search-result-entry-img, .search-result-entry-infos{
     float: none;
     display: table-cell;
+    position: relative;
     vertical-align: top;
     height: 100%;
 }
@@ -495,7 +519,6 @@ figure{
         float: none;
         width: 100%;
         border: 1px solid $grey-border;
-        border-bottom: none;
         background-color: $white;
         font-size: 14px;
         color: $blue;

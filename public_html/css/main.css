@@ -2631,6 +2631,15 @@ img {
 .icon-campingcar-ico:before {
   content: "\42"; }
 
+.icon-sort:before {
+  content: "\72"; }
+
+.icon-sort-asc:before {
+  content: "\43"; }
+
+.icon-sort-desc:before {
+  content: "\44"; }
+
 /*
 LAYOUT
 ----------------------------------------------------------------
@@ -3192,31 +3201,48 @@ img.fill-height {
   .return span {
     padding-right: 10px; }
 
-#welcome-message {
+#welcome-message, #filter {
   padding: 10px 0;
   font-size: 15px; }
-  #welcome-message span[class^=icon-] {
+  #welcome-message span[class^=icon-], #filter span[class^=icon-] {
     font-size: 1.6em;
     position: relative;
     top: 3px; }
-    #welcome-message span[class^=icon-].icon-left-arrow {
+    #welcome-message span[class^=icon-].icon-left-arrow, #filter span[class^=icon-].icon-left-arrow {
       font-size: 1.05em; }
-  #welcome-message ul {
+  #welcome-message ul, #filter ul {
     display: inline;
     vertical-align: baseline; }
-    #welcome-message ul > li {
+    #welcome-message ul > li, #filter ul > li {
       margin: 0 3px; }
-      #welcome-message ul > li:first-child {
+      #welcome-message ul > li:first-child, #filter ul > li:first-child {
         margin-left: 0; }
-      #welcome-message ul > li:last-child {
+      #welcome-message ul > li:last-child, #filter ul > li:last-child {
         margin-right: 0; }
-  #welcome-message .social-icon {
+  #welcome-message .search-sort, #filter .search-sort {
+    display: table;
+    font-weight: 600; }
+    #welcome-message .search-sort > div, #filter .search-sort > div {
+      display: table-cell; }
+    #welcome-message .search-sort #byBrand, #filter .search-sort #byBrand {
+      width: 65.5%; }
+    #welcome-message .search-sort .search-sort-container, #filter .search-sort .search-sort-container {
+      display: table;
+      width: 100%;
+      text-align: center; }
+      #welcome-message .search-sort .search-sort-container #byYear, #welcome-message .search-sort .search-sort-container #byKm, #welcome-message .search-sort .search-sort-container #byPrice, #filter .search-sort .search-sort-container #byYear, #filter .search-sort .search-sort-container #byKm, #filter .search-sort .search-sort-container #byPrice {
+        display: table-cell;
+        width: 33.3333%; }
+    #welcome-message .search-sort span, #filter .search-sort span {
+      font-size: 1.0em;
+      padding-left: 5px; }
+  #welcome-message .social-icon, #filter .social-icon {
     height: 28px;
     width: 28px;
     background-color: #7a7a7a;
     text-align: center;
     vertical-align: middle; }
-    #welcome-message .social-icon span[class^=icon-] {
+    #welcome-message .social-icon span[class^=icon-], #filter .social-icon span[class^=icon-] {
       color: #fff;
       font-size: 1em;
       position: relative;
@@ -3525,6 +3551,7 @@ figure {
 .search-result-entry-img, .search-result-entry-infos {
   float: none;
   display: table-cell;
+  position: relative;
   vertical-align: top;
   height: 100%; }
 
@@ -3543,7 +3570,6 @@ figure {
   float: none;
   width: 100%;
   border: 1px solid #dfdfdf;
-  border-bottom: none;
   background-color: #fff;
   font-size: 14px;
   color: #004994; }
@@ -3856,7 +3882,10 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
 @media screen and (max-width: 1055px) {
   .header-top .container-wrapper, .footer-bottom .container-wrapper {
     width: auto;
-    padding: 0 25px; } }
+    padding: 0 25px; }
+
+  #search_result > .container-wrapper {
+    width: 100%; } }
 @media screen and (min-width: 1056px) {
   .logo-description {
     position: relative;
@@ -3912,6 +3941,29 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     .footer-bottom .pull-right {
       text-align: right; }
 
+  .search-result-entry-infos .search-result-entry-infos-header, .search-result-entry-infos .search-result-entry-infos-details {
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    float: left; }
+
+  .search-result-entry-infos .search-result-entry-infos-details {
+    display: table;
+    width: 50%; }
+    .search-result-entry-infos .search-result-entry-infos-details .year, .search-result-entry-infos .search-result-entry-infos-details .km, .search-result-entry-infos .search-result-entry-infos-details .price {
+      width: 33.3333%;
+      height: 100%; }
+    .search-result-entry-infos .search-result-entry-infos-details .price {
+      font-size: 1.3em; }
+    .search-result-entry-infos .search-result-entry-infos-details .year, .search-result-entry-infos .search-result-entry-infos-details .km {
+      font-size: 1.1em; }
+
+  .search-result-entry-infos .search-result-entry-infos-header {
+    width: 50%; }
+
+  .search-result-entry-infos .search-result-entry-infos-details {
+    margin-left: -1px; }
+
   .annonce-entry-img {
     display: inline-block;
     width: 75%;
@@ -3958,13 +4010,20 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     font-size: 1.3em; }
 
   #search_result .row .container-wrapper {
-    width: 100%; } }
+    width: 100%;
+    padding: 0; } }
 @media screen and (min-width: 1302px) {
   .container-wrapper {
     width: 1280px; }
 
   .main-gallery:not(.annonce-entry-slider) .gallery-cell {
     width: 20%; }
+
+  .search-result-entry-infos .search-result-entry-infos-header {
+    width: 60%; }
+
+  .search-result-entry-infos .search-result-entry-infos-details {
+    width: 40%; }
 
   .annonce-entry-details .price {
     font-size: 2em; }

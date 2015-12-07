@@ -117,6 +117,11 @@ Contient les media queries pour adapter les styles sur les différents formats
         width: auto;
         padding: 0 25px;
     }
+    #search_result{
+        &>.container-wrapper{
+            width: 100%;
+        }
+    }
 }
 @include media(desk){
     .logo-description{
@@ -164,6 +169,34 @@ Contient les media queries pour adapter les styles sur les différents formats
             text-align: right;
         }
     }
+
+    .search-result-entry-infos .search-result-entry-infos-header, .search-result-entry-infos .search-result-entry-infos-details{
+        display: inline-block;
+        width: auto;
+        height: 100%;
+        float: left;
+    }
+    .search-result-entry-infos .search-result-entry-infos-details{
+        display: table;
+        width: 50%;
+        .year, .km, .price{
+            width: 33.3333%;
+            height: 100%;
+        }
+        .price{
+            font-size: 1.3em;
+        }
+        .year, .km{
+            font-size: 1.1em;
+        }
+    }
+    .search-result-entry-infos .search-result-entry-infos-header{
+        width: 50%;
+    }
+    .search-result-entry-infos .search-result-entry-infos-details{
+        margin-left: -1px;
+    }
+
     .annonce-entry-img{
         display: inline-block;
         width: 75%;
@@ -209,6 +242,7 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
     #search_result .row .container-wrapper{
         width: 100%;
+        padding: 0;
     }
 }
 @include media(lgdesk){
@@ -219,6 +253,11 @@ Contient les media queries pour adapter les styles sur les différents formats
         .gallery-cell{
             width: 20%;
         }
+    }.search-result-entry-infos .search-result-entry-infos-header{
+        width: 60%;
+    }
+    .search-result-entry-infos .search-result-entry-infos-details{
+        width: 40%;
     }
     .annonce-entry-details .price{
         font-size: 2em;

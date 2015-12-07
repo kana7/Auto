@@ -119,3 +119,12 @@
 .icon-campingcar-ico:before {
   content: "\42";
 }
+.icon-sort:before {
+  content: "\72";
+}
+.icon-sort-asc:before {
+  content: "\43";
+}
+.icon-sort-desc:before {
+  content: "\44";
+}
