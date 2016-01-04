@@ -2,10 +2,10 @@ $(function () {
     $('#content').prepend($overlay);
     resizeAllImages(callbackInitSlider);
 //Resize du slider au chargement de la page et lors du resize de la fenêtre
-    if ($('.mobile-sidebar-menu')) {
+    if ($('.mobile-sidebar-menu').length>0) {
         menuMobile.init();
     }
-    if ($('.language-selection.mobile')) {
+    if ($('.language-selection.mobile').length>0) {
         languageSelection.init();
     }
 
@@ -20,9 +20,13 @@ $(function () {
      $('window').on('resize', matchHeightBox());
      }*/
     
-    if($('#catMenu')){
+    if($('#catMenu').length>0){
         catSelection.init();
     }
+    
+    $('.disabled').on('click', function(){
+         alert('cette fonction sera bientôt disponible.');
+    });
 });
 
 
@@ -259,13 +263,13 @@ var menuMobile = (function () {
     };
 
     var _bindEvents = function () {
-        $leftButtonMenu.on('click', function () {
+        $leftButtonMenu.not('.disabled').on('click', function () {
             _toggleMenu($(this));
         });
-        $rightButtonMenu.on('click', function () {
+        $rightButtonMenu.not('.disabled').on('click', function () {
             _toggleMenu($(this));
         });
-        $searchButton.on('click', function () {
+        $searchButton.not('.disabled').on('click', function () {
             _toggleMenu($(this));
         });
         $document.on('click', function () {

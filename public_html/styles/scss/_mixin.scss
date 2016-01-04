@@ -126,6 +126,25 @@ Contient les fonctions SCSS
     transform: none;
 }
 
+@mixin disabledLink(){
+     pointer-events: none;
+     cursor: default;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin disabled($opacity: 0.5){
+    @include opacity($opacity);
+    a{
+        @include disabledLink;
+    }
+    
+}
+
 @mixin box-shadow($params...) {
     -webkit-box-shadow: $params;
     -moz-box-shadow: $params;

@@ -118,6 +118,11 @@ Contient les media queries pour adapter les styles sur les différents formats
             font-size: 1.25em;
         }
     }
+    .cat-selection{
+        li{
+            font-size: 35px;
+        }
+    }
 }
 @include viewport(max, $max: 1055){
     .header-top .container-wrapper, .footer-bottom .container-wrapper {
@@ -158,6 +163,15 @@ Contient les media queries pour adapter les styles sur les différents formats
             font-weight: 21px;
         }
     }
+
+    .cat-selection{
+        &.search-result{
+            li{
+                font-size: 32px;
+            }
+        }
+    }
+
     .menu-mobile{
         display: none;
     }

@@ -361,11 +361,16 @@ figure{
     }
     li{
         display: inline-block;
-        font-size: 28px;
+        font-size: 30px;
         cursor: pointer;
         @include transition($transitionUi);
         &:hover, &.active{
             color: $orange;
+        }
+        .icon-car-ico{
+            font-size: 1.2em;
+            position: relative;
+            top: 5px;
         }
     }
 }
@@ -516,6 +521,10 @@ figure{
             top: 2px;
         }
     }
+}
+
+.disabled{
+    @include disabled(0.5);
 }
 
 //ANNONCE SEARCH ENTRY

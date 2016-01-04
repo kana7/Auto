@@ -3391,7 +3391,7 @@ figure {
       width: 100%; }
   .cat-selection li {
     display: inline-block;
-    font-size: 28px;
+    font-size: 30px;
     cursor: pointer;
     -moz-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
     -o-transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out;
@@ -3399,6 +3399,10 @@ figure {
     transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out; }
     .cat-selection li:hover, .cat-selection li.active {
       color: #e75e0a; }
+    .cat-selection li .icon-car-ico {
+      font-size: 1.2em;
+      position: relative;
+      top: 5px; }
 
 .group-input {
   display: inline-block;
@@ -3569,6 +3573,13 @@ figure {
     .pagination .page-link span[class^=icon-] {
       position: relative;
       top: 2px; }
+
+.disabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50); }
+  .disabled a {
+    pointer-events: none;
+    cursor: default; }
 
 #search_result {
   padding: 20px 10px; }
@@ -3941,7 +3952,10 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     .annonce-entry-details .price {
       font-size: 1.6em; }
     .annonce-entry-details .km, .annonce-entry-details .year {
-      font-size: 1.25em; } }
+      font-size: 1.25em; }
+
+  .cat-selection li {
+    font-size: 35px; } }
 @media screen and (max-width: 1055px) {
   .header-top .container-wrapper, .footer-bottom .container-wrapper {
     width: auto;
@@ -3971,6 +3985,9 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
 
   .footer-top nav li {
     font-weight: 21px; }
+
+  .cat-selection.search-result li {
+    font-size: 32px; }
 
   .menu-mobile {
     display: none; }
