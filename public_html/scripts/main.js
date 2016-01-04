@@ -2,10 +2,10 @@ $(function () {
     $('#content').prepend($overlay);
     resizeAllImages(callbackInitSlider);
 //Resize du slider au chargement de la page et lors du resize de la fenêtre
-    if ($('.mobile-sidebar-menu').length>0) {
+    if ($('.mobile-sidebar-menu').length > 0) {
         menuMobile.init();
     }
-    if ($('.language-selection.mobile').length>0) {
+    if ($('.language-selection.mobile').length > 0) {
         languageSelection.init();
     }
 
@@ -19,14 +19,21 @@ $(function () {
      matchHeightBox();
      $('window').on('resize', matchHeightBox());
      }*/
-    
-    if($('#catMenu').length>0){
+
+    if ($('#catMenu').length > 0) {
         catSelection.init();
     }
-    
-    $('.disabled').on('click', function(){
-         alert('cette fonction sera bientôt disponible.');
+
+    $('.disabled').on('click', function () {
+        alert('cette fonction sera bientôt disponible.');
     });
+    
+    //vide l'input text au focus dessus
+    if ($('input:not([type=radio])').length > 0) {
+        $('input:not([type=radio])').on('focus', function () {
+            $(this).val('');
+        });
+    }
 });
 
 
@@ -111,16 +118,16 @@ var resizeAllImages = function (callback) {
         }
 
         /*var newWidth = element.width();
-        var newHeight = element.height();
-        if (newHeight > containerHeight) {
-
-            element.removeClass('fill-width');
-            element.addClass('fill-height');
-        } else if (newWidth > containerWidth) {
-
-            element.removeClass('fill-height');
-            element.addClass('fill-width');
-        }*/
+         var newHeight = element.height();
+         if (newHeight > containerHeight) {
+         
+         element.removeClass('fill-width');
+         element.addClass('fill-height');
+         } else if (newWidth > containerWidth) {
+         
+         element.removeClass('fill-height');
+         element.addClass('fill-width');
+         }*/
     });
     callback();
 };
@@ -162,7 +169,7 @@ var catSelection = (function () {
             _resetSelect();
             $element.addClass('active');
             $inputCatValue.val($element.attr('data-value'));
-        }else{
+        } else {
             _resetSelect();
         }
     };
@@ -188,7 +195,7 @@ var DesktopMenuDrop = (function () {
     };
     var _bindEvents = function () {
         $dropButton.on('click', _toggleMenu);
-        $document.on('click', function () {
+        $document.not($menuDrop).on('click', function () {
             if (flag != "0") {
                 _closeMenu();
             }

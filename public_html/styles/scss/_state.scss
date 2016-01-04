@@ -123,6 +123,9 @@ Contient les media queries pour adapter les styles sur les différents formats
             font-size: 35px;
         }
     }
+    .detailed-search-box .btn-orange {
+        width: auto;
+    }
 }
 @include viewport(max, $max: 1055){
     .header-top .container-wrapper, .footer-bottom .container-wrapper {
@@ -290,6 +293,17 @@ Contient les media queries pour adapter les styles sur les différents formats
     #search_result .row .container-wrapper{
         width: 100%;
         padding: 0;
+    }
+    .detailed-search-box{
+        .cat-selection{
+            ul{
+                width: 75%;
+            }
+        }
+    }
+    .group-input.radio{
+        margin-top: 10px;
+        &>label{float: left; width: auto; margin-bottom: 0;}
     }
 }
 @include media(lgdesk){

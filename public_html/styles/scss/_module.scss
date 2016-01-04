@@ -331,9 +331,9 @@ figure{
     }
 }
 
-//FORM INPUT STYLES - FAST SEARCH
+//FORM INPUT STYLES - FAST SEARCH + DETAILED SEARCH
 //---------------------------------------------
-.fast-search-box{
+.fast-search-box, .detailed-search-box{
     .fast-search-result{
         color: $orange;
         font-size: 16px;
@@ -342,14 +342,19 @@ figure{
     .btn-orange{
         margin-top: 7px;
     }
-    &.aside{
-
+}
+.detailed-search-box{
+    .cat-selection{
+        ul{
+            width: 100%;
+        }
     }
 }
 .cat-selection{
     text-align: center;
     margin-bottom: 10px;
     ul{
+        display: block;
         text-align: justify;
         width: 100%;
         line-height: 0;
@@ -361,11 +366,19 @@ figure{
     }
     li{
         display: inline-block;
+        text-align: center;
         font-size: 30px;
         cursor: pointer;
         @include transition($transitionUi);
         &:hover, &.active{
             color: $orange;
+        }
+        .icon-label{
+            display: block;
+            font-size: 0.4em;
+            font-weight: 600;
+            line-height: 20px;
+            margin-top: 15px;
         }
         .icon-car-ico{
             font-size: 1.2em;
@@ -379,6 +392,7 @@ figure{
     position: relative;
     width: 100%;
     padding: 4px 0;
+    @include clearfix;
     label{
         display: block;
         line-height: 20px;
@@ -397,7 +411,7 @@ figure{
     &.search{
         width: 100%;
         min-width: 275px;
-        padding: 5px 10px;
+        padding: 10px 10px 5px;
         form{
             @include clearfix;
         }
@@ -409,15 +423,47 @@ figure{
         input{
             width: 80%;
             border-width: 1px;
-            border-color: $blue;
+            border-color: $orange;
         }
         button{
             width: 18%;
-            background-color: #004994;
-            color: #fff;
+            background-color: $orange;
+            color: $white;
             line-height: 5px;
             font-size: 1.2em;
-            border-radius: 0 5px 5px 0;
+            span.icon-recherche{
+                top: -1px;
+                text-align: center;
+                font-size: 1.1em;
+                margin: 0;
+            }
+        }
+    }
+    &.radio{
+        padding: 5px 0;
+        &>label{
+            display: block; 
+            width: 100%;  
+            margin-right: 30px;
+            margin-bottom: 5px;
+        }
+        label, input[type=radio]{
+            display: inline-block;
+        }
+        div{
+            label, input[type=radio]{
+                cursor: pointer;
+            }
+            display: inline-block;
+            float: left;
+            margin-right: 35px;
+            label{
+                margin-left: 15px;
+            }
+            input[type=radio]{
+                position: relative;
+                top: 2px;
+            }
         }
     }
 }
