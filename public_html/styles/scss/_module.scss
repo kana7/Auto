@@ -348,6 +348,14 @@ figure{
         ul{
             width: 100%;
         }
+        li{
+            &:first-child{
+                margin-bottom: 15px;
+            }
+            span{
+                display: inline-block;
+            }
+        }
     }
 }
 .cat-selection{
@@ -377,8 +385,8 @@ figure{
             display: block;
             font-size: 0.4em;
             font-weight: 600;
-            line-height: 20px;
-            margin-top: 15px;
+            line-height: normal;
+            margin-top: 5px;
         }
         .icon-car-ico{
             font-size: 1.2em;
@@ -403,6 +411,7 @@ figure{
         display: block;
         width: 100%;
         border: 1px solid $grey-border;
+        background-color: $white;
         height: 38px;
         padding-left: 10px;
         font-size: 13px;

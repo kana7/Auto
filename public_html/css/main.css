@@ -3382,6 +3382,10 @@ figure {
 
 .detailed-search-box .cat-selection ul {
   width: 100%; }
+.detailed-search-box .cat-selection li:first-child {
+  margin-bottom: 15px; }
+.detailed-search-box .cat-selection li span {
+  display: inline-block; }
 
 .cat-selection {
   text-align: center;
@@ -3410,8 +3414,8 @@ figure {
       display: block;
       font-size: 0.4em;
       font-weight: 600;
-      line-height: 20px;
-      margin-top: 15px; }
+      line-height: normal;
+      margin-top: 5px; }
     .cat-selection li .icon-car-ico {
       font-size: 1.2em;
       position: relative;
@@ -3438,6 +3442,7 @@ figure {
     display: block;
     width: 100%;
     border: 1px solid #dfdfdf;
+    background-color: #fff;
     height: 38px;
     padding-left: 10px;
     font-size: 13px;
@@ -4002,7 +4007,13 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     font-size: 35px; }
 
   .detailed-search-box .btn-orange {
-    width: auto; } }
+    width: auto; }
+
+  .detailed-search-box .cat-selection li:first-child {
+    margin-bottom: 0; }
+
+  .cat-selection li .icon-label {
+    margin-top: 15px; } }
 @media screen and (max-width: 1055px) {
   .header-top .container-wrapper, .footer-bottom .container-wrapper {
     width: auto;

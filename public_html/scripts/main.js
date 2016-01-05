@@ -27,7 +27,7 @@ $(function () {
     $('.disabled').on('click', function () {
         alert('cette fonction sera bientôt disponible.');
     });
-    
+
     //vide l'input text au focus dessus
     if ($('input:not([type=radio])').length > 0) {
         $('input:not([type=radio])').on('focus', function () {
@@ -195,7 +195,10 @@ var DesktopMenuDrop = (function () {
     };
     var _bindEvents = function () {
         $dropButton.on('click', _toggleMenu);
-        $document.not($menuDrop).on('click', function () {
+        $menuDrop.on('click', function () {
+            flag = "0";
+        });
+        $document.on('click', function () {
             if (flag != "0") {
                 _closeMenu();
             }
