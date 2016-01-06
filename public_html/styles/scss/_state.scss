@@ -127,10 +127,22 @@ Contient les media queries pour adapter les styles sur les différents formats
         width: auto;
     }
     .detailed-search-box .cat-selection li:first-child {
-    margin-bottom: 0;
-}
+        margin-bottom: 0;
+    }
     .cat-selection li .icon-label{
         margin-top: 15px;
+    }
+    .group-input.inline{
+        &>.cell{
+            display: table-cell !important;
+            vertical-align: middle;
+        }
+        &>input, &>div{
+            &:not(:last-child){
+                margin-bottom: 0;
+                padding-right: 35px;
+            }
+        }
     }
 }
 @include viewport(max, $max: 1055){

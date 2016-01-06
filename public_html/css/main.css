@@ -3421,6 +3421,14 @@ figure {
       position: relative;
       top: 5px; }
 
+input[type="radio"], input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  top: 2px;
+  margin-right: 15px; }
+  input[type="radio"] + label, input[type="checkbox"] + label {
+    cursor: pointer; }
+
 .group-input {
   display: inline-block;
   position: relative;
@@ -3438,7 +3446,7 @@ figure {
     line-height: 20px;
     padding-bottom: 4px;
     font-size: 14px; }
-  .group-input select, .group-input input[type="text"] {
+  .group-input select, .group-input input[type="text"], .group-input textarea {
     display: block;
     width: 100%;
     border: 1px solid #dfdfdf;
@@ -3447,6 +3455,11 @@ figure {
     padding-left: 10px;
     font-size: 13px;
     cursor: pointer; }
+  .group-input textarea {
+    height: 120px;
+    padding: 10px;
+    line-height: 20px;
+    resize: vertical; }
   .group-input.search {
     width: 100%;
     min-width: 275px;
@@ -3492,11 +3505,18 @@ figure {
       margin-right: 35px; }
       .group-input.radio div label, .group-input.radio div input[type=radio] {
         cursor: pointer; }
-      .group-input.radio div label {
-        margin-left: 15px; }
-      .group-input.radio div input[type=radio] {
-        position: relative;
-        top: 2px; }
+  .group-input.inline {
+    display: table;
+    width: auto;
+    table-layout: fixed;
+    border-collapse: collapse; }
+    .group-input.inline > .cell {
+      display: block !important;
+      vertical-align: middle; }
+      .group-input.inline > .cell:not(:last-child) {
+        margin-bottom: 10px; }
+    .group-input.inline label {
+      display: inline-block; }
 
 .btn-orange {
   display: inline-block;
@@ -4013,7 +4033,14 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     margin-bottom: 0; }
 
   .cat-selection li .icon-label {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+
+  .group-input.inline > .cell {
+    display: table-cell !important;
+    vertical-align: middle; }
+  .group-input.inline > input:not(:last-child), .group-input.inline > div:not(:last-child) {
+    margin-bottom: 0;
+    padding-right: 35px; } }
 @media screen and (max-width: 1055px) {
   .header-top .container-wrapper, .footer-bottom .container-wrapper {
     width: auto;

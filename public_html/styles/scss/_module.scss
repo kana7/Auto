@@ -395,6 +395,15 @@ figure{
         }
     }
 }
+input[type="radio"], input[type="checkbox"]{
+    position: relative;
+    cursor: pointer;
+    top: 2px;
+    margin-right: 15px;
+    &+label{
+        cursor: pointer;
+    }
+}
 .group-input{
     display: inline-block;
     position: relative;
@@ -407,7 +416,7 @@ figure{
         padding-bottom: 4px;
         font-size: 14px;
     }
-    select, input[type="text"]{
+    select, input[type="text"], textarea{
         display: block;
         width: 100%;
         border: 1px solid $grey-border;
@@ -416,6 +425,12 @@ figure{
         padding-left: 10px;
         font-size: 13px;
         cursor: pointer;
+    }
+    textarea{
+        height: 120px;
+        padding: 10px;
+        line-height: 20px;
+        resize: vertical;
     }
     &.search{
         width: 100%;
@@ -466,13 +481,22 @@ figure{
             display: inline-block;
             float: left;
             margin-right: 35px;
-            label{
-                margin-left: 15px;
+        }
+    }
+    &.inline{
+        display: table;
+        width: auto;
+        table-layout: fixed;
+        border-collapse: collapse;
+        &>.cell{
+            display: block !important;
+            vertical-align: middle;
+            &:not(:last-child){
+                margin-bottom: 10px;
             }
-            input[type=radio]{
-                position: relative;
-                top: 2px;
-            }
+        }
+        label{
+            display: inline-block;
         }
     }
 }
