@@ -128,3 +128,9 @@
 .icon-sort-desc:before {
   content: "\44";
 }
+.icon-info-circle:before {
+  content: "\45";
+}
+.icon-picture-o:before {
+  content: "\46";
+}

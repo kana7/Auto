@@ -2640,6 +2640,12 @@ img {
 .icon-sort-desc:before {
   content: "\44"; }
 
+.icon-info-circle:before {
+  content: "\45"; }
+
+.icon-picture-o:before {
+  content: "\46"; }
+
 /*
 LAYOUT
 ----------------------------------------------------------------
@@ -3116,6 +3122,26 @@ svg:not(:root) {
   .flickity-page-dots .dot.is-selected {
     background: #fff;
     border: 2px solid #004994; }
+
+.rotate0 {
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+.rotate90 {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.rotate180 {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.rotate270 {
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg); }
 
 .orange {
   color: #e75e0a; }
@@ -3931,6 +3957,112 @@ input[type="radio"], input[type="checkbox"] {
     .annonce-entry-seller .annonce-entry-seller-options .btn-outline-orange {
       padding: 12px 15px; }
 
+.uploadFile-container {
+  position: relative;
+  display: inline-block;
+  height: 150px; }
+  .uploadFile-container:not(:last-child) {
+    margin-bottom: 50px; }
+
+.add-annonce-image-container {
+  display: block;
+  height: 154.5px;
+  width: 173px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  overflow: hidden; }
+
+.add-annonce-image-input {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute; }
+
+.image-buttons {
+  text-align: center;
+  padding-top: 5px; }
+
+.modify-image-button {
+  cursor: pointer;
+  display: inline-block; }
+
+.deleteImage {
+  position: relative;
+  top: 1px;
+  right: 0px; }
+
+.upload-status {
+  color: #e75e0a;
+  height: 100%;
+  padding-top: 21px;
+  font-size: 14px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .upload-status > .icon-picture-o {
+    display: block;
+    font-size: 28pt;
+    margin-bottom: 5px; }
+  .upload-status > .image-path {
+    width: 100%;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
+.add-annonce-pic {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.add-annonce-image-pic {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: auto;
+  max-height: 195px;
+  max-width: 173px; }
+
+#alert_browser {
+  margin: 0;
+  display: block;
+  float: left;
+  width: 100%;
+  margin-top: 19px;
+  padding: 0 15px;
+  text-align: left;
+  background-color: #F9F9F9;
+  border: 2px solid #00529C;
+  border-radius: 4px;
+  color: black; }
+  #alert_browser [class^="icon-"] {
+    color: #004994;
+    font-size: 32px; }
+  #alert_browser > .attention_sign {
+    display: none;
+    margin: 0;
+    margin-right: 15px; }
+
+#info {
+  display: inline-block;
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px; }
+  #info > p > span {
+    color: #004994;
+    font-weight: 600; }
+  #info a {
+    display: inline;
+    color: #004994;
+    text-decoration: underline; }
+
 /*
 RESPONSIVE
 ----------------------------------------------------------------
@@ -4040,7 +4172,13 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     vertical-align: middle; }
   .group-input.inline > input:not(:last-child), .group-input.inline > div:not(:last-child) {
     margin-bottom: 0;
-    padding-right: 35px; } }
+    padding-right: 35px; }
+
+  .uploadFile-container {
+    margin-right: 20px;
+    float: left; }
+    .uploadFile-container:not(:last-child) {
+      margin-bottom: 30px; } }
 @media screen and (max-width: 1055px) {
   .header-top .container-wrapper, .footer-bottom .container-wrapper {
     width: auto;
@@ -4208,7 +4346,10 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     .group-input.radio > label {
       float: left;
       width: auto;
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+
+  #alert_browser > .attention_sign {
+    display: inline-block; } }
 @media screen and (min-width: 1302px) {
   .container-wrapper {
     width: 1280px; }

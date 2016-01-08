@@ -23,6 +23,29 @@ svg:not(:root) {
     }
 }
 
+// ROTATION CLASS
+// --------------------------------------------------
+.rotate0 {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.rotate90 {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.rotate180 {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.rotate270 {
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
 // COLOR CLASS
 // --------------------------------------------------
 .orange
@@ -935,5 +958,112 @@ input[type="radio"], input[type="checkbox"]{
         .btn-outline-orange{
             padding: 12px 15px;
         }
+    }
+}
+
+//ADD ANNONCE
+//---------------------------------------
+
+.uploadFile-container {
+    position: relative;
+    display: inline-block;
+    height: 150px;
+    &:not(:last-child){
+        margin-bottom: 50px;
+    }
+}
+.add-annonce-image-container {
+    display: block;
+    height: 154.5px;
+    width: 173px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.add-annonce-image-input {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+.image-buttons {
+    text-align: center;
+    padding-top: 5px;
+}
+.modify-image-button {
+    cursor: pointer;
+    display: inline-block;
+}
+.deleteImage {
+    position: relative;
+    top: 1px;
+    right: 0px;
+}
+.upload-status {
+    color: $orange;
+    height: 100%;
+    padding-top: 21px;
+    font-size: 14px;
+    @include vertical-align-middle;
+    &>.icon-picture-o{
+        display: block;
+        font-size: 28pt;
+        margin-bottom: 5px;
+    }
+    &>.image-path{
+        width: 100%;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+}
+.add-annonce-pic{
+    @include vertical-align-middle;
+}
+.add-annonce-image-pic {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+    max-height: 195px;
+    max-width: 173px;
+}
+#alert_browser {
+    margin: 0;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 19px;
+    padding: 0 15px;
+    text-align: left;
+    background-color: #F9F9F9;
+    border: 2px solid #00529C;
+    border-radius: 4px;
+    color: black;
+    [class^="icon-"]{
+        color: $blue;
+        font-size: 32px;
+    }
+    &>.attention_sign{
+        display: none;
+        margin: 0;
+        margin-right: 15px;
+    }
+}
+#info {
+    display: inline-block;
+    margin: 0;
+    font-size: 12px;
+    line-height: 20px;
+    &>p>span {
+        color: $blue;
+        font-weight: 600;
+    }
+    a{
+        display: inline;
+        color: $blue;
+        text-decoration: underline;
     }
 }

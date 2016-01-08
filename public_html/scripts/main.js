@@ -1,3 +1,5 @@
+var temp;
+
 $(function () {
     $('#content').prepend($overlay);
     resizeAllImages(callbackInitSlider);
@@ -32,6 +34,15 @@ $(function () {
     if ($('input:not([type=radio])').length > 0) {
         $('input:not([type=radio])').on('focus', function () {
             $(this).val('');
+        });
+    }
+
+
+    /* init modules pour uploader image */
+    if ($('.add-annonce-image-container').length > 0 || $('.add-client-input-container-image').length > 0) {
+        $('.add-annonce-image-pic').each(function () {
+            temp = new uploadFile($(this));
+            temp.init();
         });
     }
 });
@@ -324,6 +335,85 @@ var menuMobile = (function () {
     };
 
 })();
+
+/* Module pour ajouter une image via input file */
+var uploadFile = function (element) {
+    var $image = element;
+
+    //cache dom 
+    var $imageContainer = $image.parents('.add-annonce-image-container');
+    var $form = $('#add-annonce-form');
+    var $container = $imageContainer.parent();
+    var $deleteButton = $container.find('button');
+    var $browserInfo = $('#alert-browser');
+    var $status = $container.find('.upload-status');
+    var $filePath = $status.find('.image-path');
+    var $hiddenInput = $imageContainer.find('input[type="hidden"]');
+    var $inputFile = $container.find('input[type="file"]');
+    var $modifyButtons = $container.find('.image-buttons');
+
+    this.init = function () {
+        _bindEvents();
+    };
+
+    var _bindEvents = function () {
+        $image.on('click', _addImage.bind(this));
+        $inputFile.on('change', function () {
+            _renderImage(this);
+        });
+        $deleteButton.on('click', _deleteImage.bind(this));
+    };
+
+    var _addImage = function () {
+        $inputFile.click();
+    };
+
+    var _deleteImage = function () {
+        $image.find('img').removeClass("rotate0");
+        $image.find('img').removeClass("rotate90");
+        $image.find('img').removeClass("rotate180");
+        $image.find('img').removeClass("rotate270");
+        $image.removeClass('hidden');
+        $status.addClass('hidden');
+        $image.val('');
+        $filePath.text('');
+        $image.attr('src', "images/add.png");
+        $inputFile.val('');
+        $hiddenInput.val(-1);
+        $deleteButton.addClass('hidden');
+        $modifyButtons.addClass('hidden');
+    };
+
+    var _renderImage = function (input) {
+        if (window.FileReader) {
+            console.log("The fileReader API is supported on this browser");
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $image.attr('src', e.target.result);
+                    $hiddenInput.val("notEmpty");
+                };
+
+                reader.readAsDataURL(input.files[0]);
+                $deleteButton.removeClass('hidden');
+                $modifyButtons.removeClass('hidden');
+            }
+        } else {
+            console.log("FileReader API not supported on this browser, use ajax instead");
+            var file_name = $inputFile.val().replace(/C:\\fakepath\\/i, '');
+            $filePath.text(file_name);
+            $hiddenInput.val($inputFile.val());
+            $image.addClass('hidden');
+            $status.removeClass('hidden');
+            $deleteButton.removeClass('hidden');
+            $browserInfo.removeClass('hidden');
+        }
+    };
+};
+
+
+
 
 //size of viewport
 function viewport() {

@@ -144,6 +144,13 @@ Contient les media queries pour adapter les styles sur les différents formats
             }
         }
     }
+    .uploadFile-container {
+        margin-right: 20px;
+        float: left;
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
 }
 @include viewport(max, $max: 1055){
     .header-top .container-wrapper, .footer-bottom .container-wrapper {
@@ -322,6 +329,11 @@ Contient les media queries pour adapter les styles sur les différents formats
     .group-input.radio{
         margin-top: 10px;
         &>label{float: left; width: auto; margin-bottom: 0;}
+    }
+    #alert_browser {
+        &>.attention_sign{
+            display: inline-block;
+        }
     }
 }
 @include media(lgdesk){

@@ -148,13 +148,13 @@
             </div>
             <div data-button="profilButton" class="mobile-sidebar-menu right">
                 <div class="category">
-                    <div class="category-title profil">quentin_fonck</div>
+                    <div class="category-title profil">quentin-fonck</div>
                     <ul class="categories">
                         <li class="category-entry">
                             <a href="#">Mes données personnelles</a>
                         </li>
                         <li class="category-entry">
-                            <a href="#">Mes Messages<span class="category_number"></span></a>
+                            <a href="#">Mes Messages<span class="category-number"></span></a>
                         </li>
                         <li class="category-entry">
                             <a href="#">Mes Annonces</a>
@@ -215,7 +215,7 @@
                                         <div class="phone-12 tab-6 tab-pr-10">
                                             <div class="group-input">
                                                 <div class="phone-12">
-                                                    <select id="Categorie" name="_categorie">
+                                                    <select id="Categorie" name="-categorie">
                                                         <option value="0">Choisissez une catégorie</option>
                                                         <option value="1"></option>
                                                     </select>
@@ -229,7 +229,7 @@
                                             <div class="group-input">
                                                 <label class="bold" for="brand">Marque : </label>
                                                 <div class="phone-12">
-                                                    <select id="brand" name="_brand">
+                                                    <select id="brand" name="-brand">
                                                         <option value="0">Tous</option>
                                                         <option value="1"></option>
                                                     </select>
@@ -238,24 +238,24 @@
                                             <div class="group-input radio">
                                                 <label class="bold">Transmission : </label>
                                                 <div>
-                                                    <input id="trans1" type="radio" name="_transmission"/>
+                                                    <input id="trans1" type="radio" name="-transmission"/>
                                                     <label for="trans1">Manuelle</label>
                                                 </div>
                                                 <div>
-                                                    <input id="trans2" type="radio" name="_transmission"/>
+                                                    <input id="trans2" type="radio" name="-transmission"/>
                                                     <label for="trans2">Automatique</label>
                                                 </div>
                                             </div>
                                             <div class="group-input">
                                                 <label class="bold" for="km1">Cylindrée (cm&sup3) : </label>
                                                 <div class="phone-6 phone-pr-5">
-                                                    <select id="km1" name="_km">
+                                                    <select id="km1" name="-km">
                                                         <option value="0">De</option>
                                                         <option value="1"></option>
                                                     </select>
                                                 </div>
                                                 <div class="phone-6 phone-pl-5">
-                                                    <select id="km2" name="_km">
+                                                    <select id="km2" name="-km">
                                                         <option value="0">Jusqu'à</option>
                                                         <option value="1"></option>
                                                     </select>
@@ -266,7 +266,7 @@
                                             <div class="group-input">
                                                 <label class="bold" for="model">Modèle : </label>
                                                 <div class="phone-12">
-                                                    <select id="model" name="_model">
+                                                    <select id="model" name="-model">
                                                         <option value="0">---</option>
                                                         <option value="1"></option>
                                                     </select>
@@ -275,18 +275,18 @@
                                             <div class="group-input radio">
                                                 <label class="bold">Portes : </label>
                                                 <div>
-                                                    <input id="port1" type="radio" name="_porte"/>
+                                                    <input id="port1" type="radio" name="-porte"/>
                                                     <label for="port1">2/3</label>
                                                 </div>
                                                 <div>
-                                                    <input id="port2" type="radio" name="_porte"/>
+                                                    <input id="port2" type="radio" name="-porte"/>
                                                     <label for="port2">4/5</label>
                                                 </div>
                                             </div>
                                             <div class="group-input">
                                                 <label class="bold" for="fuel">Puissance (CV) : </label>
                                                 <div class="phone-12">
-                                                    <select id="fuel" name="_fuel">
+                                                    <select id="fuel" name="-fuel">
                                                         <option value="0" selected>Tout type</option>
                                                         <option value="1"></option>
                                                     </select>
@@ -311,10 +311,10 @@
                                                     <label class="bold" for="brand">Prix (EUR) : </label>
                                                 </div>
                                                 <div class="cell">
-                                                    <input type="text" id="price" name="_price"/>
+                                                    <input type="text" id="price" name="-price"/>
                                                 </div>
                                                 <div class="cell">
-                                                    <input id="discuss" type="checkbox" name="_discuss"/>
+                                                    <input id="discuss" type="checkbox" name="-discuss"/>
                                                     <label for="discuss">À discuter</label>
                                                 </div>
                                             </div>
@@ -322,8 +322,75 @@
                                     </div>
                                     <div class="clearfix phone-mt-15 phone-mb-15 phone-pb-20 under-line">
                                         <h2>Photo(s) :</h2>
-                                        <div class="phone-12">
-                                            
+                                        <div style="text-align: center;" class="phone-12">
+                                            <div class="uploadFile-container">
+                                                <div id="container-1" class="add-annonce-image-container">
+                                                    <div class="upload-status hidden"><div class="icon-picture-o"></div><p class="image-path"></p></div>
+                                                    <div class="add-annonce-pic">
+                                                        <img id="add-annonce-image-pic-1" class="add-annonce-image-pic" src="images/add.png" alt="add image auto.lu">
+                                                    </div>
+                                                    <input id="add-annonce-image-pic-1-data" type="hidden" name="item-photo-1" value="-1">
+                                                </div>
+                                                <div class="image-buttons hidden">
+                                                    <div class="modify-image-button" onclick="rotateImage('container-1')">
+                                                        <img class="modify-rotate" src="images/icons/png/rotate.png" alt="rotate button auto.lu">
+                                                    </div>
+                                                    <button type="button" class="deleteImage hidden">
+                                                        <img src="images/icons/png/delete.png" alt="delete image auto.lu">
+                                                    </button>
+                                                </div>
+                                                <input id="add_annonce-image-input-1" class="add-annonce-image-input" type="file" name="file-1" onchange="getFileName(this, 1)">
+                                                <input id="filename-1" type="hidden" name="filename-1">
+                                                <input id="image-rotation-container-1" type="hidden" name="item-rotation-1">
+                                            </div>
+                                            <div class="uploadFile-container">
+                                                <div id="container-2" class="add-annonce-image-container">
+                                                    <div class="upload-status hidden"><div class="icon-picture-o"></div><p class="image-path"></p></div>
+                                                    <div class="add-annonce-pic">
+                                                        <img id="add-annonce-image-pic-2" class="add-annonce-image-pic" src="images/add.png" alt="add image auto.lu">
+                                                    </div>
+                                                    <input id="add-annonce-image-pic-2-data" type="hidden" name="item-photo-2" value="-2">
+                                                </div>
+                                                <div class="image-buttons hidden">
+                                                    <div class="modify-image-button" onclick="rotateImage('container-2')">
+                                                        <img class="modify-rotate" src="images/icons/png/rotate.png" alt="rotate image auto.lu">
+                                                    </div>
+                                                    <button type="button" class="deleteImage hidden">
+                                                        <img src="images/icons/png/delete.png" alt="delete image auto.lu">
+                                                    </button>
+                                                </div>
+                                                <input id="add_annonce-image-input-2" class="add-annonce-image-input" type="file" name="file-2" onchange="getFileName(this, 2)">
+                                                <input id="filename-2" type="hidden" name="filename-2">
+                                                <input id="image-rotation-container-2" type="hidden" name="item-rotation-2">
+                                            </div>
+                                            <div class="uploadFile-container">
+                                                <div id="container-3" class="add-annonce-image-container">
+                                                    <div class="upload-status hidden"><div class="icon-picture-o"></div><p class="image-path"></p></div>
+                                                    <div class="add-annonce-pic">
+                                                        <img id="add-annonce-image-pic-3" class="add-annonce-image-pic" src="images/add.png" alt="add image auto.lu">
+                                                    </div>
+                                                    <input id="add-annonce-image-pic-3-data" type="hidden" name="item-photo-3" value="-1">
+                                                </div>
+                                                <div class="image-buttons hidden">
+                                                    <div class="modify-image-button" onclick="rotateImage('container-3')">
+                                                        <img class="modify-rotate" src="images/icons/png/rotate.png" alt="rotate image auto.lu">
+                                                    </div>
+                                                    <button type="button" class="deleteImage hidden">
+                                                        <img src="images/icons/png/delete.png" alt="delete image auto.lu">
+                                                    </button>
+                                                </div>
+                                                <input id="add_annonce-image-input-3" class="add-annonce-image-input" type="file" name="file-3" onchange="getFileName(this, 3)">
+                                                <input id="filename-3" type="hidden" name="filename-3">
+                                                <input id="image-rotation-container-3" type="hidden" name="item-rotation-3">
+                                            </div>
+                                            <div id="alert_browser" class="hidden">
+                                                <div class="attention_sign">
+                                                    <span class="icon-info-circle"></span>
+                                                </div>
+                                                <div id="info">
+                                                    <p>Votre navigateur ne supporte pas&nbsp;<span>l'aperçu des images ci-dessus</span> (Internet explorer 9 ou Safari) .<br>Utilisez&nbsp;<a href="https://www.mozilla.org/fr/firefox/new/" target="_blank">Mozilla Firefox</a>, <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">Google Chrome</a>, <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Microsoft Edge</a> ou <a href="http://windows.microsoft.com/fr-be/internet-explorer/download-ie" target="_blank">une version récente&nbsp;d'Internet Explorer</a> pour voir vos images avant l'envoi.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="clearfix phone-mb-15">
@@ -412,5 +479,46 @@
         <script type="text/javascript" src="scripts/vendor/jquery.js"></script>
         <script type="text/javascript" src="scripts/vendor/flickity.pkgd.min.js"></script>
         <script type="text/javascript" src="scripts/main.js"></script>
+        <script>
+                                                    function getFileName(tme, id) {
+                                                        var file = tme.files[0];
+                                                        var filename = file.name;
+                                                        $('#filename_' + id).val(filename);
+                                                    }
+                                                    function rotateImage(id) {
+                                                        var element = $('#' + id);
+                                                        var hidden_element = $('#image_rotation_' + id);
+                                                        /* */
+                                                        var degree = element.attr('data');
+                                                        /* */
+                                                        element.find('img').removeClass("rotate0");
+                                                        element.find('img').removeClass("rotate90");
+                                                        element.find('img').removeClass("rotate180");
+                                                        element.find('img').removeClass("rotate270");
+                                                        /* */
+                                                        if (degree == 0) {
+                                                            element.attr('data', 90);
+                                                            hidden_element.val(90);
+                                                            element.find('img').addClass("rotate90");
+                                                        } else if (degree == 90) {
+                                                            element.attr('data', 180);
+                                                            hidden_element.val(180);
+                                                            element.find('img').addClass("rotate180");
+                                                        } else if (degree == 180) {
+                                                            element.attr('data', 270);
+                                                            hidden_element.val(270);
+                                                            element.find('img').addClass("rotate270");
+                                                        } else if (degree == 270) {
+                                                            element.attr('data', 0);
+                                                            hidden_element.val(0);
+                                                            element.find('img').addClass("rotate0");
+                                                        } else {
+                                                            element.attr('data', 90);
+                                                            hidden_element.val(90);
+                                                            element.find('img').addClass("rotate90");
+                                                        }
+                                                    }
+
+        </script>
     </body>
 </html>
