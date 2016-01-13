@@ -13,7 +13,7 @@ Contient les fonctions SCSS
 /*
 BASE
 ----------------------------------------------------------------
-Contient la base des styles pour constuire le site. Reset des propri├®t├®s de base des diff├®rents navigateurs
+Contient la base des styles pour constuire le site. Reset des propri??t??s de base des diff??rents navigateurs
 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -2649,7 +2649,7 @@ img {
 /*
 LAYOUT
 ----------------------------------------------------------------
-Contient les classes suppl├®mentaires pour la mise en page du site + les styles pour la structure g├®n├®rale du site (header, menus et footer)
+Contient les classes suppl??mentaires pour la mise en page du site + les styles pour la structure g??n??rale du site (header, menus et footer)
 */
 .container-wrapper {
   margin-right: auto;
@@ -2900,7 +2900,7 @@ section {
   .menu-mobile ul {
     text-align: justify;
     width: 100%;
-    font-size: 0;
+    line-height: 0;
     color: #004994; }
     .menu-mobile ul:after {
       content: '';
@@ -2911,7 +2911,10 @@ section {
 
 .menu-mobile-icon {
   display: inline-block;
+  position: relative;
+  top: 5px;
   text-align: center;
+  line-height: 20px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -3106,7 +3109,7 @@ section {
 /*
 MODULE
 ----------------------------------------------------------------
-Contient les styles pour les ├®l├®ments de l'interface utilisateur
+Contient les styles pour les ??l??ments de l'interface utilisateur
 */
 svg:not(:root) {
   overflow: visible; }
@@ -3155,11 +3158,26 @@ svg:not(:root) {
 .grey {
   color: #ededed; }
 
+.grey-font {
+  color: #7a7a7a; }
+
+.normal {
+  font-weight: 400; }
+
 .bold {
   font-weight: 600; }
 
 .extra-bold {
   font-weight: 800; }
+
+.lowercase {
+  text-transform: lowercase; }
+
+.captialize {
+  text-transform: capitalize; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 .immo {
   display: inline-block;
@@ -3212,7 +3230,7 @@ img.fill-width {
   height: auto; }
 
 img.fill-height {
-  height: 100%;
+  max-height: 100%;
   width: auto; }
 
 .annonce-link {
@@ -3338,7 +3356,8 @@ img.fill-height {
     color: #e75e0a;
     font-weight: 800; }
 .good-deal .img-container {
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 .good-deal ul {
   display: block;
   padding-left: 15px;
@@ -3370,6 +3389,15 @@ figure {
 .main-gallery.annonce-entry-slider .gallery-cell {
   padding: 0 1px;
   width: 50%; }
+  .main-gallery.annonce-entry-slider .gallery-cell.is-selected:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 73, 148, 0.2);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2; }
 .main-gallery.annonce-entry-slider .flickity-prev-next-button {
   top: 47%; }
 
@@ -3697,29 +3725,38 @@ input[type="radio"], input[type="checkbox"] {
 .search-result-entry {
   display: table;
   position: relative;
+  height: 98px;
   width: 100%;
-  height: 100px;
-  min-height: 100px;
   border-collapse: collapse;
-  margin-top: -1px; }
+  margin-bottom: 3px; }
 
 .search-result-entry-img {
-  vertical-align: middle;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 130.6666666666667px; }
+  .search-result-entry-img .image-container {
+    display: inline-block;
+    position: relative;
+    height: 98px;
+    width: 130.6666666666667px; }
+  .search-result-entry-img .img-annonce {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto; }
 
 .search-result-entry-img, .search-result-entry-infos {
   float: none;
   display: table-cell;
   position: relative;
   vertical-align: top;
-  height: 100%; }
+  height: 100%;
+  }
 
 .search-result-entry-img {
-  width: 132px;
-  background-color: #e0e0e0;
-  vertical-align: middle !important;
-  text-align: center;
-  height: 100px; }
+  background-color: silver;
+  }
 
 .search-result-entry-infos .infos-container {
   display: inline-block;
@@ -3731,20 +3768,20 @@ input[type="radio"], input[type="checkbox"] {
   vertical-align: top;
   float: none;
   width: 100%;
-  border: 1px solid #dfdfdf;
+  border: 1px solid silver;
   border-bottom: none;
   background-color: #fff;
-  font-size: 14px;
-  color: #004994; }
+  font-size: 12px;
+  color: #00356b; }
 .search-result-entry-infos .search-result-entry-infos-header {
   height: 65%;
-  padding: 5px; }
+  padding: 9px 15px 4px; }
   .search-result-entry-infos .search-result-entry-infos-header .header-container {
     position: relative;
     height: 100%;
     font-size: 12px; }
   .search-result-entry-infos .search-result-entry-infos-header .vehicle-infos {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #7a7a7a;
     font-weight: 800; }
   .search-result-entry-infos .search-result-entry-infos-header .brand {
@@ -3772,7 +3809,7 @@ input[type="radio"], input[type="checkbox"] {
   .search-result-entry-infos .search-result-entry-infos-details .year, .search-result-entry-infos .search-result-entry-infos-details .km, .search-result-entry-infos .search-result-entry-infos-details .price {
     display: table-cell;
     vertical-align: middle;
-    border: 1px solid #dfdfdf;
+    border: 1px solid silver;
     border-top: none; }
   .search-result-entry-infos .search-result-entry-infos-details .km {
     font-weight: 600; }
@@ -4066,7 +4103,7 @@ input[type="radio"], input[type="checkbox"] {
 /*
 RESPONSIVE
 ----------------------------------------------------------------
-Contient les media queries pour adapter les styles sur les diff├®rents formats
+Contient les media queries pour adapter les styles sur les diff??rents formats
 */
 @media screen and (max-width: 671px) {
   .container-wrapper {
@@ -4079,7 +4116,10 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
   .annonce-entry-details {
     font-size: 0.9em; }
     .annonce-entry-details > * {
-      width: 25.331%; } }
+      width: 25.331%; }
+
+  .seller-type, .fuel-type {
+    font-size: 0.85em !important; } }
 @media screen and (min-width: 672px) {
   .container-wrapper {
     width: 640px; }
@@ -4178,14 +4218,33 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     margin-right: 20px;
     float: left; }
     .uploadFile-container:not(:last-child) {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+
+  .search-result-entry {
+    margin-bottom: 5px;
+    height: 125px; }
+
+  .search-result-entry-img {
+    width: 166.6666666666667px; }
+    .search-result-entry-img .image-container {
+      width: 100%;
+      height: 125px;
+      }
+
+  .search-result-entry-infos .search-result-entry-infos-header .header-container, .search-result-entry-infos .search-result-entry-infos-details {
+    font-size: 14px; }
+  .search-result-entry-infos .search-result-entry-infos-header {
+    padding: 10px 15px 10px 15px; }
+  .search-result-entry-infos .search-result-entry-infos-details .year, .search-result-entry-infos .search-result-entry-infos-details .km, .search-result-entry-infos .search-result-entry-infos-details .price {
+    width: 33.333333%; } }
 @media screen and (max-width: 1055px) {
   .header-top .container-wrapper, .footer-bottom .container-wrapper {
     width: auto;
     padding: 0 25px; }
 
   #search_result > .container-wrapper {
-    width: 100%; } }
+    width: 100%;
+    padding: 0; } }
 @media screen and (min-width: 1056px) {
   .container-wrapper {
     width: 1024px; }
@@ -4253,7 +4312,7 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     width: auto;
     height: 100%;
     float: left;
-    border-bottom: 1px solid #dfdfdf; }
+    border-bottom: 1px solid #c6c6c6; }
 
   .search-sort {
     text-align: left;
@@ -4280,7 +4339,8 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
       font-size: 1.1em; }
 
   .search-result-entry-infos .search-result-entry-infos-header {
-    width: 45%; }
+    width: 45%;
+    border-right: none; }
 
   .search-result-entry-infos .search-result-entry-infos-details {
     width: 55%; }
@@ -4291,7 +4351,7 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
   .annonce-entry-img {
     display: inline-block;
     position: relative;
-    width: 75%;
+    width: 70%;
     z-index: 1; }
 
   .main-gallery.annonce-entry-slider .gallery-cell {
@@ -4301,7 +4361,7 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
   .annonce-entry-details {
     vertical-align: top;
     display: inline-block;
-    width: 25%;
+    width: 30%;
     height: 100%; }
     .annonce-entry-details > * {
       display: block;
@@ -4361,13 +4421,13 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     margin-left: 50px; }
 
   .search-sort .byBrand {
-    width: 61.1%; }
+    width: 62.5%; }
 
   .search-result-entry-infos .search-result-entry-infos-header {
-    width: 55%; }
+    width: 58.3%; }
 
   .search-result-entry-infos .search-result-entry-infos-details {
-    width: 45%; }
+    width: 41.7%; }
 
   .annonce-entry-details .price {
     font-size: 2em; }

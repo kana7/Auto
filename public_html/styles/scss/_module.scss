@@ -62,11 +62,27 @@ svg:not(:root) {
 .grey{
     color: $grey;
 }
+.grey-font{
+    color: $grey-font;
+}
+.normal{
+    font-weight: 400;
+}
 .bold{
     font-weight: 600;
 }
 .extra-bold{
     font-weight: 800;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+.captialize{
+    text-transform: capitalize;
+}
+.uppercase{
+    text-transform: uppercase;
 }
 
 .immo{
@@ -123,7 +139,7 @@ img.fill-width{
     height: auto;
 }
 img.fill-height{
-    height: 100%;
+    max-height: 100%;
     width: auto;
 }
 
@@ -277,6 +293,7 @@ img.fill-height{
     }
     .img-container{
         text-align: center;
+        overflow: hidden;
     }
     ul{
         display: block;
@@ -317,6 +334,18 @@ figure{
     .gallery-cell{
         padding: 0 1px;
         width: 50%;
+        &.is-selected{
+            &:after {
+                content: "";
+                position: absolute;
+                background-color: rgba(0,73,148,0.2);
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 2;
+            }
+        }
     }
     .flickity-prev-next-button{
         top: 47%;
@@ -651,15 +680,28 @@ input[type="radio"], input[type="checkbox"]{
 .search-result-entry{
     display: table;
     position: relative;
+    height: 98px;
     width: 100%;
-    height: 100px;
-    min-height: 100px;
     border-collapse: collapse;
-    margin-top: -1px;
+    margin-bottom: 3px;
 }
 .search-result-entry-img{
-    vertical-align: middle;
     overflow: hidden;
+    width: 130.6666666666667px;
+    .image-container{
+        display: inline-block;
+        position: relative;
+        height: 98px;
+        width: 130.6666666666667px;
+    }
+    .img-annonce{
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+    }
 }
 .search-result-entry-img, .search-result-entry-infos{
     float: none;
@@ -669,11 +711,7 @@ input[type="radio"], input[type="checkbox"]{
     height: 100%;
 }
 .search-result-entry-img{
-    width: 132px;
-    background-color: darken($grey, 5%);
-    vertical-align: middle !important;
-    text-align: center;
-    height: 100px;
+    background-color: darken($grey-border, 12%);
 }
 .search-result-entry-infos{
     .infos-container{
@@ -687,22 +725,22 @@ input[type="radio"], input[type="checkbox"]{
         vertical-align: top;
         float: none;
         width: 100%;
-        border: 1px solid $grey-border;
+        border: 1px solid darken($grey-border, 12%);
         border-bottom: none;
         background-color: $white;
-        font-size: 14px;
-        color: $blue;
+        font-size: 12px;
+        color: darken($blue, 8%);
     }
     .search-result-entry-infos-header{
         height: 65%;
-        padding: 5px;
+        padding: 9px 15px 4px;
         .header-container{
             position: relative;
             height: 100%;
             font-size: 12px;
         }
         .vehicle-infos{
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: $grey-font;
             font-weight: 800;
         }
@@ -738,7 +776,7 @@ input[type="radio"], input[type="checkbox"]{
         .year, .km, .price{
             display: table-cell;
             vertical-align: middle;
-            border: 1px solid $grey-border;
+            border: 1px solid darken($grey-border, 12%);
             border-top: none;
         }
         .km{

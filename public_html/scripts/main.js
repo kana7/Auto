@@ -70,7 +70,7 @@ var getTallestImageHeight = function (imgCollection) {
 var callbackInitSlider = function () {
     //Init du slider
     if ($('.main-gallery')) {
-        $('.main-gallery:not(.annonce-entry-slider)').flickity({
+        $('.main-gallery:not(.annonce-entry-slider):not(.annonce-similar-slider)').flickity({
             // options
             cellAlign: 'left',
             pageDots: false,
@@ -85,6 +85,15 @@ var callbackInitSlider = function () {
             freeScroll: false,
             wrapAround: false,
             contain: true,
+            arrowShape: "M32.272,53.375l20.117,18.96c1.975,1.859,5.178,1.859,7.149,0c1.975-1.863,1.975-4.881,0-6.74l-16.538-15.59l16.538-15.59c1.975-1.863,1.975-4.882,0-6.743c-1.975-1.863-5.178-1.863-7.149,0l-20.117,18.96C30.298,48.497,30.298,51.512,32.272,53.375z"
+        });
+        $('.main-gallery.annonce-similar-slider').flickity({
+            // options
+            cellAlign: 'left',
+            pageDots: false,
+            freeScroll: true,
+            contain: false,
+            wrapAround: false,
             arrowShape: "M32.272,53.375l20.117,18.96c1.975,1.859,5.178,1.859,7.149,0c1.975-1.863,1.975-4.881,0-6.74l-16.538-15.59l16.538-15.59c1.975-1.863,1.975-4.882,0-6.743c-1.975-1.863-5.178-1.863-7.149,0l-20.117,18.96C30.298,48.497,30.298,51.512,32.272,53.375z"
         });
         resizeSlider();
@@ -122,11 +131,11 @@ var resizeAllImages = function (callback) {
         var height = element.height();
         var containerWidth = container.width();
         var containerHeight = container.height();
-        if (height >= width) {
+        //if (height >= width) {
             element.addClass('fill-height');
-        } else {
-            element.addClass('fill-width');
-        }
+        //} else {
+            //element.addClass('fill-width');
+        //}
 
         /*var newWidth = element.width();
          var newHeight = element.height();

@@ -21,6 +21,9 @@ Contient les media queries pour adapter les styles sur les différents formats
             width: 25.331%;
         }
     }
+    .seller-type, .fuel-type {
+        font-size: 0.85em !important;
+    }
 }
 @include media(tab){
     .container-wrapper{
@@ -151,6 +154,30 @@ Contient les media queries pour adapter les styles sur les différents formats
             margin-bottom: 30px;
         }
     }
+    .search-result-entry{
+        margin-bottom: 5px;
+        height: 125px;
+    }
+    .search-result-entry-img{
+        width: 166.6666666666667px;
+        .image-container{
+            width: 100%;
+            height: 125px;
+        }
+    }
+    .search-result-entry-infos{
+        .search-result-entry-infos-header .header-container, .search-result-entry-infos-details{
+            font-size: 14px;
+        } 
+        .search-result-entry-infos-header{
+            padding: 10px 15px 10px 15px;
+        }
+        .search-result-entry-infos-details{
+            .year, .km, .price{
+                width: 33.333333%;
+            }
+        }
+    }
 }
 @include viewport(max, $max: 1055){
     .header-top .container-wrapper, .footer-bottom .container-wrapper {
@@ -160,6 +187,7 @@ Contient les media queries pour adapter les styles sur les différents formats
     #search_result{
         &>.container-wrapper{
             width: 100%;
+            padding: 0;
         }
     }
 }
@@ -228,7 +256,7 @@ Contient les media queries pour adapter les styles sur les différents formats
         width: auto;
         height: 100%;
         float: left;
-        border-bottom: 1px solid $grey-border;
+        border-bottom: 1px solid darken($grey-border, 10%);
     }
     .search-sort{
         text-align: left;
@@ -263,6 +291,7 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
     .search-result-entry-infos .search-result-entry-infos-header{
         width: 45%;
+        border-right: none;
     }
     .search-result-entry-infos .search-result-entry-infos-details{
         width: 55%;
@@ -274,7 +303,7 @@ Contient les media queries pour adapter les styles sur les différents formats
     .annonce-entry-img{
         display: inline-block;
         position: relative;
-        width: 75%;
+        width: 70%;
         z-index: 1;
     }
     .main-gallery.annonce-entry-slider{
@@ -286,7 +315,7 @@ Contient les media queries pour adapter les styles sur les différents formats
     .annonce-entry-details{
         vertical-align: top;
         display: inline-block;
-        width: 25%;
+        width: 30%;
         height: 100%;
         & > *{
             display: block;
@@ -349,13 +378,13 @@ Contient les media queries pour adapter les styles sur les différents formats
         margin-left: 50px;
     }
     .search-sort .byBrand {
-        width: 61.1%;
+        width: 62.5%;
     }
     .search-result-entry-infos .search-result-entry-infos-header{
-        width: 55%;
+        width: 58.3%;
     }
     .search-result-entry-infos .search-result-entry-infos-details{
-        width: 45%;
+        width: 41.7%;
     }
     .annonce-entry-details .price{
         font-size: 2em;
