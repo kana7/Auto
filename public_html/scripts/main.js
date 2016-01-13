@@ -2,6 +2,7 @@ var temp;
 
 $(function () {
     $('#content').prepend($overlay);
+
     resizeAllImages(callbackInitSlider);
 //Resize du slider au chargement de la page et lors du resize de la fenêtre
     if ($('.mobile-sidebar-menu').length > 0) {
@@ -26,11 +27,12 @@ $(function () {
         catSelection.init();
     }
 
+    //Message alerte sur les fonctions non disponibles
     $('.disabled').on('click', function () {
         alert('cette fonction sera bientôt disponible.');
     });
 
-    //vide l'input text au focus dessus
+    //vide l'input text au focus dessus sur la recherche rapide
     if ($('input:not([type=radio])').length > 0) {
         $('input:not([type=radio])').on('focus', function () {
             $(this).val('');
@@ -92,7 +94,7 @@ var callbackInitSlider = function () {
             cellAlign: 'left',
             pageDots: false,
             freeScroll: true,
-            contain: false,
+            contain: true,
             wrapAround: false,
             arrowShape: "M32.272,53.375l20.117,18.96c1.975,1.859,5.178,1.859,7.149,0c1.975-1.863,1.975-4.881,0-6.74l-16.538-15.59l16.538-15.59c1.975-1.863,1.975-4.882,0-6.743c-1.975-1.863-5.178-1.863-7.149,0l-20.117,18.96C30.298,48.497,30.298,51.512,32.272,53.375z"
         });
@@ -117,24 +119,29 @@ var resizeAnnonceDetail = function () {
 
 var resizeSlider = function () {
     $('.main-gallery').each(function () {
-        $(this).find('.img-annonce').css('height', ($(this).find('.gallery-cell').innerWidth() / 4) * 3);
+        $(this).find('.img-annonce').parent().css('height', ($(this).find('.gallery-cell').innerWidth() / 4) * 3);
         $(this).find('.flickity-viewport').css('height', $('.annonce-slider-item').innerHeight());
         $(this).show().flickity('resize');
     });
 };
 
+/*var resizeMainImage = function () {
+    $('.annonce-entry-img').find('figure').css('height', ($('.annonce-entry-img').find('img').innerWidth() / 4) * 3);
+    $('.annonce-entry-slider').show().flickity('resize');
+};*/
+
 var resizeAllImages = function (callback) {
     $('.img-annonce').each(function () {
         var element = $(this);
-        var container = element.parent();
-        var width = element.width();
-        var height = element.height();
-        var containerWidth = container.width();
-        var containerHeight = container.height();
+        /*var container = element.parent();
+         var width = element.width();
+         var height = element.height();
+         var containerWidth = container.width();
+         var containerHeight = container.height();*/
         //if (height >= width) {
-            element.addClass('fill-height');
+        element.addClass('fill-height');
         //} else {
-            //element.addClass('fill-width');
+        //element.addClass('fill-width');
         //}
 
         /*var newWidth = element.width();

@@ -166,6 +166,11 @@ img.fill-height{
 
 //TEXT STYLES
 //--------------------------------------------------
+
+.title-search-result{
+    font-size: 20px;
+    line-height: 21px;
+}
 #welcome-message, #filter{
     padding: 10px 0;
     font-size: 15px;
@@ -663,6 +668,20 @@ input[type="radio"], input[type="checkbox"]{
 #search_result{
     padding: 20px 10px;
 }
+.image-container{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .img-annonce{
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+    }
+}
 #search-result-table{
     display: inline-block;
     position: relative;
@@ -689,18 +708,8 @@ input[type="radio"], input[type="checkbox"]{
     overflow: hidden;
     width: 130.6666666666667px;
     .image-container{
-        display: inline-block;
-        position: relative;
         height: 98px;
         width: 130.6666666666667px;
-    }
-    .img-annonce{
-        position: absolute;
-        top: -9999px;
-        bottom: -9999px;
-        left: -9999px;
-        right: -9999px;
-        margin: auto;
     }
 }
 .search-result-entry-img, .search-result-entry-infos{
