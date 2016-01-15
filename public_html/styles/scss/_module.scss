@@ -139,7 +139,7 @@ img.fill-width{
     height: auto;
 }
 img.fill-height{
-    max-height: 100%;
+    height: 100%;
     width: auto;
 }
 
@@ -318,9 +318,31 @@ img.fill-height{
 
 //SLIDER ANNONCE UNE STYLES
 //--------------------------------------------------
-figure{
-    margin: 0;
+
+.annonce-entry-img{
+    height: 100%;
+    figure{
+        margin: 0;
+    }
+    &>figure{
+        margin: 0;
+        background-color: #D2D2D2;
+        border-top: 1px solid #EDEDED;
+        border-bottom: 1px solid #EDEDED;
+        height: 100%;
+        a{
+            height: 100%;
+            text-align: center;
+            overflow: hidden;
+        }
+        img{
+            image-rendering:optimizeQuality; 
+            -ms-interpolation-mode:bicubic;
+            max-height: 300px;
+        }
+    }
 }
+
 .pswp__image{
     max-width: 150px !important;
     padding: 10px 15px;
@@ -604,10 +626,11 @@ input[type="radio"], input[type="checkbox"]{
 }
 .btn-blue{
     @include btn($blue, $white);
+    height: 47px;
     font-size: 1.2em;
     font-weight: 400;
-    line-height: 23px;
-    padding: 9px 32px 12px;
+    line-height: 47px;
+    padding: 0 32px;
     text-transform: uppercase;
     &:hover{
         background-color: lighten($blue, 5%);

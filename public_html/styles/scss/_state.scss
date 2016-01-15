@@ -178,6 +178,13 @@ Contient les media queries pour adapter les styles sur les différents formats
             }
         }
     }
+    .annonce-entry-img{
+        &>figure{
+            img{
+                max-height: 450px;
+            }
+        }
+    }
 }
 @include viewport(max, $max: 1055){
     .header-top .container-wrapper, .footer-bottom .container-wrapper {
@@ -235,6 +242,7 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
     .header-bottom{
         @include gradient-upDown($orange, darken($orange, 7%));
+        background-color: $orange;
         border-bottom: none;
         @include box-shadow(none);
         padding: 0;
@@ -362,6 +370,13 @@ Contient les media queries pour adapter les styles sur les différents formats
         &>.attention_sign{
             display: inline-block;
         }
+    }
+    .annonce-entry-img{
+        &>figure{
+            img{
+                max-height: 500px;
+            }
+        } 
     }
 }
 @include media(lgdesk){
