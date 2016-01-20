@@ -2765,13 +2765,17 @@ Contient les classes suppl├®mentaires pour la mise en page du site + les styl
       width: 100%; } }
 .page-wrapper {
   min-height: 100%;
-  position: relative; }
-  .page-wrapper footer {
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 0; }
+  margin-bottom: -188.182px; }
+  .page-wrapper:after {
+    content: "";
+    display: block; }
+
+footer, .page-wrapper:after {
+  height: 188.182px; }
+
+#content {
+  position: relative;
+  overflow-x: hidden; }
 
 .margin-bottom-phone {
   margin-bottom: 20px; }
@@ -2915,10 +2919,6 @@ section {
         top: 2px;
         margin-right: 5px;
         font-size: 0.9em; }
-
-#content {
-  position: relative;
-  overflow-x: hidden; }
 
 .menu-mobile {
   position: relative; }
@@ -3545,7 +3545,7 @@ input[type="radio"], input[type="checkbox"] {
     line-height: 20px;
     padding-bottom: 4px;
     font-size: 14px; }
-  .group-input select, .group-input input[type="text"], .group-input textarea {
+  .group-input select, .group-input input[type="text"], .group-input input[type="password"], .group-input textarea {
     display: block;
     width: 100%;
     border: 1px solid #dfdfdf;
@@ -4149,55 +4149,27 @@ input[type="radio"], input[type="checkbox"] {
     text-decoration: underline; }
 
 #login {
+  position: relative;
   background: #f7f7f7 none repeat scroll 0 0;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  height: 390px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
   text-align: center;
-  width: 400px;
+  width: 310px;
   margin: 0 auto;
-  margin-top: 100px; }
-  #login div {
-    width: 100%; }
-  #login #bazar_login_image {
-    width: 250px !important;
-    width: 60%;
-    margin: 0 auto;
-    height: 145px; }
-  #login .bazar_login_input {
-    height: 40px;
+  margin-top: 5%; }
+  #login #login-image {
+    width: 85%;
+    margin: 0 auto; }
+  #login #login-error {
+    font-size: 1.1em;
     line-height: 20px;
-    padding-left: 10px;
-    width: 78%;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    display: block;
-    margin: 0 auto;
-    margin-top: 15px; }
-  #login .bazar_login_button {
-    height: 40px;
-    line-height: 35px;
-    text-align: center;
-    width: 78%;
-    border-radius: 4px;
-    border: 1px solid #888;
-    display: block;
-    margin: 0 auto;
-    margin-top: 15px;
-    background: #00529c;
-    color: #fff;
-    font-size: 10pt;
-    font-weight: bold;
-    cursor: pointer; }
-  #login .login_link {
+    color: #CE272D;
+    padding-bottom: 10px; }
+  #login .login-link {
     color: #00529c;
-    float: left;
-    text-align: left;
-    position: relative;
-    text-decoration: none;
-    top: 15px;
-    left: 45px;
     font-size: 9pt; }
+    #login .login-link:hover {
+      text-decoration: underline; }
 
 /*
 RESPONSIVE
@@ -4220,6 +4192,12 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
   .seller-type, .fuel-type {
     font-size: 0.85em !important; } }
 @media screen and (min-width: 672px) {
+  .page-wrapper {
+    margin-bottom: -141.364px; }
+
+  footer, .page-wrapper:after {
+    height: 141.364px; }
+
   .container-wrapper {
     width: 640px; }
 
@@ -4347,6 +4325,12 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
     width: 100%;
     padding: 0; } }
 @media screen and (min-width: 1056px) {
+  .page-wrapper {
+    margin-bottom: -135.724px; }
+
+  footer, .page-wrapper:after {
+    height: 135.724px; }
+
   .container-wrapper {
     width: 1024px; }
 
@@ -4516,6 +4500,12 @@ Contient les media queries pour adapter les styles sur les diff├®rents format
   .annonce-entry-img > figure img {
     max-height: 500px; } }
 @media screen and (min-width: 1302px) {
+  .page-wrapper {
+    margin-bottom: -135.69px; }
+
+  footer, .page-wrapper:after {
+    height: 135.69px; }
+
   .container-wrapper {
     width: 1280px; }
 

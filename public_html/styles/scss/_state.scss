@@ -26,6 +26,13 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
 }
 @include media(tab){
+    .page-wrapper{
+        margin-bottom: -141.364px;
+    }
+    footer, .page-wrapper:after{
+        height: 141.364px;
+    }
+
     .container-wrapper{
         width: 640px;
     }
@@ -199,6 +206,12 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
 }
 @include media(desk){
+    .page-wrapper{
+        margin-bottom: -135.724px;
+    }
+    footer, .page-wrapper:after{
+        height: 135.724px;
+    }
     .container-wrapper{
         width: 1024px;
     }
@@ -380,6 +393,12 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
 }
 @include media(lgdesk){
+    .page-wrapper{
+        margin-bottom: -135.69px;
+    }
+    footer, .page-wrapper:after{
+        height: 135.69px;
+    }
     .container-wrapper{
         width: 1280px;
     }

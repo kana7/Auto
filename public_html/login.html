@@ -169,58 +169,62 @@
                         </ul>
                     </div>
                 </div>
-                <section id="login" class="phone-mb-40">
-                    <div class="container-wrapper">
-                        <div class="row">
-                            <div id="bazar_login_image" class="hidden-phone hidden-tab"><img src="images/logo-bleu.png" alt="Auto.lu" style="width: 100%; height: auto; position: relative;" class="vertical-align-middle"></div>
-                            <div id="bazar_login_text"></div>
-                            <form id="bazar_login_form" action="sql.exe?SqlDB=auto6&amp;Sql=LoginClient_Login.phs" method="POST" name="bazar_login">
-                                <input class="bazar_login_input" type="text" name="_Username" value="" placeholder="Nom d'utilisateur">
-                                <input class="bazar_login_input" type="password" name="_Password" value="" placeholder="Mot de passe">
-                                <input type="hidden" name="ErrorScript" value="ErrorAuto.phs&amp;m=19">
-                                <input type="hidden" name="NextScript" value="Auto.phs">
-                                <input type="hidden" name="_Login" value="1">
-                                <button class="bazar_login_button" name="login_button" onclick="bazarLogin(event);">Connexion</button>
-                                <a class="bazar_link login_link" href="sql.exe?SqlDB=auto6&amp;Sql=Password.phs&amp;action=1">Nom d'utilisateur/Mot de passe oublié?</a><br>
-                                <a class="bazar_link login_link" href="sql.exe?SqlDB=auto6&amp;Sql=NewClient.phs">Je n'ai pas encore de compte</a>
-                            </form>
+                <section id="login" class="phone-mb-40 phone-pt-30 phone-pb-30">
+                    <div class="clearfix phone-pl-30 phone-pr-30">
+                        <div id="login-image" class="phone-mb-40"><img src="images/logo-bleu.png" alt="Auto.lu" style="width: 100%; height: auto; position: relative;"></div>
+                        <div id="login-error" class="hidden">Nom utilisateur ou mot de passe incorrect</div>
+                        <form id="bazar-login-form" action="sql.exe?SqlDB=auto6&amp;Sql=LoginClient_Login.phs" method="POST" name="bazar_login">
+                            <div class="group-input">
+                                <input type="text" name="_Username" value="" placeholder="Nom d'utilisateur">
+                            </div>
+                            <div class="group-input">
+                                <input type="password" name="_Password" value="" placeholder="Mot de passe">
+                            </div>
+                            <input type="hidden" name="ErrorScript" value="ErrorAuto.phs&amp;m=19">
+                            <input type="hidden" name="NextScript" value="Auto.phs">
+                            <input type="hidden" name="_Login" value="1">
+                            <button class="btn-blue phone-mt-30" name="login_button" onclick="bazarLogin(event);">Connexion</button>
+                        </form>
+                        <div class="align-center phone-mt-30">
+                            <a class="login-link" href="sql.exe?SqlDB=auto6&amp;Sql=Password.phs&amp;action=1">Nom d'utilisateur/Mot de passe oublié?</a><br>
+                            <a class="login-link" href="sql.exe?SqlDB=auto6&amp;Sql=NewClient.phs">Je n'ai pas encore de compte</a>
                         </div>
                     </div>
                 </section>
             </div>
-            <footer class="top-line">
-                <div class="footer-top">
-                    <div class="container-wrapper">
-                        <div class="row">
-                            <nav>
-                                <ul>
-                                    <li><a href="#">Informations légales</a></li>
-                                    <li class="hidden-phone">|</li>
-                                    <li><a href="#">Aide</a></li>
-                                    <li class="hidden-phone">|</li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li class="hidden-phone">|</li>
-                                    <li><a href="#">Conditions d'utilisation</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <div class="container-wrapper">
-                        <div class="row">
-                            <div class="phone-12 desk-6 pull-left hidden-phone phone-mb-15 desk-mb-0">
-                                <span style="display: inline-block;" class="desk-mt-20"><strong>Auto.lu</strong> : Vos annonces auto 100% gratuites!</span>
-                            </div>
-                            <div class="phone-12 desk-6 pull-right">
-                                <span style="display: inline-block;" class="tab-mt-10 desk-mt-20">Copyright © 2015 Luxembourg Online S.A.</span>
-                                <img class="hidden-phone hidden-tab pull-right phone-ml-50" src="images/Logo-LOL-white.png" alt="logo lol white" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
+        <footer>
+            <div class="footer-top">
+                <div class="container-wrapper">
+                    <div class="row">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Informations légales</a></li>
+                                <li class="hidden-phone">|</li>
+                                <li><a href="#">Aide</a></li>
+                                <li class="hidden-phone">|</li>
+                                <li><a href="#">Contact</a></li>
+                                <li class="hidden-phone">|</li>
+                                <li><a href="#">Conditions d'utilisation</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container-wrapper">
+                    <div class="row">
+                        <div class="phone-12 desk-6 pull-left hidden-phone phone-mb-15 desk-mb-0">
+                            <span style="display: inline-block;" class="desk-mt-20"><strong>Auto.lu</strong> : Vos annonces auto 100% gratuites!</span>
+                        </div>
+                        <div class="phone-12 desk-6 pull-right">
+                            <span style="display: inline-block;" class="tab-mt-10 desk-mt-20">Copyright © 2015 Luxembourg Online S.A.</span>
+                            <img class="hidden-phone hidden-tab pull-right phone-ml-50" src="images/Logo-LOL-white.png" alt="logo lol white" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script type="text/javascript" src="scripts/vendor/jquery.js"></script>
         <script type="text/javascript" src="scripts/vendor/flickity.pkgd.min.js"></script>

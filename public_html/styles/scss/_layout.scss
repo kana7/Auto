@@ -73,16 +73,20 @@ Contient les classes supplémentaires pour la mise en page du site + les styles 
 //----------------------------------------------
 
 .page-wrapper{
-    min-height:100%;
-    position:relative;
-
-    footer{
-        width:100%;
-        height:100px;
-        position:absolute;
-        bottom:0;
-        left:0;
+    min-height: 100%;
+    margin-bottom: -188.182px;
+    &:after{
+        content: "";
+        display: block;
     }
+}
+footer, .page-wrapper:after{
+    height: 188.182px;
+}
+
+#content{
+    position: relative;
+    overflow-x: hidden;
 }
 
 .margin-bottom-phone{
@@ -226,10 +230,7 @@ section{
         }
     }
 }
-#content{
-    position: relative;
-    overflow-x: hidden;
-}
+
 .menu-mobile{
     position: relative;
     ul{
