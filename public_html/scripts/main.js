@@ -74,7 +74,7 @@ var getTallestImageHeight = function (imgCollection) {
 //le resize du slider se fait une fois que toutes les images de la page ont été traité par la fonction resizeAllimage 
 var callbackInitSlider = function () {
     //Init du slider
-    if ($('.main-gallery')) {
+    if ($('.main-gallery').length > 0 && jQuery().flickity) {
         $('.main-gallery:not(.annonce-entry-slider):not(.annonce-similar-slider)').flickity({
             // options
             cellAlign: 'left',
