@@ -1137,3 +1137,65 @@ input[type="radio"], input[type="checkbox"]{
         text-decoration: underline;
     }
 }
+
+//LOGIN
+//------------------------------------------------------------------------------
+#login {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    height: 390px;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    div{
+        width: 100%;
+    }
+    #bazar_login_image{
+        width: 250px !important;
+        width: 60%;
+        margin: 0 auto;
+        height: 145px;
+    }
+    .bazar_login_input {
+        height: 40px;
+        line-height: 20px;
+        padding-left: 10px;
+        width: 78%;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .bazar_login_button {
+        height: 40px;
+        line-height: 35px;
+        text-align: center;
+        width: 78%;
+        border-radius: 4px;
+        border: 1px solid #888;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        background: #00529c;
+        color: #fff;
+        font-size: 10pt;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .login_link {
+        color: #00529c;
+        float: left;
+        text-align: left;
+        position: relative;
+        text-decoration: none;
+        top: 15px;
+        left: 45px;
+        font-size: 9pt;
+    }
+    
+}

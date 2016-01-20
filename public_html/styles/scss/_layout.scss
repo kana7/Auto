@@ -72,6 +72,19 @@ Contient les classes supplémentaires pour la mise en page du site + les styles 
 }
 //----------------------------------------------
 
+.page-wrapper{
+    min-height:100%;
+    position:relative;
+
+    footer{
+        width:100%;
+        height:100px;
+        position:absolute;
+        bottom:0;
+        left:0;
+    }
+}
+
 .margin-bottom-phone{
     margin-bottom: 20px;
 }
@@ -109,6 +122,8 @@ header{
     padding: 20px 0;
 }
 .footer-top{
+    @extend .top-line;
+    background-color: #ededed;
     nav{
         color: darken($grey, 40%);
         li{
@@ -125,9 +140,13 @@ header{
         }
     }
 }
-section:not(:last-child), .header-bottom, #content, .under-line{
+section:not(:last-child), .header-bottom, .under-line{
     border-bottom: 1px solid $grey-border;
     @include box-shadow(0 1px 0 0 $white);
+}
+.top-line{
+    border-top: 1px solid $grey-border;
+    @include box-shadow(inset 0 1px 0 $white);
 }
 section{
     padding: 20px 0;
