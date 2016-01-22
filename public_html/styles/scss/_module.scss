@@ -587,6 +587,7 @@ input[type="radio"], input[type="checkbox"]{
     padding: 14px 35px 11px;
     font-size: 12px;
     font-weight: 600;
+    text-align: center;
     @include transition($transitionUi);
     span{
         position: relative; 
