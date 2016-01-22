@@ -391,6 +391,9 @@ Contient les media queries pour adapter les styles sur les différents formats
             }
         } 
     }
+    .search-result-entry-infos .search-result-entry-infos-header .vehicle-infos{
+        max-width: 87%;
+    }
 }
 @include media(lgdesk){
     .page-wrapper{
@@ -432,5 +435,8 @@ Contient les media queries pour adapter les styles sur les différents formats
     }
     .annonce-entry-details {
         font-size: 1.4em;
+    }
+    .search-result-entry-infos .search-result-entry-infos-header .vehicle-infos{
+        max-width: 93%;
     }
 }
