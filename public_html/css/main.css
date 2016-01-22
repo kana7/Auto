@@ -4018,7 +4018,8 @@ input[type="radio"], input[type="checkbox"] {
   .annonce-entry-bottom .annonce-entry-comment {
     line-height: 20px; }
     .annonce-entry-bottom .annonce-entry-comment > p {
-      margin-top: 0; }
+      margin-top: 0;
+      word-wrap: break-word; }
 
 .annonce-entry-seller {
   background-color: #dfdfdf;

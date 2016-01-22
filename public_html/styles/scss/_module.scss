@@ -987,6 +987,7 @@ input[type="radio"], input[type="checkbox"]{
         line-height: 20px;
         &>p{
             margin-top: 0;
+            word-wrap: break-word;
         }
     }
 }
