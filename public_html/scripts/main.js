@@ -1,5 +1,7 @@
 var temp;
 
+var $overlay = $('<div id="overlay"></div>');
+
 $(function () {
     $('#content').prepend($overlay);
 
@@ -16,7 +18,9 @@ $(function () {
 
     if ($('.annonce-entry').length > 0) {
         resizeImageDetail();
-        resizeAnnonceDetail();
+        $(window).on('load', function () {
+            resizeAnnonceDetail();
+        });
         $(window).resize(resizeAnnonceDetail);
     }
 
@@ -51,9 +55,6 @@ $(function () {
         });
     }
 });
-
-
-var $overlay = $('<div id="overlay"></div>');
 
 var getTallestImageHeight = function (imgCollection) {
     var max_height = 0;
@@ -371,7 +372,6 @@ var uploadFile = function (element) {
 
     //cache dom 
     var $imageContainer = $image.parents('.add-annonce-image-container');
-    var $form = $('#add-annonce-form');
     var $container = $imageContainer.parent();
     var $deleteButton = $container.find('button');
     var $browserInfo = $('#alert-browser');
@@ -440,9 +440,6 @@ var uploadFile = function (element) {
         }
     };
 };
-
-
-
 
 //size of viewport
 function viewport() {
